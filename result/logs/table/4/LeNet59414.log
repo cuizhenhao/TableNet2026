@@ -1,0 +1,129 @@
+2024-09-04 14:46:05,924 : LeNet5(
+2024-09-04 14:46:05,925 :   (conv1): WhiteConv2(1, 6, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), padding_mode=replicate)
+2024-09-04 14:46:05,925 :   (pool1): WhitePool()
+2024-09-04 14:46:05,925 :   (conv2): WhiteConv2(6, 16, kernel_size=(5, 5), stride=(1, 1), padding_mode=replicate)
+2024-09-04 14:46:05,925 :   (pool2): WhitePool()
+2024-09-04 14:46:05,925 :   (fc1): WhiteLinear(in_features=400, out_features=120, bias=True)
+2024-09-04 14:46:05,925 :   (fc2): WhiteLinear(in_features=120, out_features=84, bias=True)
+2024-09-04 14:46:05,925 :   (fc3): WhiteLinear(in_features=84, out_features=10, bias=True)
+2024-09-04 14:46:05,935 : )
+2024-09-04 14:46:05,935 : Traceback (most recent call last):
+2024-09-04 14:46:05,935 :   File "E:\TableNet\generateWhitebox.py", line 86, in <module>
+2024-09-04 14:46:05,935 :     net.last_codebook = np.array([(256, (np.arange(256, dtype=np.float) / 255 - mean) / std)], dtype=np.object)
+2024-09-04 14:46:05,935 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\numpy\__init__.py", line 305, in __getattr__
+2024-09-04 14:46:05,944 :     raise AttributeError(__former_attrs__[attr])
+2024-09-04 14:46:05,944 : AttributeError: module 'numpy' has no attribute 'float'.
+2024-09-04 14:46:05,944 : `np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+2024-09-04 14:46:05,944 : The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+2024-09-04 14:46:05,945 :     https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+2024-09-04 14:46:36,780 : LeNet5(
+2024-09-04 14:46:36,780 :   (conv1): WhiteConv2(1, 6, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), padding_mode=replicate)
+2024-09-04 14:46:36,780 :   (pool1): WhitePool()
+2024-09-04 14:46:36,780 :   (conv2): WhiteConv2(6, 16, kernel_size=(5, 5), stride=(1, 1), padding_mode=replicate)
+2024-09-04 14:46:36,780 :   (pool2): WhitePool()
+2024-09-04 14:46:36,780 :   (fc1): WhiteLinear(in_features=400, out_features=120, bias=True)
+2024-09-04 14:46:36,780 :   (fc2): WhiteLinear(in_features=120, out_features=84, bias=True)
+2024-09-04 14:46:36,780 :   (fc3): WhiteLinear(in_features=84, out_features=10, bias=True)
+2024-09-04 14:46:36,780 : )
+2024-09-04 14:46:36,781 : Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+2024-09-04 14:46:37,179 : Downloading http://202.120.161.162/cache/5/02/yann.lecun.com/34152be34c1115808d82493371362afe/train-images-idx3-ubyte.gz to ./data\MNIST\raw\train-images-idx3-ubyte.gz
+2024-09-04 14:46:37,207 :   0%|          | 0/9912422 [00:00<?, ?it/s]
+2024-09-04 14:46:37,313 :   3%|3         | 327680/9912422 [00:00<00:03, 3092511.75it/s]
+2024-09-04 14:46:37,430 :   9%|8         | 851968/9912422 [00:00<00:02, 3944523.70it/s]
+2024-09-04 14:46:37,530 :  15%|#4        | 1474560/9912422 [00:00<00:01, 4905479.61it/s]
+2024-09-04 14:46:37,658 :  20%|##        | 1998848/9912422 [00:00<00:01, 4549104.63it/s]
+2024-09-04 14:46:37,759 :  26%|##5       | 2555904/9912422 [00:00<00:01, 4879932.70it/s]
+2024-09-04 14:46:37,861 :  32%|###1      | 3145728/9912422 [00:00<00:01, 5181005.89it/s]
+2024-09-04 14:46:37,977 :  37%|###7      | 3702784/9912422 [00:00<00:01, 5048613.12it/s]
+2024-09-04 14:46:38,093 :  43%|####2     | 4227072/9912422 [00:00<00:01, 4870699.94it/s]
+2024-09-04 14:46:38,196 :  48%|####7     | 4751360/9912422 [00:00<00:01, 4948326.83it/s]
+2024-09-04 14:46:38,305 :  53%|#####3    | 5275648/9912422 [00:01<00:00, 4892043.54it/s]
+2024-09-04 14:46:38,412 :  59%|#####8    | 5832704/9912422 [00:01<00:00, 4989732.39it/s]
+2024-09-04 14:46:38,523 :  64%|######4   | 6356992/9912422 [00:01<00:00, 4914597.01it/s]
+2024-09-04 14:46:38,644 :  69%|######9   | 6881280/9912422 [00:01<00:00, 4709664.83it/s]
+2024-09-04 14:46:38,787 :  74%|#######4  | 7372800/9912422 [00:01<00:00, 4265657.10it/s]
+2024-09-04 14:46:38,890 :  80%|#######9  | 7897088/9912422 [00:01<00:00, 4495973.81it/s]
+2024-09-04 14:46:38,991 :  85%|########5 | 8454144/9912422 [00:01<00:00, 4754933.90it/s]
+2024-09-04 14:46:39,093 :  90%|######### | 8945664/9912422 [00:01<00:00, 4793086.92it/s]
+2024-09-04 14:46:39,192 :  96%|#########5| 9502720/9912422 [00:01<00:00, 5005540.94it/s]
+2024-09-04 14:46:39,273 : 100%|##########| 9912422/9912422 [00:02<00:00, 4797445.81it/s]
+2024-09-04 14:46:39,274 : 
+2024-09-04 14:46:39,303 : Extracting ./data\MNIST\raw\train-images-idx3-ubyte.gz to ./data\MNIST\raw
+2024-09-04 14:46:39,538 : 
+2024-09-04 14:46:39,538 : Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+2024-09-04 14:46:39,868 : Downloading http://202.120.161.162/cache/11/02/yann.lecun.com/32a667c2f3de678798ae039d04726fa1/train-labels-idx1-ubyte.gz to ./data\MNIST\raw\train-labels-idx1-ubyte.gz
+2024-09-04 14:46:39,901 :   0%|          | 0/28881 [00:00<?, ?it/s]
+2024-09-04 14:46:39,902 : 100%|##########| 28881/28881 [00:00<?, ?it/s]
+2024-09-04 14:46:39,902 : 
+2024-09-04 14:46:39,908 : Extracting ./data\MNIST\raw\train-labels-idx1-ubyte.gz to ./data\MNIST\raw
+2024-09-04 14:46:39,909 : 
+2024-09-04 14:46:39,909 : Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+2024-09-04 14:46:40,244 : Downloading http://202.120.161.162/cache/1/02/yann.lecun.com/b80c4efc17eabb28908f865775412435/t10k-images-idx3-ubyte.gz to ./data\MNIST\raw\t10k-images-idx3-ubyte.gz
+2024-09-04 14:46:40,276 :   0%|          | 0/1648877 [00:00<?, ?it/s]
+2024-09-04 14:46:40,380 :  16%|#5        | 262144/1648877 [00:00<00:00, 2542840.75it/s]
+2024-09-04 14:46:40,484 :  36%|###5      | 589824/1648877 [00:00<00:00, 2884915.65it/s]
+2024-09-04 14:46:40,591 :  70%|######9   | 1146880/1648877 [00:00<00:00, 3971587.87it/s]
+2024-09-04 14:46:40,672 : 100%|##########| 1648877/1648877 [00:00<00:00, 4169839.45it/s]
+2024-09-04 14:46:40,672 : 
+2024-09-04 14:46:40,688 : Extracting ./data\MNIST\raw\t10k-images-idx3-ubyte.gz to ./data\MNIST\raw
+2024-09-04 14:46:40,723 : 
+2024-09-04 14:46:40,723 : Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+2024-09-04 14:46:42,348 : Failed to download (trying next):
+2024-09-04 14:46:42,349 : HTTP Error 403: Forbidden
+2024-09-04 14:46:42,350 : 
+2024-09-04 14:46:42,350 : Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz
+2024-09-04 14:46:43,385 : Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz to ./data\MNIST\raw\t10k-labels-idx1-ubyte.gz
+2024-09-04 14:46:44,256 :   0%|          | 0/4542 [00:00<?, ?it/s]
+2024-09-04 14:46:44,257 : 100%|##########| 4542/4542 [00:00<00:00, 4542329.22it/s]
+2024-09-04 14:46:44,257 : 
+2024-09-04 14:46:44,265 : Extracting ./data\MNIST\raw\t10k-labels-idx1-ubyte.gz to ./data\MNIST\raw
+2024-09-04 14:46:44,266 : 
+2024-09-04 14:46:44,332 : Traceback (most recent call last):
+2024-09-04 14:46:44,332 :   File "E:\TableNet\generateWhitebox.py", line 172, in <module>
+2024-09-04 14:46:44,334 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2024-09-04 14:46:44,334 :   File "E:\TableNet\modules\white_net.py", line 85, in test_whitebox
+2024-09-04 14:46:44,334 :     self.test_once(test_loader)
+2024-09-04 14:46:44,334 :   File "E:\TableNet\modules\white_net.py", line 26, in test_once
+2024-09-04 14:46:44,334 :     outputs = self(inputs)
+2024-09-04 14:46:44,334 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 14:46:44,334 :     return forward_call(*input, **kwargs)
+2024-09-04 14:46:44,334 :   File "E:\TableNet\net\lenet5.py", line 68, in forward
+2024-09-04 14:46:44,334 :     x = self.conv1(x)
+2024-09-04 14:46:44,334 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 14:46:44,334 :     return forward_call(*input, **kwargs)
+2024-09-04 14:46:44,334 :   File "E:\TableNet\modules\parents\clustering_layer.py", line 86, in forward
+2024-09-04 14:46:44,334 :     input = self.process_input(input)
+2024-09-04 14:46:44,334 :   File "E:\TableNet\modules\parents\clustering_layer.py", line 82, in process_input
+2024-09-04 14:46:44,334 :     input = process_single_input(input, self.info.previous)
+2024-09-04 14:46:44,334 :   File "E:\TableNet\modules\parents\clustering_layer.py", line 67, in process_single_input
+2024-09-04 14:46:44,334 :     normal_input_set = [Forward_Mode.normal, Forward_Mode.cluster,Forward_Mode.cluster_multiprocessing, Forward_Mode.out_cluster, Forward_Mode.cluster_and_generate_table]
+2024-09-04 14:46:44,334 :   File "C:\Users\12784\AppData\Local\Programs\Python\Python38\lib\enum.py", line 384, in __getattr__
+2024-09-04 14:46:44,342 :     raise AttributeError(name) from None
+2024-09-04 14:46:44,342 : AttributeError: cluster
+2024-09-04 14:48:08,398 : LeNet5(
+2024-09-04 14:48:08,399 :   (conv1): WhiteConv2(1, 6, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), padding_mode=replicate)
+2024-09-04 14:48:08,399 :   (pool1): WhitePool()
+2024-09-04 14:48:08,399 :   (conv2): WhiteConv2(6, 16, kernel_size=(5, 5), stride=(1, 1), padding_mode=replicate)
+2024-09-04 14:48:08,399 :   (pool2): WhitePool()
+2024-09-04 14:48:08,399 :   (fc1): WhiteLinear(in_features=400, out_features=120, bias=True)
+2024-09-04 14:48:08,399 :   (fc2): WhiteLinear(in_features=120, out_features=84, bias=True)
+2024-09-04 14:48:08,399 :   (fc3): WhiteLinear(in_features=84, out_features=10, bias=True)
+2024-09-04 14:48:08,399 : )
+2024-09-04 14:48:08,437 : Traceback (most recent call last):
+2024-09-04 14:48:08,437 :   File "E:\TableNet\generateWhitebox.py", line 172, in <module>
+2024-09-04 14:48:08,437 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2024-09-04 14:48:08,438 :   File "E:\TableNet\modules\white_net.py", line 85, in test_whitebox
+2024-09-04 14:48:08,438 :     self.test_once(test_loader)
+2024-09-04 14:48:08,438 :   File "E:\TableNet\modules\white_net.py", line 26, in test_once
+2024-09-04 14:48:08,438 :     outputs = self(inputs)
+2024-09-04 14:48:08,438 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 14:48:08,438 :     return forward_call(*input, **kwargs)
+2024-09-04 14:48:08,438 :   File "E:\TableNet\net\lenet5.py", line 68, in forward
+2024-09-04 14:48:08,438 :     x = self.conv1(x)
+2024-09-04 14:48:08,438 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 14:48:08,439 :     return forward_call(*input, **kwargs)
+2024-09-04 14:48:08,439 :   File "E:\TableNet\modules\parents\clustering_layer.py", line 88, in forward
+2024-09-04 14:48:08,439 :     out = self._normal_forward(input)
+2024-09-04 14:48:08,439 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1265, in __getattr__
+2024-09-04 14:48:08,439 :     raise AttributeError("'{}' object has no attribute '{}'".format(
+2024-09-04 14:48:08,439 : AttributeError: 'WhiteConv2' object has no attribute '_normal_forward'

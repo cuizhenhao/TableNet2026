@@ -1,0 +1,62 @@
+2024-09-04 15:43:16,260 : LSTM_IMDB(
+2024-09-04 15:43:16,260 :   (embedding): WhiteEmbedding(1001, 16)
+2024-09-04 15:43:16,260 :   (lstm): CustomLSTM(
+2024-09-04 15:43:16,260 :     (W_i): WhiteLinear(in_features=48, out_features=32, bias=True)
+2024-09-04 15:43:16,261 :     (W_c): WhiteLinear(in_features=48, out_features=32, bias=True)
+2024-09-04 15:43:16,261 :     (W_f): WhiteLinear(in_features=48, out_features=32, bias=True)
+2024-09-04 15:43:16,261 :     (W_o): WhiteLinear(in_features=48, out_features=32, bias=True)
+2024-09-04 15:43:16,261 :     (mul1): WhiteMul()
+2024-09-04 15:43:16,261 :     (mul2): WhiteMul()
+2024-09-04 15:43:16,261 :     (add): WhiteAdd()
+2024-09-04 15:43:16,261 :     (mul3): WhiteMul()
+2024-09-04 15:43:16,261 :     (tanh): WhiteActivation()
+2024-09-04 15:43:16,261 :   )
+2024-09-04 15:43:16,261 :   (fc): WhiteLinear(in_features=32, out_features=1, bias=True)
+2024-09-04 15:43:16,261 : )
+2024-09-04 15:43:16,345 : WhiteEmbedding(1001, 16) 1-embedding
+2024-09-04 15:43:16,346 : WhiteLinear(in_features=48, out_features=32, bias=True) 2-lstm.W_i
+2024-09-04 15:43:16,346 : WhiteLinear(in_features=48, out_features=32, bias=True) 3-lstm.W_c
+2024-09-04 15:43:16,346 : WhiteLinear(in_features=48, out_features=32, bias=True) 4-lstm.W_f
+2024-09-04 15:43:16,346 : WhiteLinear(in_features=48, out_features=32, bias=True) 5-lstm.W_o
+2024-09-04 15:43:16,346 : WhiteMul() 6-lstm.mul2
+2024-09-04 15:43:16,346 : WhiteMul() 7-lstm.mul1
+2024-09-04 15:43:16,346 : WhiteAdd() 8-lstm.add
+2024-09-04 15:43:16,346 : WhiteActivation() 9-lstm.tanh
+2024-09-04 15:43:16,346 : WhiteMul() 10-lstm.mul3
+2024-09-04 15:43:16,346 : WhiteLinear(in_features=32, out_features=1, bias=True) 11-fc
+2024-09-04 15:43:16,350 : ==============================1-embedding load==============================
+2024-09-04 15:43:16,447 : ==============================2-lstm.W_i load==============================
+2024-09-04 15:43:16,574 : ==============================3-lstm.W_c load==============================
+2024-09-04 15:43:16,697 : ==============================4-lstm.W_f load==============================
+2024-09-04 15:43:16,822 : ==============================5-lstm.W_o load==============================
+2024-09-04 15:43:16,824 : ==============================6-lstm.mul2 load==============================
+2024-09-04 15:43:16,829 : ==============================7-lstm.mul1 load==============================
+2024-09-04 15:43:16,833 : ==============================8-lstm.add load==============================
+2024-09-04 15:43:16,834 : ==============================9-lstm.tanh load==============================
+2024-09-04 15:43:16,838 : ==============================10-lstm.mul3 load==============================
+2024-09-04 15:43:16,842 : ==============================11-fc load==============================
+2024-09-04 15:43:16,842 : load time:  0.49573516845703125
+2024-09-04 15:43:29,545 : tensor(228.) tensor(24.)
+2024-09-04 15:43:29,547 : Validation Accuracy0: 89.0000
+2024-09-04 15:43:41,172 : tensor(232.) tensor(24.)
+2024-09-04 15:43:41,173 : Validation Accuracy1: 88.2500
+2024-09-04 15:43:43,996 : Traceback (most recent call last):
+2024-09-04 15:43:43,996 :   File "E:\TableNet\generateWhitebox.py", line 170, in <module>
+2024-09-04 15:43:43,996 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2024-09-04 15:43:43,997 :   File "E:\TableNet\net\lstm_imdb.py", line 250, in test_whitebox
+2024-09-04 15:43:43,997 :     output, val_h = self(inputs, val_h)
+2024-09-04 15:43:43,997 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 15:43:43,997 :     return forward_call(*input, **kwargs)
+2024-09-04 15:43:43,997 :   File "E:\TableNet\net\lstm_imdb.py", line 155, in forward
+2024-09-04 15:43:43,997 :     lstm_out, hidden  = self.lstm(embeds, hidden)
+2024-09-04 15:43:43,997 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 15:43:43,998 :     return forward_call(*input, **kwargs)
+2024-09-04 15:43:43,998 :   File "E:\TableNet\net\lstm_imdb.py", line 81, in forward
+2024-09-04 15:43:43,998 :     i_t = self.W_i(combined)
+2024-09-04 15:43:43,998 :   File "D:\Projects\Pycharm\WBML_update(1)\venv\lib\site-packages\torch\nn\modules\module.py", line 1190, in _call_impl
+2024-09-04 15:43:43,998 :     return forward_call(*input, **kwargs)
+2024-09-04 15:43:43,998 :   File "E:\TableNet\modules\parents\clustering_layer.py", line 88, in forward
+2024-09-04 15:43:43,998 :     out = self._whitebox_forward(input)
+2024-09-04 15:43:43,998 :   File "E:\TableNet\modules\white_linear.py", line 35, in _whitebox_forward
+2024-09-04 15:43:43,998 :     out[..., i] = table[out[..., i], input_arr[..., index]]
+2024-09-04 15:43:43,998 : KeyboardInterrupt

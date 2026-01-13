@@ -24,8 +24,8 @@ import os
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='train')
     parser.add_argument('--net', type=str, default='LeNet5',
-                        help='CNN/LeNet5/ResNet50/BNLeNet5')
-    parser.add_argument('--bit', type=int, default=4,
+                        help='LeNet5/ResNet20/lstm-imdb')
+    parser.add_argument('--bit', type=int, default=7,
                         help='quantization count')
     parser.add_argument('--prune', action='store_true',
                         help='use prune model or not')

@@ -3,7 +3,7 @@ import torch.nn as nn
 import math
 
 
-from modules.white_dense_block import WhiteDenseBlock, WhiteTransition
+from modules.white_dense_block import WhiteDenseBlock, WhiteTransition, WhiteDenseBlockWM
 from modules.white_bn import WhiteBatchNorm2d
 from modules.white_conv import WhiteConv2
 from modules.white_pooling import WhitePool
@@ -20,7 +20,7 @@ class DenseNet121(WhiteNet):
 
         self.growth_rate = 12
         nblocks = [6, 12, 24, 16]
-        block = WhiteDenseBlock
+        block = WhiteDenseBlockWM
         reduction = 0.5
         num_classes = 10
 

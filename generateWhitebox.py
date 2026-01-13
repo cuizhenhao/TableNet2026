@@ -104,24 +104,34 @@ if __name__ == '__main__':
     elif args.net == "ResNet20" or args.net == "DenseNet121":
         mean = [0.4914, 0.4822, 0.4465]
         std = [0.2023, 0.1994, 0.2010]
-        # net.last_codebook = np.array([
-        #     (256, (np.arange(256, dtype=np.float) / 255 - mean[0]) / std[0]),
-        #     (256, (np.arange(256, dtype=np.float) / 255 - mean[1]) / std[1]),
-        #     (256, (np.arange(256, dtype=np.float) / 255 - mean[2]) / std[2])], dtype=np.object)
-        net.last_codebook = np.array([(256, np.arange(256)), (256, np.arange(256)), (256, np.arange(256))], dtype=np.object)
 
-        transform_train = transforms.Compose([
-            # transforms.RandomCrop(32, padding=4),
-            # transforms.RandomHorizontalFlip(),
-            transforms.ToTensor(),
-            # transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
-            transforms.Lambda(lambda x: x * 255),
-        ])
-        transform_test = transforms.Compose([
-            transforms.ToTensor(),
-            # transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
-            transforms.Lambda(lambda x: x * 255),
-        ])
+        if args.net == "DenseNet121":
+            net.last_codebook = np.array([
+                (256, (np.arange(256, dtype=np.float32) / 255 - mean[0]) / std[0]),
+                (256, (np.arange(256, dtype=np.float32) / 255 - mean[1]) / std[1]),
+                (256, (np.arange(256, dtype=np.float32) / 255 - mean[2]) / std[2])], dtype=np.object_)
+            transform_train = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.RandomHorizontalFlip(),
+                transforms.ToTensor(),
+                transforms.RandomRotation(22.5)
+            ])
+            transform_test = transforms.ToTensor()
+        else:
+            net.last_codebook = np.array([(256, np.arange(256)), (256, np.arange(256)), (256, np.arange(256))],
+                                         dtype=np.object)
+            transform_train = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.RandomHorizontalFlip(),
+                transforms.ToTensor(),
+                # transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+                transforms.Lambda(lambda x: x * 255),
+            ])
+            transform_test = transforms.Compose([
+                transforms.ToTensor(),
+                # transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+                transforms.Lambda(lambda x: x * 255),
+            ])
         train_set = CIFAR10(root='./data', train=True, download=True, transform=transform_train)
         test_set = CIFAR10(root='./data', train=False, download=True, transform=transform_test)
         test_batch_size = 100

@@ -37,6 +37,25 @@ class WhiteDenseBlock(WhiteNet):
     def get_size(self) -> int:
         return self.bn1.get_size() + self.conv1.get_size() + self.bn2.get_size() + self.conv2.get_size()
 
+class WhiteDenseBlockWM(WhiteNet):
+    def __init__(self, in_planes, growth_rate):
+        super(WhiteDenseBlockWM, self).__init__()
+        self.bn1 = WhiteBatchNorm2d(in_planes, activate_function=F.relu)
+        self.conv1 = WhiteConv2(in_planes, growth_rate, kernel_size=3, padding=1, bias=False, padding_mode='zeros')
+        self.cat = WhiteCat(in_planes, growth_rate)
+        self.previous_codebook = None
+
+    def init_info(self, layer_name, previous):
+        self.bn1.init_info(layer_name + ".bn1", previous=previous)
+        self.conv1.init_info(layer_name + ".conv1", previous=self.bn1)
+        self.cat.init_info(layer_name + ".cat",previous=(previous, self.conv1))
+        return [self.bn1,self.conv1,self.cat]
+
+    def forward(self, x):
+        out = self.conv1(self.bn1(x))
+        out = self.cat((x, out))
+        return out
+
 class WhiteTransition(nn.Module):
     def __init__(self, in_planes, out_planes):
         super(WhiteTransition, self).__init__()

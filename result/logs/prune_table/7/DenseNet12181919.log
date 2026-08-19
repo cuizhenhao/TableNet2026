@@ -1,0 +1,1843 @@
+2026-08-19 19:31:08,864 : DenseNet121(
+2026-08-19 19:31:08,865 :   (conv1): WhiteConv2(3, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:31:08,865 :   (dense1): WhiteSequential(
+2026-08-19 19:31:08,865 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:08,865 :       (bn1): WhiteBatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,866 :       (conv1): WhiteConv2(24, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,866 :       (cat): WhiteCat()
+2026-08-19 19:31:08,866 :     )
+2026-08-19 19:31:08,866 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:08,867 :       (bn1): WhiteBatchNorm2d(36, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,867 :       (conv1): WhiteConv2(36, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,867 :       (cat): WhiteCat()
+2026-08-19 19:31:08,867 :     )
+2026-08-19 19:31:08,868 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:08,868 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,868 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,868 :       (cat): WhiteCat()
+2026-08-19 19:31:08,869 :     )
+2026-08-19 19:31:08,869 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:08,869 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,869 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,870 :       (cat): WhiteCat()
+2026-08-19 19:31:08,870 :     )
+2026-08-19 19:31:08,870 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:08,870 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,871 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,871 :       (cat): WhiteCat()
+2026-08-19 19:31:08,871 :     )
+2026-08-19 19:31:08,871 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:08,871 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,872 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,872 :       (cat): WhiteCat()
+2026-08-19 19:31:08,872 :     )
+2026-08-19 19:31:08,872 :   )
+2026-08-19 19:31:08,873 :   (trans1): WhiteTransition(
+2026-08-19 19:31:08,873 :     (bn): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,873 :     (conv): WhiteConv2(96, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:31:08,873 :     (pool): WhitePool()
+2026-08-19 19:31:08,874 :   )
+2026-08-19 19:31:08,874 :   (dense2): WhiteSequential(
+2026-08-19 19:31:08,874 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:08,874 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,875 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,875 :       (cat): WhiteCat()
+2026-08-19 19:31:08,875 :     )
+2026-08-19 19:31:08,875 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:08,876 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,876 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,876 :       (cat): WhiteCat()
+2026-08-19 19:31:08,876 :     )
+2026-08-19 19:31:08,877 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:08,877 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,877 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,877 :       (cat): WhiteCat()
+2026-08-19 19:31:08,878 :     )
+2026-08-19 19:31:08,878 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:08,878 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,878 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,879 :       (cat): WhiteCat()
+2026-08-19 19:31:08,879 :     )
+2026-08-19 19:31:08,879 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:08,879 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,879 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,880 :       (cat): WhiteCat()
+2026-08-19 19:31:08,880 :     )
+2026-08-19 19:31:08,880 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:08,880 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,881 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,881 :       (cat): WhiteCat()
+2026-08-19 19:31:08,881 :     )
+2026-08-19 19:31:08,881 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:31:08,881 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,882 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,882 :       (cat): WhiteCat()
+2026-08-19 19:31:08,882 :     )
+2026-08-19 19:31:08,882 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:31:08,883 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,883 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,883 :       (cat): WhiteCat()
+2026-08-19 19:31:08,883 :     )
+2026-08-19 19:31:08,884 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:31:08,884 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,884 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,884 :       (cat): WhiteCat()
+2026-08-19 19:31:08,885 :     )
+2026-08-19 19:31:08,885 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:31:08,885 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,885 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,885 :       (cat): WhiteCat()
+2026-08-19 19:31:08,886 :     )
+2026-08-19 19:31:08,886 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:31:08,886 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,886 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,887 :       (cat): WhiteCat()
+2026-08-19 19:31:08,887 :     )
+2026-08-19 19:31:08,887 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:31:08,887 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,888 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,888 :       (cat): WhiteCat()
+2026-08-19 19:31:08,888 :     )
+2026-08-19 19:31:08,888 :   )
+2026-08-19 19:31:08,888 :   (trans2): WhiteTransition(
+2026-08-19 19:31:08,889 :     (bn): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,889 :     (conv): WhiteConv2(192, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:31:08,889 :     (pool): WhitePool()
+2026-08-19 19:31:08,889 :   )
+2026-08-19 19:31:08,890 :   (dense3): WhiteSequential(
+2026-08-19 19:31:08,890 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:08,890 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,891 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,891 :       (cat): WhiteCat()
+2026-08-19 19:31:08,891 :     )
+2026-08-19 19:31:08,891 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:08,892 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,892 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,892 :       (cat): WhiteCat()
+2026-08-19 19:31:08,892 :     )
+2026-08-19 19:31:08,893 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:08,893 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,893 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,893 :       (cat): WhiteCat()
+2026-08-19 19:31:08,894 :     )
+2026-08-19 19:31:08,894 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:08,894 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,894 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,895 :       (cat): WhiteCat()
+2026-08-19 19:31:08,895 :     )
+2026-08-19 19:31:08,895 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:08,895 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,895 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,896 :       (cat): WhiteCat()
+2026-08-19 19:31:08,896 :     )
+2026-08-19 19:31:08,896 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:08,896 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,897 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,897 :       (cat): WhiteCat()
+2026-08-19 19:31:08,897 :     )
+2026-08-19 19:31:08,897 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:31:08,897 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,898 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,898 :       (cat): WhiteCat()
+2026-08-19 19:31:08,898 :     )
+2026-08-19 19:31:08,898 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:31:08,899 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,899 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,899 :       (cat): WhiteCat()
+2026-08-19 19:31:08,899 :     )
+2026-08-19 19:31:08,900 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:31:08,900 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,900 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,900 :       (cat): WhiteCat()
+2026-08-19 19:31:08,901 :     )
+2026-08-19 19:31:08,901 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:31:08,901 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,901 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,902 :       (cat): WhiteCat()
+2026-08-19 19:31:08,902 :     )
+2026-08-19 19:31:08,902 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:31:08,902 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,903 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,903 :       (cat): WhiteCat()
+2026-08-19 19:31:08,903 :     )
+2026-08-19 19:31:08,903 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:31:08,904 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,904 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,904 :       (cat): WhiteCat()
+2026-08-19 19:31:08,904 :     )
+2026-08-19 19:31:08,904 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:31:08,904 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,905 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,905 :       (cat): WhiteCat()
+2026-08-19 19:31:08,905 :     )
+2026-08-19 19:31:08,905 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:31:08,905 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,906 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,906 :       (cat): WhiteCat()
+2026-08-19 19:31:08,906 :     )
+2026-08-19 19:31:08,906 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:31:08,906 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,906 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,907 :       (cat): WhiteCat()
+2026-08-19 19:31:08,907 :     )
+2026-08-19 19:31:08,907 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:31:08,907 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,908 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,908 :       (cat): WhiteCat()
+2026-08-19 19:31:08,908 :     )
+2026-08-19 19:31:08,908 :     (16): WhiteDenseBlockWM(
+2026-08-19 19:31:08,908 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,909 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,909 :       (cat): WhiteCat()
+2026-08-19 19:31:08,909 :     )
+2026-08-19 19:31:08,909 :     (17): WhiteDenseBlockWM(
+2026-08-19 19:31:08,910 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,910 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,910 :       (cat): WhiteCat()
+2026-08-19 19:31:08,910 :     )
+2026-08-19 19:31:08,910 :     (18): WhiteDenseBlockWM(
+2026-08-19 19:31:08,911 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,911 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,911 :       (cat): WhiteCat()
+2026-08-19 19:31:08,911 :     )
+2026-08-19 19:31:08,912 :     (19): WhiteDenseBlockWM(
+2026-08-19 19:31:08,912 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,912 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,912 :       (cat): WhiteCat()
+2026-08-19 19:31:08,912 :     )
+2026-08-19 19:31:08,913 :     (20): WhiteDenseBlockWM(
+2026-08-19 19:31:08,913 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,913 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,913 :       (cat): WhiteCat()
+2026-08-19 19:31:08,914 :     )
+2026-08-19 19:31:08,914 :     (21): WhiteDenseBlockWM(
+2026-08-19 19:31:08,914 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,914 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,914 :       (cat): WhiteCat()
+2026-08-19 19:31:08,915 :     )
+2026-08-19 19:31:08,915 :     (22): WhiteDenseBlockWM(
+2026-08-19 19:31:08,915 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,915 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,916 :       (cat): WhiteCat()
+2026-08-19 19:31:08,916 :     )
+2026-08-19 19:31:08,916 :     (23): WhiteDenseBlockWM(
+2026-08-19 19:31:08,916 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,917 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,917 :       (cat): WhiteCat()
+2026-08-19 19:31:08,917 :     )
+2026-08-19 19:31:08,917 :   )
+2026-08-19 19:31:08,917 :   (trans3): WhiteTransition(
+2026-08-19 19:31:08,918 :     (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,918 :     (conv): WhiteConv2(384, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:31:08,918 :     (pool): WhitePool()
+2026-08-19 19:31:08,918 :   )
+2026-08-19 19:31:08,919 :   (dense4): WhiteSequential(
+2026-08-19 19:31:08,919 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:08,919 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,919 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,920 :       (cat): WhiteCat()
+2026-08-19 19:31:08,920 :     )
+2026-08-19 19:31:08,920 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:08,920 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,921 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,921 :       (cat): WhiteCat()
+2026-08-19 19:31:08,921 :     )
+2026-08-19 19:31:08,921 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:08,922 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,922 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,922 :       (cat): WhiteCat()
+2026-08-19 19:31:08,922 :     )
+2026-08-19 19:31:08,922 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:08,922 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,922 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,923 :       (cat): WhiteCat()
+2026-08-19 19:31:08,923 :     )
+2026-08-19 19:31:08,923 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:08,923 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,923 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,923 :       (cat): WhiteCat()
+2026-08-19 19:31:08,923 :     )
+2026-08-19 19:31:08,923 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:08,923 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,924 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,924 :       (cat): WhiteCat()
+2026-08-19 19:31:08,924 :     )
+2026-08-19 19:31:08,924 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:31:08,924 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,924 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,924 :       (cat): WhiteCat()
+2026-08-19 19:31:08,925 :     )
+2026-08-19 19:31:08,925 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:31:08,925 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,926 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,926 :       (cat): WhiteCat()
+2026-08-19 19:31:08,926 :     )
+2026-08-19 19:31:08,926 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:31:08,927 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,927 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,927 :       (cat): WhiteCat()
+2026-08-19 19:31:08,927 :     )
+2026-08-19 19:31:08,928 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:31:08,928 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,928 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,928 :       (cat): WhiteCat()
+2026-08-19 19:31:08,929 :     )
+2026-08-19 19:31:08,929 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:31:08,929 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,929 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,930 :       (cat): WhiteCat()
+2026-08-19 19:31:08,930 :     )
+2026-08-19 19:31:08,930 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:31:08,930 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,931 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,931 :       (cat): WhiteCat()
+2026-08-19 19:31:08,931 :     )
+2026-08-19 19:31:08,931 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:31:08,932 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,932 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,932 :       (cat): WhiteCat()
+2026-08-19 19:31:08,932 :     )
+2026-08-19 19:31:08,933 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:31:08,933 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,933 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,933 :       (cat): WhiteCat()
+2026-08-19 19:31:08,934 :     )
+2026-08-19 19:31:08,934 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:31:08,934 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,934 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,935 :       (cat): WhiteCat()
+2026-08-19 19:31:08,935 :     )
+2026-08-19 19:31:08,935 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:31:08,935 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,936 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:08,936 :       (cat): WhiteCat()
+2026-08-19 19:31:08,936 :     )
+2026-08-19 19:31:08,936 :   )
+2026-08-19 19:31:08,937 :   (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:08,937 :   (pool): WhitePool()
+2026-08-19 19:31:08,937 :   (linear): WhiteLinear(in_features=384, out_features=10, bias=True)
+2026-08-19 19:31:08,937 : )
+2026-08-19 19:31:09,215 : Files already downloaded and verified
+2026-08-19 19:31:09,907 : Files already downloaded and verified
+2026-08-19 19:31:10,574 : 0 100 Acc: 6.000%
+2026-08-19 19:31:10,846 : 1 100 Acc: 6.500%
+2026-08-19 19:31:11,118 : 2 100 Acc: 9.000%
+2026-08-19 19:31:11,391 : 3 100 Acc: 9.000%
+2026-08-19 19:31:11,670 : 4 100 Acc: 9.200%
+2026-08-19 19:31:11,942 : 5 100 Acc: 9.833%
+2026-08-19 19:31:12,207 : 6 100 Acc: 9.571%
+2026-08-19 19:31:12,475 : 7 100 Acc: 9.750%
+2026-08-19 19:31:12,753 : 8 100 Acc: 9.556%
+2026-08-19 19:31:13,039 : 9 100 Acc: 9.700%
+2026-08-19 19:31:13,343 : 10 100 Acc: 9.818%
+2026-08-19 19:31:13,642 : 11 100 Acc: 9.917%
+2026-08-19 19:31:13,942 : 12 100 Acc: 10.000%
+2026-08-19 19:31:14,235 : 13 100 Acc: 10.429%
+2026-08-19 19:31:14,550 : 14 100 Acc: 10.533%
+2026-08-19 19:31:14,855 : 15 100 Acc: 10.312%
+2026-08-19 19:31:15,155 : 16 100 Acc: 10.471%
+2026-08-19 19:31:15,447 : 17 100 Acc: 10.389%
+2026-08-19 19:31:15,579 : Traceback (most recent call last):
+2026-08-19 19:31:15,579 :   File "E:\TableNet2026\generateWhitebox.py", line 177, in <module>
+2026-08-19 19:31:15,580 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:31:15,580 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:31:15,580 :     self.test_once(test_loader)
+2026-08-19 19:31:15,580 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:31:15,580 :     outputs = self(inputs)
+2026-08-19 19:31:15,581 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:15,583 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:15,583 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:15,584 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:15,584 :   File "E:\TableNet2026\net\densenet121.py", line 66, in forward
+2026-08-19 19:31:15,584 :     out = self.trans2(self.dense2(out))
+2026-08-19 19:31:15,584 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:15,586 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:15,586 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:15,588 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:15,588 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-08-19 19:31:15,589 :     input = module(input)
+2026-08-19 19:31:15,589 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:15,591 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:15,591 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:15,593 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:15,593 :   File "E:\TableNet2026\modules\white_dense_block.py", line 55, in forward
+2026-08-19 19:31:15,593 :     out = self.conv1(self.bn1(x))
+2026-08-19 19:31:15,594 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:15,595 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:15,595 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:15,597 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:15,598 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 86, in forward
+2026-08-19 19:31:15,598 :     out = self._normal_forward(input)
+2026-08-19 19:31:15,598 :   File "E:\TableNet2026\modules\white_conv.py", line 92, in _normal_forward
+2026-08-19 19:31:15,599 :     out = F.conv2d(input, weight, bias, self.stride,
+2026-08-19 19:31:15,599 : KeyboardInterrupt
+2026-08-19 19:31:49,449 : DenseNet121(
+2026-08-19 19:31:49,449 :   (conv1): WhiteConv2(3, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:31:49,449 :   (dense1): WhiteSequential(
+2026-08-19 19:31:49,450 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:49,450 :       (bn1): WhiteBatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,450 :       (conv1): WhiteConv2(24, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,450 :       (cat): WhiteCat()
+2026-08-19 19:31:49,450 :     )
+2026-08-19 19:31:49,450 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:49,450 :       (bn1): WhiteBatchNorm2d(36, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,450 :       (conv1): WhiteConv2(36, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,450 :       (cat): WhiteCat()
+2026-08-19 19:31:49,450 :     )
+2026-08-19 19:31:49,451 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:49,451 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,451 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,451 :       (cat): WhiteCat()
+2026-08-19 19:31:49,451 :     )
+2026-08-19 19:31:49,451 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:49,451 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,451 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,451 :       (cat): WhiteCat()
+2026-08-19 19:31:49,451 :     )
+2026-08-19 19:31:49,452 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:49,452 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,452 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,452 :       (cat): WhiteCat()
+2026-08-19 19:31:49,452 :     )
+2026-08-19 19:31:49,452 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:49,452 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,452 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,453 :       (cat): WhiteCat()
+2026-08-19 19:31:49,453 :     )
+2026-08-19 19:31:49,453 :   )
+2026-08-19 19:31:49,453 :   (trans1): WhiteTransition(
+2026-08-19 19:31:49,453 :     (bn): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,453 :     (conv): WhiteConv2(96, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:31:49,453 :     (pool): WhitePool()
+2026-08-19 19:31:49,453 :   )
+2026-08-19 19:31:49,453 :   (dense2): WhiteSequential(
+2026-08-19 19:31:49,453 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:49,453 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,454 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,454 :       (cat): WhiteCat()
+2026-08-19 19:31:49,454 :     )
+2026-08-19 19:31:49,454 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:49,454 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,454 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,454 :       (cat): WhiteCat()
+2026-08-19 19:31:49,454 :     )
+2026-08-19 19:31:49,454 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:49,455 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,455 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,455 :       (cat): WhiteCat()
+2026-08-19 19:31:49,455 :     )
+2026-08-19 19:31:49,455 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:49,455 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,455 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,456 :       (cat): WhiteCat()
+2026-08-19 19:31:49,456 :     )
+2026-08-19 19:31:49,456 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:49,456 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,456 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,456 :       (cat): WhiteCat()
+2026-08-19 19:31:49,456 :     )
+2026-08-19 19:31:49,456 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:49,456 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,456 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,456 :       (cat): WhiteCat()
+2026-08-19 19:31:49,457 :     )
+2026-08-19 19:31:49,457 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:31:49,457 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,457 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,457 :       (cat): WhiteCat()
+2026-08-19 19:31:49,457 :     )
+2026-08-19 19:31:49,457 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:31:49,457 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,457 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,457 :       (cat): WhiteCat()
+2026-08-19 19:31:49,458 :     )
+2026-08-19 19:31:49,458 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:31:49,458 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,458 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,458 :       (cat): WhiteCat()
+2026-08-19 19:31:49,458 :     )
+2026-08-19 19:31:49,458 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:31:49,458 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,458 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,458 :       (cat): WhiteCat()
+2026-08-19 19:31:49,458 :     )
+2026-08-19 19:31:49,459 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:31:49,459 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,459 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,459 :       (cat): WhiteCat()
+2026-08-19 19:31:49,459 :     )
+2026-08-19 19:31:49,459 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:31:49,459 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,459 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,459 :       (cat): WhiteCat()
+2026-08-19 19:31:49,459 :     )
+2026-08-19 19:31:49,459 :   )
+2026-08-19 19:31:49,460 :   (trans2): WhiteTransition(
+2026-08-19 19:31:49,460 :     (bn): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,460 :     (conv): WhiteConv2(192, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:31:49,460 :     (pool): WhitePool()
+2026-08-19 19:31:49,460 :   )
+2026-08-19 19:31:49,460 :   (dense3): WhiteSequential(
+2026-08-19 19:31:49,460 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:49,460 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,460 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,460 :       (cat): WhiteCat()
+2026-08-19 19:31:49,461 :     )
+2026-08-19 19:31:49,461 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:49,461 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,461 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,461 :       (cat): WhiteCat()
+2026-08-19 19:31:49,461 :     )
+2026-08-19 19:31:49,461 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:49,461 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,461 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,461 :       (cat): WhiteCat()
+2026-08-19 19:31:49,462 :     )
+2026-08-19 19:31:49,462 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:49,462 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,462 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,462 :       (cat): WhiteCat()
+2026-08-19 19:31:49,462 :     )
+2026-08-19 19:31:49,462 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:49,462 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,462 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,462 :       (cat): WhiteCat()
+2026-08-19 19:31:49,462 :     )
+2026-08-19 19:31:49,463 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:49,463 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,463 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,463 :       (cat): WhiteCat()
+2026-08-19 19:31:49,463 :     )
+2026-08-19 19:31:49,463 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:31:49,463 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,464 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,464 :       (cat): WhiteCat()
+2026-08-19 19:31:49,464 :     )
+2026-08-19 19:31:49,464 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:31:49,464 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,464 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,464 :       (cat): WhiteCat()
+2026-08-19 19:31:49,464 :     )
+2026-08-19 19:31:49,464 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:31:49,465 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,465 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,465 :       (cat): WhiteCat()
+2026-08-19 19:31:49,465 :     )
+2026-08-19 19:31:49,465 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:31:49,465 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,465 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,465 :       (cat): WhiteCat()
+2026-08-19 19:31:49,465 :     )
+2026-08-19 19:31:49,465 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:31:49,465 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,466 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,466 :       (cat): WhiteCat()
+2026-08-19 19:31:49,466 :     )
+2026-08-19 19:31:49,466 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:31:49,466 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,466 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,466 :       (cat): WhiteCat()
+2026-08-19 19:31:49,466 :     )
+2026-08-19 19:31:49,466 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:31:49,466 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,467 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,467 :       (cat): WhiteCat()
+2026-08-19 19:31:49,467 :     )
+2026-08-19 19:31:49,467 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:31:49,467 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,467 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,467 :       (cat): WhiteCat()
+2026-08-19 19:31:49,467 :     )
+2026-08-19 19:31:49,467 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:31:49,467 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,467 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,468 :       (cat): WhiteCat()
+2026-08-19 19:31:49,468 :     )
+2026-08-19 19:31:49,468 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:31:49,468 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,468 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,468 :       (cat): WhiteCat()
+2026-08-19 19:31:49,468 :     )
+2026-08-19 19:31:49,468 :     (16): WhiteDenseBlockWM(
+2026-08-19 19:31:49,468 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,468 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,468 :       (cat): WhiteCat()
+2026-08-19 19:31:49,469 :     )
+2026-08-19 19:31:49,469 :     (17): WhiteDenseBlockWM(
+2026-08-19 19:31:49,469 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,469 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,469 :       (cat): WhiteCat()
+2026-08-19 19:31:49,469 :     )
+2026-08-19 19:31:49,469 :     (18): WhiteDenseBlockWM(
+2026-08-19 19:31:49,469 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,469 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,469 :       (cat): WhiteCat()
+2026-08-19 19:31:49,469 :     )
+2026-08-19 19:31:49,470 :     (19): WhiteDenseBlockWM(
+2026-08-19 19:31:49,470 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,470 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,470 :       (cat): WhiteCat()
+2026-08-19 19:31:49,470 :     )
+2026-08-19 19:31:49,470 :     (20): WhiteDenseBlockWM(
+2026-08-19 19:31:49,470 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,470 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,471 :       (cat): WhiteCat()
+2026-08-19 19:31:49,471 :     )
+2026-08-19 19:31:49,471 :     (21): WhiteDenseBlockWM(
+2026-08-19 19:31:49,471 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,471 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,471 :       (cat): WhiteCat()
+2026-08-19 19:31:49,471 :     )
+2026-08-19 19:31:49,471 :     (22): WhiteDenseBlockWM(
+2026-08-19 19:31:49,471 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,472 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,472 :       (cat): WhiteCat()
+2026-08-19 19:31:49,472 :     )
+2026-08-19 19:31:49,472 :     (23): WhiteDenseBlockWM(
+2026-08-19 19:31:49,472 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,472 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,472 :       (cat): WhiteCat()
+2026-08-19 19:31:49,472 :     )
+2026-08-19 19:31:49,472 :   )
+2026-08-19 19:31:49,472 :   (trans3): WhiteTransition(
+2026-08-19 19:31:49,472 :     (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,473 :     (conv): WhiteConv2(384, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:31:49,473 :     (pool): WhitePool()
+2026-08-19 19:31:49,473 :   )
+2026-08-19 19:31:49,473 :   (dense4): WhiteSequential(
+2026-08-19 19:31:49,473 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:31:49,473 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,473 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,473 :       (cat): WhiteCat()
+2026-08-19 19:31:49,473 :     )
+2026-08-19 19:31:49,473 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:31:49,474 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,474 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,474 :       (cat): WhiteCat()
+2026-08-19 19:31:49,474 :     )
+2026-08-19 19:31:49,474 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:31:49,474 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,474 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,474 :       (cat): WhiteCat()
+2026-08-19 19:31:49,474 :     )
+2026-08-19 19:31:49,475 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:31:49,475 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,475 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,475 :       (cat): WhiteCat()
+2026-08-19 19:31:49,475 :     )
+2026-08-19 19:31:49,475 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:31:49,475 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,475 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,475 :       (cat): WhiteCat()
+2026-08-19 19:31:49,475 :     )
+2026-08-19 19:31:49,476 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:31:49,476 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,476 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,476 :       (cat): WhiteCat()
+2026-08-19 19:31:49,476 :     )
+2026-08-19 19:31:49,476 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:31:49,476 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,476 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,476 :       (cat): WhiteCat()
+2026-08-19 19:31:49,476 :     )
+2026-08-19 19:31:49,477 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:31:49,477 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,477 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,477 :       (cat): WhiteCat()
+2026-08-19 19:31:49,477 :     )
+2026-08-19 19:31:49,477 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:31:49,477 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,477 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,477 :       (cat): WhiteCat()
+2026-08-19 19:31:49,478 :     )
+2026-08-19 19:31:49,478 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:31:49,478 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,478 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,478 :       (cat): WhiteCat()
+2026-08-19 19:31:49,478 :     )
+2026-08-19 19:31:49,478 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:31:49,478 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,479 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,479 :       (cat): WhiteCat()
+2026-08-19 19:31:49,479 :     )
+2026-08-19 19:31:49,479 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:31:49,479 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,479 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,479 :       (cat): WhiteCat()
+2026-08-19 19:31:49,479 :     )
+2026-08-19 19:31:49,479 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:31:49,479 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,480 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,480 :       (cat): WhiteCat()
+2026-08-19 19:31:49,480 :     )
+2026-08-19 19:31:49,480 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:31:49,480 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,480 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,480 :       (cat): WhiteCat()
+2026-08-19 19:31:49,480 :     )
+2026-08-19 19:31:49,480 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:31:49,480 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,481 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,481 :       (cat): WhiteCat()
+2026-08-19 19:31:49,481 :     )
+2026-08-19 19:31:49,481 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:31:49,481 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,481 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:31:49,481 :       (cat): WhiteCat()
+2026-08-19 19:31:49,481 :     )
+2026-08-19 19:31:49,481 :   )
+2026-08-19 19:31:49,481 :   (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:31:49,482 :   (pool): WhitePool()
+2026-08-19 19:31:49,482 :   (linear): WhiteLinear(in_features=384, out_features=10, bias=True)
+2026-08-19 19:31:49,482 : )
+2026-08-19 19:31:49,762 : Files already downloaded and verified
+2026-08-19 19:31:50,410 : Files already downloaded and verified
+2026-08-19 19:31:51,004 : 0 100 Acc: 6.000%
+2026-08-19 19:31:51,274 : 1 100 Acc: 6.500%
+2026-08-19 19:31:51,545 : 2 100 Acc: 9.000%
+2026-08-19 19:31:51,842 : 3 100 Acc: 9.000%
+2026-08-19 19:31:52,136 : 4 100 Acc: 9.200%
+2026-08-19 19:31:52,438 : 5 100 Acc: 9.833%
+2026-08-19 19:31:52,718 : 6 100 Acc: 9.571%
+2026-08-19 19:31:52,988 : 7 100 Acc: 9.750%
+2026-08-19 19:31:53,258 : 8 100 Acc: 9.556%
+2026-08-19 19:31:53,543 : 9 100 Acc: 9.700%
+2026-08-19 19:31:53,828 : 10 100 Acc: 9.818%
+2026-08-19 19:31:54,113 : 11 100 Acc: 9.917%
+2026-08-19 19:31:54,408 : 12 100 Acc: 10.000%
+2026-08-19 19:31:54,702 : 13 100 Acc: 10.429%
+2026-08-19 19:31:55,004 : 14 100 Acc: 10.533%
+2026-08-19 19:31:55,308 : 15 100 Acc: 10.312%
+2026-08-19 19:31:55,599 : 16 100 Acc: 10.471%
+2026-08-19 19:31:55,898 : 17 100 Acc: 10.389%
+2026-08-19 19:31:56,199 : 18 100 Acc: 10.474%
+2026-08-19 19:31:56,521 : 19 100 Acc: 10.350%
+2026-08-19 19:31:56,841 : 20 100 Acc: 10.381%
+2026-08-19 19:31:57,180 : 21 100 Acc: 10.364%
+2026-08-19 19:31:57,476 : 22 100 Acc: 10.348%
+2026-08-19 19:31:57,766 : 23 100 Acc: 10.292%
+2026-08-19 19:31:58,053 : 24 100 Acc: 10.320%
+2026-08-19 19:31:58,250 : Traceback (most recent call last):
+2026-08-19 19:31:58,250 :   File "E:\TableNet2026\generateWhitebox.py", line 177, in <module>
+2026-08-19 19:31:58,250 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:31:58,251 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:31:58,251 :     self.test_once(test_loader)
+2026-08-19 19:31:58,251 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:31:58,251 :     outputs = self(inputs)
+2026-08-19 19:31:58,252 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:58,253 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:58,253 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:58,255 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:58,255 :   File "E:\TableNet2026\net\densenet121.py", line 67, in forward
+2026-08-19 19:31:58,256 :     out = self.trans3(self.dense3(out))
+2026-08-19 19:31:58,256 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:58,257 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:58,258 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:58,259 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:58,259 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-08-19 19:31:58,260 :     input = module(input)
+2026-08-19 19:31:58,260 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:58,262 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:58,262 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:58,264 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:58,264 :   File "E:\TableNet2026\modules\white_dense_block.py", line 55, in forward
+2026-08-19 19:31:58,264 :     out = self.conv1(self.bn1(x))
+2026-08-19 19:31:58,265 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:31:58,266 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:31:58,266 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:31:58,267 :     return forward_call(*args, **kwargs)
+2026-08-19 19:31:58,268 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 86, in forward
+2026-08-19 19:31:58,268 :     out = self._normal_forward(input)
+2026-08-19 19:31:58,268 :   File "E:\TableNet2026\modules\white_conv.py", line 90, in _normal_forward
+2026-08-19 19:31:58,268 :     input = F.pad(input, expanded_padding, 'constant') # zeros padding
+2026-08-19 19:31:58,269 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\functional.py", line 4522, in pad
+2026-08-19 19:31:58,271 :     return torch._C._nn.pad(input, pad, mode, value)
+2026-08-19 19:31:58,271 : KeyboardInterrupt
+2026-08-19 19:32:04,601 : DenseNet121(
+2026-08-19 19:32:04,602 :   (conv1): WhiteConv2(3, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:32:04,602 :   (dense1): WhiteSequential(
+2026-08-19 19:32:04,602 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:32:04,602 :       (bn1): WhiteBatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,602 :       (conv1): WhiteConv2(24, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,604 :       (cat): WhiteCat()
+2026-08-19 19:32:04,604 :     )
+2026-08-19 19:32:04,604 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:32:04,604 :       (bn1): WhiteBatchNorm2d(36, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,604 :       (conv1): WhiteConv2(36, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,604 :       (cat): WhiteCat()
+2026-08-19 19:32:04,604 :     )
+2026-08-19 19:32:04,604 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:32:04,604 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,605 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,605 :       (cat): WhiteCat()
+2026-08-19 19:32:04,605 :     )
+2026-08-19 19:32:04,605 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:32:04,605 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,605 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,605 :       (cat): WhiteCat()
+2026-08-19 19:32:04,605 :     )
+2026-08-19 19:32:04,605 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:32:04,605 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,605 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,607 :       (cat): WhiteCat()
+2026-08-19 19:32:04,607 :     )
+2026-08-19 19:32:04,607 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:32:04,607 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,607 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,607 :       (cat): WhiteCat()
+2026-08-19 19:32:04,607 :     )
+2026-08-19 19:32:04,607 :   )
+2026-08-19 19:32:04,607 :   (trans1): WhiteTransition(
+2026-08-19 19:32:04,607 :     (bn): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,607 :     (conv): WhiteConv2(96, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:32:04,608 :     (pool): WhitePool()
+2026-08-19 19:32:04,608 :   )
+2026-08-19 19:32:04,608 :   (dense2): WhiteSequential(
+2026-08-19 19:32:04,608 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:32:04,608 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,608 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,608 :       (cat): WhiteCat()
+2026-08-19 19:32:04,608 :     )
+2026-08-19 19:32:04,608 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:32:04,608 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,608 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,608 :       (cat): WhiteCat()
+2026-08-19 19:32:04,608 :     )
+2026-08-19 19:32:04,610 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:32:04,610 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,610 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,610 :       (cat): WhiteCat()
+2026-08-19 19:32:04,610 :     )
+2026-08-19 19:32:04,610 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:32:04,610 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,610 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,610 :       (cat): WhiteCat()
+2026-08-19 19:32:04,610 :     )
+2026-08-19 19:32:04,610 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:32:04,610 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,611 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,611 :       (cat): WhiteCat()
+2026-08-19 19:32:04,611 :     )
+2026-08-19 19:32:04,611 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:32:04,611 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,612 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,612 :       (cat): WhiteCat()
+2026-08-19 19:32:04,612 :     )
+2026-08-19 19:32:04,612 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:32:04,612 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,613 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,613 :       (cat): WhiteCat()
+2026-08-19 19:32:04,613 :     )
+2026-08-19 19:32:04,613 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:32:04,613 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,613 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,613 :       (cat): WhiteCat()
+2026-08-19 19:32:04,613 :     )
+2026-08-19 19:32:04,614 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:32:04,614 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,614 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,614 :       (cat): WhiteCat()
+2026-08-19 19:32:04,614 :     )
+2026-08-19 19:32:04,614 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:32:04,614 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,614 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,615 :       (cat): WhiteCat()
+2026-08-19 19:32:04,615 :     )
+2026-08-19 19:32:04,615 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:32:04,615 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,615 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,615 :       (cat): WhiteCat()
+2026-08-19 19:32:04,615 :     )
+2026-08-19 19:32:04,615 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:32:04,616 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,616 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,616 :       (cat): WhiteCat()
+2026-08-19 19:32:04,616 :     )
+2026-08-19 19:32:04,616 :   )
+2026-08-19 19:32:04,616 :   (trans2): WhiteTransition(
+2026-08-19 19:32:04,616 :     (bn): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,616 :     (conv): WhiteConv2(192, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:32:04,617 :     (pool): WhitePool()
+2026-08-19 19:32:04,617 :   )
+2026-08-19 19:32:04,617 :   (dense3): WhiteSequential(
+2026-08-19 19:32:04,617 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:32:04,617 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,617 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,617 :       (cat): WhiteCat()
+2026-08-19 19:32:04,617 :     )
+2026-08-19 19:32:04,618 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:32:04,618 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,618 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,618 :       (cat): WhiteCat()
+2026-08-19 19:32:04,618 :     )
+2026-08-19 19:32:04,618 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:32:04,618 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,618 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,619 :       (cat): WhiteCat()
+2026-08-19 19:32:04,619 :     )
+2026-08-19 19:32:04,619 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:32:04,619 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,619 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,619 :       (cat): WhiteCat()
+2026-08-19 19:32:04,619 :     )
+2026-08-19 19:32:04,619 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:32:04,620 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,620 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,620 :       (cat): WhiteCat()
+2026-08-19 19:32:04,620 :     )
+2026-08-19 19:32:04,620 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:32:04,620 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,620 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,620 :       (cat): WhiteCat()
+2026-08-19 19:32:04,621 :     )
+2026-08-19 19:32:04,621 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:32:04,621 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,621 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,621 :       (cat): WhiteCat()
+2026-08-19 19:32:04,621 :     )
+2026-08-19 19:32:04,621 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:32:04,621 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,621 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,622 :       (cat): WhiteCat()
+2026-08-19 19:32:04,622 :     )
+2026-08-19 19:32:04,622 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:32:04,622 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,622 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,622 :       (cat): WhiteCat()
+2026-08-19 19:32:04,622 :     )
+2026-08-19 19:32:04,623 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:32:04,623 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,623 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,623 :       (cat): WhiteCat()
+2026-08-19 19:32:04,623 :     )
+2026-08-19 19:32:04,623 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:32:04,623 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,623 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,623 :       (cat): WhiteCat()
+2026-08-19 19:32:04,624 :     )
+2026-08-19 19:32:04,624 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:32:04,624 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,624 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,624 :       (cat): WhiteCat()
+2026-08-19 19:32:04,624 :     )
+2026-08-19 19:32:04,624 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:32:04,624 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,625 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,625 :       (cat): WhiteCat()
+2026-08-19 19:32:04,625 :     )
+2026-08-19 19:32:04,625 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:32:04,625 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,625 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,625 :       (cat): WhiteCat()
+2026-08-19 19:32:04,625 :     )
+2026-08-19 19:32:04,626 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:32:04,626 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,626 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,626 :       (cat): WhiteCat()
+2026-08-19 19:32:04,626 :     )
+2026-08-19 19:32:04,626 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:32:04,626 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,626 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,626 :       (cat): WhiteCat()
+2026-08-19 19:32:04,627 :     )
+2026-08-19 19:32:04,627 :     (16): WhiteDenseBlockWM(
+2026-08-19 19:32:04,627 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,627 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,627 :       (cat): WhiteCat()
+2026-08-19 19:32:04,627 :     )
+2026-08-19 19:32:04,627 :     (17): WhiteDenseBlockWM(
+2026-08-19 19:32:04,627 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,628 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,628 :       (cat): WhiteCat()
+2026-08-19 19:32:04,628 :     )
+2026-08-19 19:32:04,628 :     (18): WhiteDenseBlockWM(
+2026-08-19 19:32:04,628 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,628 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,628 :       (cat): WhiteCat()
+2026-08-19 19:32:04,628 :     )
+2026-08-19 19:32:04,628 :     (19): WhiteDenseBlockWM(
+2026-08-19 19:32:04,629 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,629 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,629 :       (cat): WhiteCat()
+2026-08-19 19:32:04,629 :     )
+2026-08-19 19:32:04,629 :     (20): WhiteDenseBlockWM(
+2026-08-19 19:32:04,629 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,629 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,630 :       (cat): WhiteCat()
+2026-08-19 19:32:04,630 :     )
+2026-08-19 19:32:04,630 :     (21): WhiteDenseBlockWM(
+2026-08-19 19:32:04,630 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,630 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,630 :       (cat): WhiteCat()
+2026-08-19 19:32:04,630 :     )
+2026-08-19 19:32:04,630 :     (22): WhiteDenseBlockWM(
+2026-08-19 19:32:04,631 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,631 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,631 :       (cat): WhiteCat()
+2026-08-19 19:32:04,631 :     )
+2026-08-19 19:32:04,631 :     (23): WhiteDenseBlockWM(
+2026-08-19 19:32:04,631 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,631 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,631 :       (cat): WhiteCat()
+2026-08-19 19:32:04,632 :     )
+2026-08-19 19:32:04,632 :   )
+2026-08-19 19:32:04,632 :   (trans3): WhiteTransition(
+2026-08-19 19:32:04,632 :     (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,632 :     (conv): WhiteConv2(384, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:32:04,632 :     (pool): WhitePool()
+2026-08-19 19:32:04,632 :   )
+2026-08-19 19:32:04,632 :   (dense4): WhiteSequential(
+2026-08-19 19:32:04,632 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:32:04,633 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,633 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,633 :       (cat): WhiteCat()
+2026-08-19 19:32:04,633 :     )
+2026-08-19 19:32:04,633 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:32:04,633 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,633 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,633 :       (cat): WhiteCat()
+2026-08-19 19:32:04,634 :     )
+2026-08-19 19:32:04,634 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:32:04,634 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,634 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,634 :       (cat): WhiteCat()
+2026-08-19 19:32:04,634 :     )
+2026-08-19 19:32:04,634 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:32:04,634 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,635 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,635 :       (cat): WhiteCat()
+2026-08-19 19:32:04,635 :     )
+2026-08-19 19:32:04,635 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:32:04,635 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,635 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,635 :       (cat): WhiteCat()
+2026-08-19 19:32:04,635 :     )
+2026-08-19 19:32:04,635 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:32:04,636 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,636 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,636 :       (cat): WhiteCat()
+2026-08-19 19:32:04,636 :     )
+2026-08-19 19:32:04,636 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:32:04,636 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,636 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,637 :       (cat): WhiteCat()
+2026-08-19 19:32:04,637 :     )
+2026-08-19 19:32:04,637 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:32:04,637 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,637 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,637 :       (cat): WhiteCat()
+2026-08-19 19:32:04,637 :     )
+2026-08-19 19:32:04,637 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:32:04,637 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,637 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,638 :       (cat): WhiteCat()
+2026-08-19 19:32:04,638 :     )
+2026-08-19 19:32:04,638 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:32:04,638 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,638 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,638 :       (cat): WhiteCat()
+2026-08-19 19:32:04,638 :     )
+2026-08-19 19:32:04,638 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:32:04,638 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,638 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,638 :       (cat): WhiteCat()
+2026-08-19 19:32:04,639 :     )
+2026-08-19 19:32:04,639 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:32:04,639 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,639 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,639 :       (cat): WhiteCat()
+2026-08-19 19:32:04,639 :     )
+2026-08-19 19:32:04,639 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:32:04,639 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,639 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,639 :       (cat): WhiteCat()
+2026-08-19 19:32:04,639 :     )
+2026-08-19 19:32:04,640 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:32:04,640 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,640 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,640 :       (cat): WhiteCat()
+2026-08-19 19:32:04,640 :     )
+2026-08-19 19:32:04,640 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:32:04,640 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,640 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,640 :       (cat): WhiteCat()
+2026-08-19 19:32:04,640 :     )
+2026-08-19 19:32:04,641 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:32:04,641 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,641 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:32:04,641 :       (cat): WhiteCat()
+2026-08-19 19:32:04,641 :     )
+2026-08-19 19:32:04,641 :   )
+2026-08-19 19:32:04,641 :   (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:32:04,641 :   (pool): WhitePool()
+2026-08-19 19:32:04,641 :   (linear): WhiteLinear(in_features=384, out_features=10, bias=True)
+2026-08-19 19:32:04,641 : )
+2026-08-19 19:32:04,916 : Files already downloaded and verified
+2026-08-19 19:32:05,566 : Files already downloaded and verified
+2026-08-19 19:32:05,875 : ==============================1-conv1 load==============================
+2026-08-19 19:32:05,876 : ==============================2-dense1.0.bn1 load==============================
+2026-08-19 19:32:05,902 : ==============================3-dense1.0.conv1 load==============================
+2026-08-19 19:32:05,902 : ==============================4-dense1.0.cat load==============================
+2026-08-19 19:32:05,903 : ==============================5-dense1.1.bn1 load==============================
+2026-08-19 19:32:05,930 : ==============================6-dense1.1.conv1 load==============================
+2026-08-19 19:32:05,931 : ==============================7-dense1.1.cat load==============================
+2026-08-19 19:32:05,931 : ==============================8-dense1.2.bn1 load==============================
+2026-08-19 19:32:05,970 : ==============================9-dense1.2.conv1 load==============================
+2026-08-19 19:32:05,970 : ==============================10-dense1.2.cat load==============================
+2026-08-19 19:32:05,971 : ==============================11-dense1.3.bn1 load==============================
+2026-08-19 19:32:06,014 : ==============================12-dense1.3.conv1 load==============================
+2026-08-19 19:32:06,015 : ==============================13-dense1.3.cat load==============================
+2026-08-19 19:32:06,016 : ==============================14-dense1.4.bn1 load==============================
+2026-08-19 19:32:06,068 : ==============================15-dense1.4.conv1 load==============================
+2026-08-19 19:32:06,069 : ==============================16-dense1.4.cat load==============================
+2026-08-19 19:32:06,070 : ==============================17-dense1.5.bn1 load==============================
+2026-08-19 19:32:06,102 : ==============================18-dense1.5.conv1 load==============================
+2026-08-19 19:32:06,103 : ==============================19-dense1.5.cat load==============================
+2026-08-19 19:32:06,104 : ==============================20-trans1.bn load==============================
+2026-08-19 19:32:06,201 : ==============================21-trans1.conv load==============================
+2026-08-19 19:32:06,213 : ==============================22-trans1.pool load==============================
+2026-08-19 19:32:06,214 : ==============================23-dense2.0.bn1 load==============================
+2026-08-19 19:32:06,266 : ==============================24-dense2.0.conv1 load==============================
+2026-08-19 19:32:06,267 : ==============================25-dense2.0.cat load==============================
+2026-08-19 19:32:06,268 : ==============================26-dense2.1.bn1 load==============================
+2026-08-19 19:32:06,330 : ==============================27-dense2.1.conv1 load==============================
+2026-08-19 19:32:06,331 : ==============================28-dense2.1.cat load==============================
+2026-08-19 19:32:06,332 : ==============================29-dense2.2.bn1 load==============================
+2026-08-19 19:32:06,388 : ==============================30-dense2.2.conv1 load==============================
+2026-08-19 19:32:06,389 : ==============================31-dense2.2.cat load==============================
+2026-08-19 19:32:06,390 : ==============================32-dense2.3.bn1 load==============================
+2026-08-19 19:32:06,457 : ==============================33-dense2.3.conv1 load==============================
+2026-08-19 19:32:06,459 : ==============================34-dense2.3.cat load==============================
+2026-08-19 19:32:06,460 : ==============================35-dense2.4.bn1 load==============================
+2026-08-19 19:32:06,525 : ==============================36-dense2.4.conv1 load==============================
+2026-08-19 19:32:06,526 : ==============================37-dense2.4.cat load==============================
+2026-08-19 19:32:06,528 : ==============================38-dense2.5.bn1 load==============================
+2026-08-19 19:32:06,602 : ==============================39-dense2.5.conv1 load==============================
+2026-08-19 19:32:06,603 : ==============================40-dense2.5.cat load==============================
+2026-08-19 19:32:06,604 : ==============================41-dense2.6.bn1 load==============================
+2026-08-19 19:32:06,689 : ==============================42-dense2.6.conv1 load==============================
+2026-08-19 19:32:06,690 : ==============================43-dense2.6.cat load==============================
+2026-08-19 19:32:06,691 : ==============================44-dense2.7.bn1 load==============================
+2026-08-19 19:32:06,759 : ==============================45-dense2.7.conv1 load==============================
+2026-08-19 19:32:06,761 : ==============================46-dense2.7.cat load==============================
+2026-08-19 19:32:06,763 : ==============================47-dense2.8.bn1 load==============================
+2026-08-19 19:32:06,840 : ==============================48-dense2.8.conv1 load==============================
+2026-08-19 19:32:06,842 : ==============================49-dense2.8.cat load==============================
+2026-08-19 19:32:06,843 : ==============================50-dense2.9.bn1 load==============================
+2026-08-19 19:32:06,920 : ==============================51-dense2.9.conv1 load==============================
+2026-08-19 19:32:06,921 : ==============================52-dense2.9.cat load==============================
+2026-08-19 19:32:06,922 : ==============================53-dense2.10.bn1 load==============================
+2026-08-19 19:32:06,995 : ==============================54-dense2.10.conv1 load==============================
+2026-08-19 19:32:06,996 : ==============================55-dense2.10.cat load==============================
+2026-08-19 19:32:06,998 : ==============================56-dense2.11.bn1 load==============================
+2026-08-19 19:32:07,071 : ==============================57-dense2.11.conv1 load==============================
+2026-08-19 19:32:07,072 : ==============================58-dense2.11.cat load==============================
+2026-08-19 19:32:07,074 : ==============================59-trans2.bn load==============================
+2026-08-19 19:32:07,401 : ==============================60-trans2.conv load==============================
+2026-08-19 19:32:07,420 : ==============================61-trans2.pool load==============================
+2026-08-19 19:32:07,421 : ==============================62-dense3.0.bn1 load==============================
+2026-08-19 19:32:07,496 : ==============================63-dense3.0.conv1 load==============================
+2026-08-19 19:32:07,497 : ==============================64-dense3.0.cat load==============================
+2026-08-19 19:32:07,498 : ==============================65-dense3.1.bn1 load==============================
+2026-08-19 19:32:07,567 : ==============================66-dense3.1.conv1 load==============================
+2026-08-19 19:32:07,568 : ==============================67-dense3.1.cat load==============================
+2026-08-19 19:32:07,569 : ==============================68-dense3.2.bn1 load==============================
+2026-08-19 19:32:07,640 : ==============================69-dense3.2.conv1 load==============================
+2026-08-19 19:32:07,641 : ==============================70-dense3.2.cat load==============================
+2026-08-19 19:32:07,642 : ==============================71-dense3.3.bn1 load==============================
+2026-08-19 19:32:07,704 : ==============================72-dense3.3.conv1 load==============================
+2026-08-19 19:32:07,705 : ==============================73-dense3.3.cat load==============================
+2026-08-19 19:32:07,706 : ==============================74-dense3.4.bn1 load==============================
+2026-08-19 19:32:07,794 : ==============================75-dense3.4.conv1 load==============================
+2026-08-19 19:32:07,797 : ==============================76-dense3.4.cat load==============================
+2026-08-19 19:32:07,800 : ==============================77-dense3.5.bn1 load==============================
+2026-08-19 19:32:07,951 : ==============================78-dense3.5.conv1 load==============================
+2026-08-19 19:32:07,952 : ==============================79-dense3.5.cat load==============================
+2026-08-19 19:32:07,954 : ==============================80-dense3.6.bn1 load==============================
+2026-08-19 19:32:08,050 : ==============================81-dense3.6.conv1 load==============================
+2026-08-19 19:32:08,051 : ==============================82-dense3.6.cat load==============================
+2026-08-19 19:32:08,053 : ==============================83-dense3.7.bn1 load==============================
+2026-08-19 19:32:08,122 : ==============================84-dense3.7.conv1 load==============================
+2026-08-19 19:32:08,123 : ==============================85-dense3.7.cat load==============================
+2026-08-19 19:32:08,125 : ==============================86-dense3.8.bn1 load==============================
+2026-08-19 19:32:08,195 : ==============================87-dense3.8.conv1 load==============================
+2026-08-19 19:32:08,196 : ==============================88-dense3.8.cat load==============================
+2026-08-19 19:32:08,197 : ==============================89-dense3.9.bn1 load==============================
+2026-08-19 19:32:08,281 : ==============================90-dense3.9.conv1 load==============================
+2026-08-19 19:32:08,282 : ==============================91-dense3.9.cat load==============================
+2026-08-19 19:32:08,284 : ==============================92-dense3.10.bn1 load==============================
+2026-08-19 19:32:08,358 : ==============================93-dense3.10.conv1 load==============================
+2026-08-19 19:32:08,359 : ==============================94-dense3.10.cat load==============================
+2026-08-19 19:32:08,361 : ==============================95-dense3.11.bn1 load==============================
+2026-08-19 19:32:08,433 : ==============================96-dense3.11.conv1 load==============================
+2026-08-19 19:32:08,434 : ==============================97-dense3.11.cat load==============================
+2026-08-19 19:32:08,436 : ==============================98-dense3.12.bn1 load==============================
+2026-08-19 19:32:08,512 : ==============================99-dense3.12.conv1 load==============================
+2026-08-19 19:32:08,513 : ==============================100-dense3.12.cat load==============================
+2026-08-19 19:32:08,515 : ==============================101-dense3.13.bn1 load==============================
+2026-08-19 19:32:08,590 : ==============================102-dense3.13.conv1 load==============================
+2026-08-19 19:32:08,591 : ==============================103-dense3.13.cat load==============================
+2026-08-19 19:32:08,592 : ==============================104-dense3.14.bn1 load==============================
+2026-08-19 19:32:08,661 : ==============================105-dense3.14.conv1 load==============================
+2026-08-19 19:32:08,662 : ==============================106-dense3.14.cat load==============================
+2026-08-19 19:32:08,664 : ==============================107-dense3.15.bn1 load==============================
+2026-08-19 19:32:08,745 : ==============================108-dense3.15.conv1 load==============================
+2026-08-19 19:32:08,746 : ==============================109-dense3.15.cat load==============================
+2026-08-19 19:32:08,749 : ==============================110-dense3.16.bn1 load==============================
+2026-08-19 19:32:08,816 : ==============================111-dense3.16.conv1 load==============================
+2026-08-19 19:32:08,818 : ==============================112-dense3.16.cat load==============================
+2026-08-19 19:32:08,819 : ==============================113-dense3.17.bn1 load==============================
+2026-08-19 19:32:08,882 : ==============================114-dense3.17.conv1 load==============================
+2026-08-19 19:32:08,883 : ==============================115-dense3.17.cat load==============================
+2026-08-19 19:32:08,885 : ==============================116-dense3.18.bn1 load==============================
+2026-08-19 19:32:08,957 : ==============================117-dense3.18.conv1 load==============================
+2026-08-19 19:32:08,958 : ==============================118-dense3.18.cat load==============================
+2026-08-19 19:32:08,960 : ==============================119-dense3.19.bn1 load==============================
+2026-08-19 19:32:09,037 : ==============================120-dense3.19.conv1 load==============================
+2026-08-19 19:32:09,038 : ==============================121-dense3.19.cat load==============================
+2026-08-19 19:32:09,040 : ==============================122-dense3.20.bn1 load==============================
+2026-08-19 19:32:09,115 : ==============================123-dense3.20.conv1 load==============================
+2026-08-19 19:32:09,116 : ==============================124-dense3.20.cat load==============================
+2026-08-19 19:32:09,119 : ==============================125-dense3.21.bn1 load==============================
+2026-08-19 19:32:09,190 : ==============================126-dense3.21.conv1 load==============================
+2026-08-19 19:32:09,191 : ==============================127-dense3.21.cat load==============================
+2026-08-19 19:32:09,194 : ==============================128-dense3.22.bn1 load==============================
+2026-08-19 19:32:09,255 : ==============================129-dense3.22.conv1 load==============================
+2026-08-19 19:32:09,256 : ==============================130-dense3.22.cat load==============================
+2026-08-19 19:32:09,258 : ==============================131-dense3.23.bn1 load==============================
+2026-08-19 19:32:09,328 : ==============================132-dense3.23.conv1 load==============================
+2026-08-19 19:32:09,330 : ==============================133-dense3.23.cat load==============================
+2026-08-19 19:32:09,332 : ==============================134-trans3.bn load==============================
+2026-08-19 19:32:10,007 : ==============================135-trans3.conv load==============================
+2026-08-19 19:32:10,042 : ==============================136-trans3.pool load==============================
+2026-08-19 19:32:10,043 : ==============================137-dense4.0.bn1 load==============================
+2026-08-19 19:32:10,076 : ==============================138-dense4.0.conv1 load==============================
+2026-08-19 19:32:10,077 : ==============================139-dense4.0.cat load==============================
+2026-08-19 19:32:10,079 : ==============================140-dense4.1.bn1 load==============================
+2026-08-19 19:32:10,125 : ==============================141-dense4.1.conv1 load==============================
+2026-08-19 19:32:10,126 : ==============================142-dense4.1.cat load==============================
+2026-08-19 19:32:10,127 : ==============================143-dense4.2.bn1 load==============================
+2026-08-19 19:32:10,162 : ==============================144-dense4.2.conv1 load==============================
+2026-08-19 19:32:10,164 : ==============================145-dense4.2.cat load==============================
+2026-08-19 19:32:10,165 : ==============================146-dense4.3.bn1 load==============================
+2026-08-19 19:32:10,205 : ==============================147-dense4.3.conv1 load==============================
+2026-08-19 19:32:10,206 : ==============================148-dense4.3.cat load==============================
+2026-08-19 19:32:10,208 : ==============================149-dense4.4.bn1 load==============================
+2026-08-19 19:32:10,249 : ==============================150-dense4.4.conv1 load==============================
+2026-08-19 19:32:10,253 : ==============================151-dense4.4.cat load==============================
+2026-08-19 19:32:10,254 : ==============================152-dense4.5.bn1 load==============================
+2026-08-19 19:32:10,289 : ==============================153-dense4.5.conv1 load==============================
+2026-08-19 19:32:10,291 : ==============================154-dense4.5.cat load==============================
+2026-08-19 19:32:10,292 : ==============================155-dense4.6.bn1 load==============================
+2026-08-19 19:32:10,329 : ==============================156-dense4.6.conv1 load==============================
+2026-08-19 19:32:10,331 : ==============================157-dense4.6.cat load==============================
+2026-08-19 19:32:10,332 : ==============================158-dense4.7.bn1 load==============================
+2026-08-19 19:32:10,370 : ==============================159-dense4.7.conv1 load==============================
+2026-08-19 19:32:10,371 : ==============================160-dense4.7.cat load==============================
+2026-08-19 19:32:10,373 : ==============================161-dense4.8.bn1 load==============================
+2026-08-19 19:32:10,402 : ==============================162-dense4.8.conv1 load==============================
+2026-08-19 19:32:10,403 : ==============================163-dense4.8.cat load==============================
+2026-08-19 19:32:10,405 : ==============================164-dense4.9.bn1 load==============================
+2026-08-19 19:32:10,441 : ==============================165-dense4.9.conv1 load==============================
+2026-08-19 19:32:10,443 : ==============================166-dense4.9.cat load==============================
+2026-08-19 19:32:10,445 : ==============================167-dense4.10.bn1 load==============================
+2026-08-19 19:32:10,475 : ==============================168-dense4.10.conv1 load==============================
+2026-08-19 19:32:10,477 : ==============================169-dense4.10.cat load==============================
+2026-08-19 19:32:10,479 : ==============================170-dense4.11.bn1 load==============================
+2026-08-19 19:32:10,510 : ==============================171-dense4.11.conv1 load==============================
+2026-08-19 19:32:10,512 : ==============================172-dense4.11.cat load==============================
+2026-08-19 19:32:10,514 : ==============================173-dense4.12.bn1 load==============================
+2026-08-19 19:32:10,541 : ==============================174-dense4.12.conv1 load==============================
+2026-08-19 19:32:10,543 : ==============================175-dense4.12.cat load==============================
+2026-08-19 19:32:10,545 : ==============================176-dense4.13.bn1 load==============================
+2026-08-19 19:32:10,571 : ==============================177-dense4.13.conv1 load==============================
+2026-08-19 19:32:10,572 : ==============================178-dense4.13.cat load==============================
+2026-08-19 19:32:10,575 : ==============================179-dense4.14.bn1 load==============================
+2026-08-19 19:32:10,604 : ==============================180-dense4.14.conv1 load==============================
+2026-08-19 19:32:10,605 : ==============================181-dense4.14.cat load==============================
+2026-08-19 19:32:10,607 : ==============================182-dense4.15.bn1 load==============================
+2026-08-19 19:32:10,634 : ==============================183-dense4.15.conv1 load==============================
+2026-08-19 19:32:10,635 : ==============================184-dense4.15.cat load==============================
+2026-08-19 19:32:10,637 : ==============================185-bn load==============================
+2026-08-19 19:32:10,840 : ==============================186-pool load==============================
+2026-08-19 19:32:10,901 : ==============================187-linear load==============================
+2026-08-19 19:32:31,226 : 0 100 Acc: 42.000%
+2026-08-19 19:32:45,476 : Traceback (most recent call last):
+2026-08-19 19:32:45,476 :   File "E:\TableNet2026\generateWhitebox.py", line 177, in <module>
+2026-08-19 19:32:45,476 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:32:45,477 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:32:45,477 :     self.test_once(test_loader)
+2026-08-19 19:32:45,477 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:32:45,477 :     outputs = self(inputs)
+2026-08-19 19:32:45,477 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:32:45,479 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:32:45,479 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:32:45,480 :     return forward_call(*args, **kwargs)
+2026-08-19 19:32:45,480 :   File "E:\TableNet2026\net\densenet121.py", line 67, in forward
+2026-08-19 19:32:45,481 :     out = self.trans3(self.dense3(out))
+2026-08-19 19:32:45,481 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:32:45,482 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:32:45,483 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:32:45,484 :     return forward_call(*args, **kwargs)
+2026-08-19 19:32:45,484 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-08-19 19:32:45,485 :     input = module(input)
+2026-08-19 19:32:45,486 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:32:45,487 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:32:45,487 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:32:45,488 :     return forward_call(*args, **kwargs)
+2026-08-19 19:32:45,488 :   File "E:\TableNet2026\modules\white_dense_block.py", line 55, in forward
+2026-08-19 19:32:45,489 :     out = self.conv1(self.bn1(x))
+2026-08-19 19:32:45,489 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:32:45,495 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:32:45,495 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:32:45,497 :     return forward_call(*args, **kwargs)
+2026-08-19 19:32:45,498 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-08-19 19:32:45,498 :     out = self._whitebox_forward(input)
+2026-08-19 19:32:45,498 :   File "E:\TableNet2026\modules\white_conv.py", line 69, in _whitebox_forward
+2026-08-19 19:32:45,499 :     out[:, out_ch] = table[out[:, out_ch], input_arr[:, in_ch, i: i + step: stride, j: j + step: stride]]
+2026-08-19 19:32:45,499 : KeyboardInterrupt
+2026-08-19 19:34:01,614 : DenseNet121(
+2026-08-19 19:34:01,614 :   (conv1): WhiteConv2(3, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:34:01,614 :   (dense1): WhiteSequential(
+2026-08-19 19:34:01,614 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:34:01,614 :       (bn1): WhiteBatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,615 :       (conv1): WhiteConv2(24, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,615 :       (cat): WhiteCat()
+2026-08-19 19:34:01,615 :     )
+2026-08-19 19:34:01,615 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:34:01,615 :       (bn1): WhiteBatchNorm2d(36, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,615 :       (conv1): WhiteConv2(36, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,615 :       (cat): WhiteCat()
+2026-08-19 19:34:01,615 :     )
+2026-08-19 19:34:01,615 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:34:01,616 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,616 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,616 :       (cat): WhiteCat()
+2026-08-19 19:34:01,616 :     )
+2026-08-19 19:34:01,616 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:34:01,616 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,616 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,616 :       (cat): WhiteCat()
+2026-08-19 19:34:01,616 :     )
+2026-08-19 19:34:01,616 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:34:01,617 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,617 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,617 :       (cat): WhiteCat()
+2026-08-19 19:34:01,617 :     )
+2026-08-19 19:34:01,617 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:34:01,617 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,617 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,617 :       (cat): WhiteCat()
+2026-08-19 19:34:01,617 :     )
+2026-08-19 19:34:01,617 :   )
+2026-08-19 19:34:01,617 :   (trans1): WhiteTransition(
+2026-08-19 19:34:01,618 :     (bn): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,618 :     (conv): WhiteConv2(96, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:34:01,618 :     (pool): WhitePool()
+2026-08-19 19:34:01,618 :   )
+2026-08-19 19:34:01,618 :   (dense2): WhiteSequential(
+2026-08-19 19:34:01,618 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:34:01,618 :       (bn1): WhiteBatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,618 :       (conv1): WhiteConv2(48, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,618 :       (cat): WhiteCat()
+2026-08-19 19:34:01,618 :     )
+2026-08-19 19:34:01,618 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:34:01,619 :       (bn1): WhiteBatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,619 :       (conv1): WhiteConv2(60, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,619 :       (cat): WhiteCat()
+2026-08-19 19:34:01,619 :     )
+2026-08-19 19:34:01,620 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:34:01,620 :       (bn1): WhiteBatchNorm2d(72, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,620 :       (conv1): WhiteConv2(72, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,620 :       (cat): WhiteCat()
+2026-08-19 19:34:01,621 :     )
+2026-08-19 19:34:01,621 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:34:01,621 :       (bn1): WhiteBatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,621 :       (conv1): WhiteConv2(84, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,621 :       (cat): WhiteCat()
+2026-08-19 19:34:01,622 :     )
+2026-08-19 19:34:01,622 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:34:01,622 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,622 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,622 :       (cat): WhiteCat()
+2026-08-19 19:34:01,623 :     )
+2026-08-19 19:34:01,623 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:34:01,623 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,623 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,624 :       (cat): WhiteCat()
+2026-08-19 19:34:01,624 :     )
+2026-08-19 19:34:01,624 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:34:01,624 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,624 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,625 :       (cat): WhiteCat()
+2026-08-19 19:34:01,625 :     )
+2026-08-19 19:34:01,625 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:34:01,625 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,625 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,626 :       (cat): WhiteCat()
+2026-08-19 19:34:01,626 :     )
+2026-08-19 19:34:01,626 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:34:01,626 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,626 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,627 :       (cat): WhiteCat()
+2026-08-19 19:34:01,627 :     )
+2026-08-19 19:34:01,627 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:34:01,627 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,627 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,628 :       (cat): WhiteCat()
+2026-08-19 19:34:01,628 :     )
+2026-08-19 19:34:01,628 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:34:01,628 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,628 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,629 :       (cat): WhiteCat()
+2026-08-19 19:34:01,629 :     )
+2026-08-19 19:34:01,629 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:34:01,629 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,629 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,630 :       (cat): WhiteCat()
+2026-08-19 19:34:01,630 :     )
+2026-08-19 19:34:01,630 :   )
+2026-08-19 19:34:01,630 :   (trans2): WhiteTransition(
+2026-08-19 19:34:01,631 :     (bn): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,631 :     (conv): WhiteConv2(192, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:34:01,631 :     (pool): WhitePool()
+2026-08-19 19:34:01,631 :   )
+2026-08-19 19:34:01,631 :   (dense3): WhiteSequential(
+2026-08-19 19:34:01,632 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:34:01,632 :       (bn1): WhiteBatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,632 :       (conv1): WhiteConv2(96, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,632 :       (cat): WhiteCat()
+2026-08-19 19:34:01,632 :     )
+2026-08-19 19:34:01,633 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:34:01,633 :       (bn1): WhiteBatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,633 :       (conv1): WhiteConv2(108, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,633 :       (cat): WhiteCat()
+2026-08-19 19:34:01,634 :     )
+2026-08-19 19:34:01,634 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:34:01,634 :       (bn1): WhiteBatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,634 :       (conv1): WhiteConv2(120, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,634 :       (cat): WhiteCat()
+2026-08-19 19:34:01,635 :     )
+2026-08-19 19:34:01,635 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:34:01,635 :       (bn1): WhiteBatchNorm2d(132, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,635 :       (conv1): WhiteConv2(132, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,635 :       (cat): WhiteCat()
+2026-08-19 19:34:01,636 :     )
+2026-08-19 19:34:01,636 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:34:01,636 :       (bn1): WhiteBatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,636 :       (conv1): WhiteConv2(144, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,636 :       (cat): WhiteCat()
+2026-08-19 19:34:01,637 :     )
+2026-08-19 19:34:01,637 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:34:01,637 :       (bn1): WhiteBatchNorm2d(156, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,637 :       (conv1): WhiteConv2(156, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,637 :       (cat): WhiteCat()
+2026-08-19 19:34:01,638 :     )
+2026-08-19 19:34:01,638 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:34:01,638 :       (bn1): WhiteBatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,638 :       (conv1): WhiteConv2(168, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,638 :       (cat): WhiteCat()
+2026-08-19 19:34:01,639 :     )
+2026-08-19 19:34:01,639 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:34:01,639 :       (bn1): WhiteBatchNorm2d(180, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,639 :       (conv1): WhiteConv2(180, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,640 :       (cat): WhiteCat()
+2026-08-19 19:34:01,640 :     )
+2026-08-19 19:34:01,640 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:34:01,640 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,640 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,641 :       (cat): WhiteCat()
+2026-08-19 19:34:01,641 :     )
+2026-08-19 19:34:01,641 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:34:01,641 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,641 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,642 :       (cat): WhiteCat()
+2026-08-19 19:34:01,642 :     )
+2026-08-19 19:34:01,642 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:34:01,642 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,642 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,643 :       (cat): WhiteCat()
+2026-08-19 19:34:01,643 :     )
+2026-08-19 19:34:01,643 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:34:01,643 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,644 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,644 :       (cat): WhiteCat()
+2026-08-19 19:34:01,644 :     )
+2026-08-19 19:34:01,644 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:34:01,644 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,645 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,645 :       (cat): WhiteCat()
+2026-08-19 19:34:01,645 :     )
+2026-08-19 19:34:01,645 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:34:01,645 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,646 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,646 :       (cat): WhiteCat()
+2026-08-19 19:34:01,646 :     )
+2026-08-19 19:34:01,646 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:34:01,646 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,647 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,647 :       (cat): WhiteCat()
+2026-08-19 19:34:01,647 :     )
+2026-08-19 19:34:01,647 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:34:01,647 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,648 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,648 :       (cat): WhiteCat()
+2026-08-19 19:34:01,648 :     )
+2026-08-19 19:34:01,648 :     (16): WhiteDenseBlockWM(
+2026-08-19 19:34:01,648 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,649 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,649 :       (cat): WhiteCat()
+2026-08-19 19:34:01,649 :     )
+2026-08-19 19:34:01,649 :     (17): WhiteDenseBlockWM(
+2026-08-19 19:34:01,649 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,650 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,650 :       (cat): WhiteCat()
+2026-08-19 19:34:01,650 :     )
+2026-08-19 19:34:01,650 :     (18): WhiteDenseBlockWM(
+2026-08-19 19:34:01,651 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,651 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,651 :       (cat): WhiteCat()
+2026-08-19 19:34:01,651 :     )
+2026-08-19 19:34:01,651 :     (19): WhiteDenseBlockWM(
+2026-08-19 19:34:01,652 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,652 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,652 :       (cat): WhiteCat()
+2026-08-19 19:34:01,652 :     )
+2026-08-19 19:34:01,653 :     (20): WhiteDenseBlockWM(
+2026-08-19 19:34:01,653 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,653 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,653 :       (cat): WhiteCat()
+2026-08-19 19:34:01,653 :     )
+2026-08-19 19:34:01,654 :     (21): WhiteDenseBlockWM(
+2026-08-19 19:34:01,654 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,654 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,654 :       (cat): WhiteCat()
+2026-08-19 19:34:01,655 :     )
+2026-08-19 19:34:01,655 :     (22): WhiteDenseBlockWM(
+2026-08-19 19:34:01,655 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,655 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,656 :       (cat): WhiteCat()
+2026-08-19 19:34:01,656 :     )
+2026-08-19 19:34:01,656 :     (23): WhiteDenseBlockWM(
+2026-08-19 19:34:01,656 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,656 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,657 :       (cat): WhiteCat()
+2026-08-19 19:34:01,657 :     )
+2026-08-19 19:34:01,657 :   )
+2026-08-19 19:34:01,657 :   (trans3): WhiteTransition(
+2026-08-19 19:34:01,658 :     (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,658 :     (conv): WhiteConv2(384, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-08-19 19:34:01,658 :     (pool): WhitePool()
+2026-08-19 19:34:01,658 :   )
+2026-08-19 19:34:01,658 :   (dense4): WhiteSequential(
+2026-08-19 19:34:01,659 :     (0): WhiteDenseBlockWM(
+2026-08-19 19:34:01,659 :       (bn1): WhiteBatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,659 :       (conv1): WhiteConv2(192, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,659 :       (cat): WhiteCat()
+2026-08-19 19:34:01,659 :     )
+2026-08-19 19:34:01,660 :     (1): WhiteDenseBlockWM(
+2026-08-19 19:34:01,660 :       (bn1): WhiteBatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,660 :       (conv1): WhiteConv2(204, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,660 :       (cat): WhiteCat()
+2026-08-19 19:34:01,660 :     )
+2026-08-19 19:34:01,661 :     (2): WhiteDenseBlockWM(
+2026-08-19 19:34:01,661 :       (bn1): WhiteBatchNorm2d(216, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,661 :       (conv1): WhiteConv2(216, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,661 :       (cat): WhiteCat()
+2026-08-19 19:34:01,662 :     )
+2026-08-19 19:34:01,662 :     (3): WhiteDenseBlockWM(
+2026-08-19 19:34:01,662 :       (bn1): WhiteBatchNorm2d(228, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,662 :       (conv1): WhiteConv2(228, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,662 :       (cat): WhiteCat()
+2026-08-19 19:34:01,663 :     )
+2026-08-19 19:34:01,663 :     (4): WhiteDenseBlockWM(
+2026-08-19 19:34:01,663 :       (bn1): WhiteBatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,663 :       (conv1): WhiteConv2(240, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,664 :       (cat): WhiteCat()
+2026-08-19 19:34:01,664 :     )
+2026-08-19 19:34:01,664 :     (5): WhiteDenseBlockWM(
+2026-08-19 19:34:01,664 :       (bn1): WhiteBatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,664 :       (conv1): WhiteConv2(252, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,665 :       (cat): WhiteCat()
+2026-08-19 19:34:01,665 :     )
+2026-08-19 19:34:01,665 :     (6): WhiteDenseBlockWM(
+2026-08-19 19:34:01,665 :       (bn1): WhiteBatchNorm2d(264, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,665 :       (conv1): WhiteConv2(264, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,666 :       (cat): WhiteCat()
+2026-08-19 19:34:01,666 :     )
+2026-08-19 19:34:01,666 :     (7): WhiteDenseBlockWM(
+2026-08-19 19:34:01,666 :       (bn1): WhiteBatchNorm2d(276, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,666 :       (conv1): WhiteConv2(276, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,667 :       (cat): WhiteCat()
+2026-08-19 19:34:01,667 :     )
+2026-08-19 19:34:01,667 :     (8): WhiteDenseBlockWM(
+2026-08-19 19:34:01,667 :       (bn1): WhiteBatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,668 :       (conv1): WhiteConv2(288, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,668 :       (cat): WhiteCat()
+2026-08-19 19:34:01,668 :     )
+2026-08-19 19:34:01,668 :     (9): WhiteDenseBlockWM(
+2026-08-19 19:34:01,668 :       (bn1): WhiteBatchNorm2d(300, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,669 :       (conv1): WhiteConv2(300, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,669 :       (cat): WhiteCat()
+2026-08-19 19:34:01,669 :     )
+2026-08-19 19:34:01,669 :     (10): WhiteDenseBlockWM(
+2026-08-19 19:34:01,670 :       (bn1): WhiteBatchNorm2d(312, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,670 :       (conv1): WhiteConv2(312, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,670 :       (cat): WhiteCat()
+2026-08-19 19:34:01,670 :     )
+2026-08-19 19:34:01,670 :     (11): WhiteDenseBlockWM(
+2026-08-19 19:34:01,671 :       (bn1): WhiteBatchNorm2d(324, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,671 :       (conv1): WhiteConv2(324, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,671 :       (cat): WhiteCat()
+2026-08-19 19:34:01,671 :     )
+2026-08-19 19:34:01,671 :     (12): WhiteDenseBlockWM(
+2026-08-19 19:34:01,672 :       (bn1): WhiteBatchNorm2d(336, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,672 :       (conv1): WhiteConv2(336, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,672 :       (cat): WhiteCat()
+2026-08-19 19:34:01,672 :     )
+2026-08-19 19:34:01,672 :     (13): WhiteDenseBlockWM(
+2026-08-19 19:34:01,673 :       (bn1): WhiteBatchNorm2d(348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,673 :       (conv1): WhiteConv2(348, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,673 :       (cat): WhiteCat()
+2026-08-19 19:34:01,673 :     )
+2026-08-19 19:34:01,674 :     (14): WhiteDenseBlockWM(
+2026-08-19 19:34:01,674 :       (bn1): WhiteBatchNorm2d(360, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,674 :       (conv1): WhiteConv2(360, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,674 :       (cat): WhiteCat()
+2026-08-19 19:34:01,675 :     )
+2026-08-19 19:34:01,675 :     (15): WhiteDenseBlockWM(
+2026-08-19 19:34:01,675 :       (bn1): WhiteBatchNorm2d(372, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,675 :       (conv1): WhiteConv2(372, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:34:01,675 :       (cat): WhiteCat()
+2026-08-19 19:34:01,676 :     )
+2026-08-19 19:34:01,676 :   )
+2026-08-19 19:34:01,676 :   (bn): WhiteBatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:34:01,676 :   (pool): WhitePool()
+2026-08-19 19:34:01,676 :   (linear): WhiteLinear(in_features=384, out_features=10, bias=True)
+2026-08-19 19:34:01,677 : )
+2026-08-19 19:34:01,942 : Files already downloaded and verified
+2026-08-19 19:34:02,597 : Files already downloaded and verified
+2026-08-19 19:34:02,914 : ==============================1-conv1 load==============================
+2026-08-19 19:34:02,915 : ==============================2-dense1.0.bn1 load==============================
+2026-08-19 19:34:02,940 : ==============================3-dense1.0.conv1 load==============================
+2026-08-19 19:34:02,941 : ==============================4-dense1.0.cat load==============================
+2026-08-19 19:34:02,941 : ==============================5-dense1.1.bn1 load==============================
+2026-08-19 19:34:02,969 : ==============================6-dense1.1.conv1 load==============================
+2026-08-19 19:34:02,969 : ==============================7-dense1.1.cat load==============================
+2026-08-19 19:34:02,970 : ==============================8-dense1.2.bn1 load==============================
+2026-08-19 19:34:03,006 : ==============================9-dense1.2.conv1 load==============================
+2026-08-19 19:34:03,006 : ==============================10-dense1.2.cat load==============================
+2026-08-19 19:34:03,007 : ==============================11-dense1.3.bn1 load==============================
+2026-08-19 19:34:03,052 : ==============================12-dense1.3.conv1 load==============================
+2026-08-19 19:34:03,053 : ==============================13-dense1.3.cat load==============================
+2026-08-19 19:34:03,054 : ==============================14-dense1.4.bn1 load==============================
+2026-08-19 19:34:03,102 : ==============================15-dense1.4.conv1 load==============================
+2026-08-19 19:34:03,103 : ==============================16-dense1.4.cat load==============================
+2026-08-19 19:34:03,104 : ==============================17-dense1.5.bn1 load==============================
+2026-08-19 19:34:03,138 : ==============================18-dense1.5.conv1 load==============================
+2026-08-19 19:34:03,139 : ==============================19-dense1.5.cat load==============================
+2026-08-19 19:34:03,140 : ==============================20-trans1.bn load==============================
+2026-08-19 19:34:03,235 : ==============================21-trans1.conv load==============================
+2026-08-19 19:34:03,244 : ==============================22-trans1.pool load==============================
+2026-08-19 19:34:03,245 : ==============================23-dense2.0.bn1 load==============================
+2026-08-19 19:34:03,297 : ==============================24-dense2.0.conv1 load==============================
+2026-08-19 19:34:03,298 : ==============================25-dense2.0.cat load==============================
+2026-08-19 19:34:03,299 : ==============================26-dense2.1.bn1 load==============================
+2026-08-19 19:34:03,362 : ==============================27-dense2.1.conv1 load==============================
+2026-08-19 19:34:03,363 : ==============================28-dense2.1.cat load==============================
+2026-08-19 19:34:03,365 : ==============================29-dense2.2.bn1 load==============================
+2026-08-19 19:34:03,421 : ==============================30-dense2.2.conv1 load==============================
+2026-08-19 19:34:03,422 : ==============================31-dense2.2.cat load==============================
+2026-08-19 19:34:03,423 : ==============================32-dense2.3.bn1 load==============================
+2026-08-19 19:34:03,490 : ==============================33-dense2.3.conv1 load==============================
+2026-08-19 19:34:03,491 : ==============================34-dense2.3.cat load==============================
+2026-08-19 19:34:03,492 : ==============================35-dense2.4.bn1 load==============================
+2026-08-19 19:34:03,556 : ==============================36-dense2.4.conv1 load==============================
+2026-08-19 19:34:03,557 : ==============================37-dense2.4.cat load==============================
+2026-08-19 19:34:03,558 : ==============================38-dense2.5.bn1 load==============================
+2026-08-19 19:34:03,631 : ==============================39-dense2.5.conv1 load==============================
+2026-08-19 19:34:03,632 : ==============================40-dense2.5.cat load==============================
+2026-08-19 19:34:03,633 : ==============================41-dense2.6.bn1 load==============================
+2026-08-19 19:34:03,716 : ==============================42-dense2.6.conv1 load==============================
+2026-08-19 19:34:03,717 : ==============================43-dense2.6.cat load==============================
+2026-08-19 19:34:03,718 : ==============================44-dense2.7.bn1 load==============================
+2026-08-19 19:34:03,782 : ==============================45-dense2.7.conv1 load==============================
+2026-08-19 19:34:03,784 : ==============================46-dense2.7.cat load==============================
+2026-08-19 19:34:03,785 : ==============================47-dense2.8.bn1 load==============================
+2026-08-19 19:34:03,856 : ==============================48-dense2.8.conv1 load==============================
+2026-08-19 19:34:03,857 : ==============================49-dense2.8.cat load==============================
+2026-08-19 19:34:03,858 : ==============================50-dense2.9.bn1 load==============================
+2026-08-19 19:34:03,933 : ==============================51-dense2.9.conv1 load==============================
+2026-08-19 19:34:03,934 : ==============================52-dense2.9.cat load==============================
+2026-08-19 19:34:03,935 : ==============================53-dense2.10.bn1 load==============================
+2026-08-19 19:34:04,005 : ==============================54-dense2.10.conv1 load==============================
+2026-08-19 19:34:04,006 : ==============================55-dense2.10.cat load==============================
+2026-08-19 19:34:04,008 : ==============================56-dense2.11.bn1 load==============================
+2026-08-19 19:34:04,080 : ==============================57-dense2.11.conv1 load==============================
+2026-08-19 19:34:04,081 : ==============================58-dense2.11.cat load==============================
+2026-08-19 19:34:04,084 : ==============================59-trans2.bn load==============================
+2026-08-19 19:34:04,398 : ==============================60-trans2.conv load==============================
+2026-08-19 19:34:04,415 : ==============================61-trans2.pool load==============================
+2026-08-19 19:34:04,416 : ==============================62-dense3.0.bn1 load==============================
+2026-08-19 19:34:04,480 : ==============================63-dense3.0.conv1 load==============================
+2026-08-19 19:34:04,482 : ==============================64-dense3.0.cat load==============================
+2026-08-19 19:34:04,483 : ==============================65-dense3.1.bn1 load==============================
+2026-08-19 19:34:04,545 : ==============================66-dense3.1.conv1 load==============================
+2026-08-19 19:34:04,546 : ==============================67-dense3.1.cat load==============================
+2026-08-19 19:34:04,547 : ==============================68-dense3.2.bn1 load==============================
+2026-08-19 19:34:04,615 : ==============================69-dense3.2.conv1 load==============================
+2026-08-19 19:34:04,616 : ==============================70-dense3.2.cat load==============================
+2026-08-19 19:34:04,617 : ==============================71-dense3.3.bn1 load==============================
+2026-08-19 19:34:04,678 : ==============================72-dense3.3.conv1 load==============================
+2026-08-19 19:34:04,679 : ==============================73-dense3.3.cat load==============================
+2026-08-19 19:34:04,681 : ==============================74-dense3.4.bn1 load==============================
+2026-08-19 19:34:04,749 : ==============================75-dense3.4.conv1 load==============================
+2026-08-19 19:34:04,750 : ==============================76-dense3.4.cat load==============================
+2026-08-19 19:34:04,752 : ==============================77-dense3.5.bn1 load==============================
+2026-08-19 19:34:04,825 : ==============================78-dense3.5.conv1 load==============================
+2026-08-19 19:34:04,826 : ==============================79-dense3.5.cat load==============================
+2026-08-19 19:34:04,827 : ==============================80-dense3.6.bn1 load==============================
+2026-08-19 19:34:04,908 : ==============================81-dense3.6.conv1 load==============================
+2026-08-19 19:34:04,909 : ==============================82-dense3.6.cat load==============================
+2026-08-19 19:34:04,910 : ==============================83-dense3.7.bn1 load==============================
+2026-08-19 19:34:04,977 : ==============================84-dense3.7.conv1 load==============================
+2026-08-19 19:34:04,978 : ==============================85-dense3.7.cat load==============================
+2026-08-19 19:34:04,980 : ==============================86-dense3.8.bn1 load==============================
+2026-08-19 19:34:05,046 : ==============================87-dense3.8.conv1 load==============================
+2026-08-19 19:34:05,047 : ==============================88-dense3.8.cat load==============================
+2026-08-19 19:34:05,048 : ==============================89-dense3.9.bn1 load==============================
+2026-08-19 19:34:05,126 : ==============================90-dense3.9.conv1 load==============================
+2026-08-19 19:34:05,127 : ==============================91-dense3.9.cat load==============================
+2026-08-19 19:34:05,129 : ==============================92-dense3.10.bn1 load==============================
+2026-08-19 19:34:05,201 : ==============================93-dense3.10.conv1 load==============================
+2026-08-19 19:34:05,203 : ==============================94-dense3.10.cat load==============================
+2026-08-19 19:34:05,204 : ==============================95-dense3.11.bn1 load==============================
+2026-08-19 19:34:05,280 : ==============================96-dense3.11.conv1 load==============================
+2026-08-19 19:34:05,281 : ==============================97-dense3.11.cat load==============================
+2026-08-19 19:34:05,283 : ==============================98-dense3.12.bn1 load==============================
+2026-08-19 19:34:05,362 : ==============================99-dense3.12.conv1 load==============================
+2026-08-19 19:34:05,363 : ==============================100-dense3.12.cat load==============================
+2026-08-19 19:34:05,364 : ==============================101-dense3.13.bn1 load==============================
+2026-08-19 19:34:05,438 : ==============================102-dense3.13.conv1 load==============================
+2026-08-19 19:34:05,440 : ==============================103-dense3.13.cat load==============================
+2026-08-19 19:34:05,441 : ==============================104-dense3.14.bn1 load==============================
+2026-08-19 19:34:05,510 : ==============================105-dense3.14.conv1 load==============================
+2026-08-19 19:34:05,512 : ==============================106-dense3.14.cat load==============================
+2026-08-19 19:34:05,514 : ==============================107-dense3.15.bn1 load==============================
+2026-08-19 19:34:05,596 : ==============================108-dense3.15.conv1 load==============================
+2026-08-19 19:34:05,598 : ==============================109-dense3.15.cat load==============================
+2026-08-19 19:34:05,600 : ==============================110-dense3.16.bn1 load==============================
+2026-08-19 19:34:05,665 : ==============================111-dense3.16.conv1 load==============================
+2026-08-19 19:34:05,667 : ==============================112-dense3.16.cat load==============================
+2026-08-19 19:34:05,668 : ==============================113-dense3.17.bn1 load==============================
+2026-08-19 19:34:05,732 : ==============================114-dense3.17.conv1 load==============================
+2026-08-19 19:34:05,734 : ==============================115-dense3.17.cat load==============================
+2026-08-19 19:34:05,735 : ==============================116-dense3.18.bn1 load==============================
+2026-08-19 19:34:05,807 : ==============================117-dense3.18.conv1 load==============================
+2026-08-19 19:34:05,808 : ==============================118-dense3.18.cat load==============================
+2026-08-19 19:34:05,811 : ==============================119-dense3.19.bn1 load==============================
+2026-08-19 19:34:05,890 : ==============================120-dense3.19.conv1 load==============================
+2026-08-19 19:34:05,900 : ==============================121-dense3.19.cat load==============================
+2026-08-19 19:34:05,901 : ==============================122-dense3.20.bn1 load==============================
+2026-08-19 19:34:05,982 : ==============================123-dense3.20.conv1 load==============================
+2026-08-19 19:34:05,984 : ==============================124-dense3.20.cat load==============================
+2026-08-19 19:34:05,986 : ==============================125-dense3.21.bn1 load==============================
+2026-08-19 19:34:06,063 : ==============================126-dense3.21.conv1 load==============================
+2026-08-19 19:34:06,064 : ==============================127-dense3.21.cat load==============================
+2026-08-19 19:34:06,066 : ==============================128-dense3.22.bn1 load==============================
+2026-08-19 19:34:06,136 : ==============================129-dense3.22.conv1 load==============================
+2026-08-19 19:34:06,136 : ==============================130-dense3.22.cat load==============================
+2026-08-19 19:34:06,138 : ==============================131-dense3.23.bn1 load==============================
+2026-08-19 19:34:06,214 : ==============================132-dense3.23.conv1 load==============================
+2026-08-19 19:34:06,215 : ==============================133-dense3.23.cat load==============================
+2026-08-19 19:34:06,217 : ==============================134-trans3.bn load==============================
+2026-08-19 19:34:06,908 : ==============================135-trans3.conv load==============================
+2026-08-19 19:34:06,949 : ==============================136-trans3.pool load==============================
+2026-08-19 19:34:06,952 : ==============================137-dense4.0.bn1 load==============================
+2026-08-19 19:34:06,988 : ==============================138-dense4.0.conv1 load==============================
+2026-08-19 19:34:06,989 : ==============================139-dense4.0.cat load==============================
+2026-08-19 19:34:06,991 : ==============================140-dense4.1.bn1 load==============================
+2026-08-19 19:34:07,034 : ==============================141-dense4.1.conv1 load==============================
+2026-08-19 19:34:07,035 : ==============================142-dense4.1.cat load==============================
+2026-08-19 19:34:07,036 : ==============================143-dense4.2.bn1 load==============================
+2026-08-19 19:34:07,073 : ==============================144-dense4.2.conv1 load==============================
+2026-08-19 19:34:07,074 : ==============================145-dense4.2.cat load==============================
+2026-08-19 19:34:07,076 : ==============================146-dense4.3.bn1 load==============================
+2026-08-19 19:34:07,115 : ==============================147-dense4.3.conv1 load==============================
+2026-08-19 19:34:07,116 : ==============================148-dense4.3.cat load==============================
+2026-08-19 19:34:07,118 : ==============================149-dense4.4.bn1 load==============================
+2026-08-19 19:34:07,161 : ==============================150-dense4.4.conv1 load==============================
+2026-08-19 19:34:07,163 : ==============================151-dense4.4.cat load==============================
+2026-08-19 19:34:07,165 : ==============================152-dense4.5.bn1 load==============================
+2026-08-19 19:34:07,201 : ==============================153-dense4.5.conv1 load==============================
+2026-08-19 19:34:07,202 : ==============================154-dense4.5.cat load==============================
+2026-08-19 19:34:07,205 : ==============================155-dense4.6.bn1 load==============================
+2026-08-19 19:34:07,240 : ==============================156-dense4.6.conv1 load==============================
+2026-08-19 19:34:07,241 : ==============================157-dense4.6.cat load==============================
+2026-08-19 19:34:07,243 : ==============================158-dense4.7.bn1 load==============================
+2026-08-19 19:34:07,280 : ==============================159-dense4.7.conv1 load==============================
+2026-08-19 19:34:07,281 : ==============================160-dense4.7.cat load==============================
+2026-08-19 19:34:07,283 : ==============================161-dense4.8.bn1 load==============================
+2026-08-19 19:34:07,314 : ==============================162-dense4.8.conv1 load==============================
+2026-08-19 19:34:07,316 : ==============================163-dense4.8.cat load==============================
+2026-08-19 19:34:07,317 : ==============================164-dense4.9.bn1 load==============================
+2026-08-19 19:34:07,353 : ==============================165-dense4.9.conv1 load==============================
+2026-08-19 19:34:07,355 : ==============================166-dense4.9.cat load==============================
+2026-08-19 19:34:07,357 : ==============================167-dense4.10.bn1 load==============================
+2026-08-19 19:34:07,384 : ==============================168-dense4.10.conv1 load==============================
+2026-08-19 19:34:07,385 : ==============================169-dense4.10.cat load==============================
+2026-08-19 19:34:07,388 : ==============================170-dense4.11.bn1 load==============================
+2026-08-19 19:34:07,417 : ==============================171-dense4.11.conv1 load==============================
+2026-08-19 19:34:07,419 : ==============================172-dense4.11.cat load==============================
+2026-08-19 19:34:07,422 : ==============================173-dense4.12.bn1 load==============================
+2026-08-19 19:34:07,448 : ==============================174-dense4.12.conv1 load==============================
+2026-08-19 19:34:07,450 : ==============================175-dense4.12.cat load==============================
+2026-08-19 19:34:07,452 : ==============================176-dense4.13.bn1 load==============================
+2026-08-19 19:34:07,482 : ==============================177-dense4.13.conv1 load==============================
+2026-08-19 19:34:07,483 : ==============================178-dense4.13.cat load==============================
+2026-08-19 19:34:07,485 : ==============================179-dense4.14.bn1 load==============================
+2026-08-19 19:34:07,514 : ==============================180-dense4.14.conv1 load==============================
+2026-08-19 19:34:07,515 : ==============================181-dense4.14.cat load==============================
+2026-08-19 19:34:07,517 : ==============================182-dense4.15.bn1 load==============================
+2026-08-19 19:34:07,545 : ==============================183-dense4.15.conv1 load==============================
+2026-08-19 19:34:07,546 : ==============================184-dense4.15.cat load==============================
+2026-08-19 19:34:07,548 : ==============================185-bn load==============================
+2026-08-19 19:34:07,757 : ==============================186-pool load==============================
+2026-08-19 19:34:07,818 : ==============================187-linear load==============================
+2026-08-19 19:34:27,515 : 0 100 Acc: 93.000%
+2026-08-19 19:34:46,822 : 1 100 Acc: 93.500%
+2026-08-19 19:35:06,079 : 2 100 Acc: 94.000%
+2026-08-19 19:35:11,085 : Traceback (most recent call last):
+2026-08-19 19:35:11,085 :   File "E:\TableNet2026\generateWhitebox.py", line 168, in <module>
+2026-08-19 19:35:11,085 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:35:11,085 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:35:11,086 :     self.test_once(test_loader)
+2026-08-19 19:35:11,086 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:35:11,086 :     outputs = self(inputs)
+2026-08-19 19:35:11,086 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:35:11,087 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:35:11,087 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:35:11,088 :     return forward_call(*args, **kwargs)
+2026-08-19 19:35:11,088 :   File "E:\TableNet2026\net\densenet121.py", line 65, in forward
+2026-08-19 19:35:11,089 :     out = self.trans1(self.dense1(out))
+2026-08-19 19:35:11,089 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:35:11,090 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:35:11,090 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:35:11,091 :     return forward_call(*args, **kwargs)
+2026-08-19 19:35:11,091 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-08-19 19:35:11,092 :     input = module(input)
+2026-08-19 19:35:11,092 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:35:11,092 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:35:11,093 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:35:11,094 :     return forward_call(*args, **kwargs)
+2026-08-19 19:35:11,094 :   File "E:\TableNet2026\modules\white_dense_block.py", line 55, in forward
+2026-08-19 19:35:11,094 :     out = self.conv1(self.bn1(x))
+2026-08-19 19:35:11,094 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:35:11,095 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:35:11,095 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:35:11,096 :     return forward_call(*args, **kwargs)
+2026-08-19 19:35:11,096 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-08-19 19:35:11,097 :     out = self._whitebox_forward(input)
+2026-08-19 19:35:11,097 :   File "E:\TableNet2026\modules\white_conv.py", line 69, in _whitebox_forward
+2026-08-19 19:35:11,097 :     out[:, out_ch] = table[out[:, out_ch], input_arr[:, in_ch, i: i + step: stride, j: j + step: stride]]
+2026-08-19 19:35:11,097 : KeyboardInterrupt

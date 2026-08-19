@@ -1,0 +1,526 @@
+2026-01-13 16:28:51,270 : WhiteResNet50(
+2026-01-13 16:28:51,270 :   (conv1): WhiteConv2(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,270 :   (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,271 :   (maxpool): WhiteMaxPool()
+2026-01-13 16:28:51,271 :   (layer1): WhiteSequential(
+2026-01-13 16:28:51,271 :     (0): WhiteBottleneck(
+2026-01-13 16:28:51,271 :       (conv1): WhiteConv2(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,281 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,281 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,281 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,282 :       (conv3): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,282 :       (bn3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,282 :       (downsample): WhiteSequential(
+2026-01-13 16:28:51,282 :         (0): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,282 :         (1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,282 :       )
+2026-01-13 16:28:51,282 :       (add): WhiteAdd()
+2026-01-13 16:28:51,282 :     )
+2026-01-13 16:28:51,283 :     (1): WhiteBottleneck(
+2026-01-13 16:28:51,283 :       (conv1): WhiteConv2(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,283 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,283 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,283 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,283 :       (conv3): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,283 :       (bn3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,284 :       (add): WhiteAdd()
+2026-01-13 16:28:51,284 :     )
+2026-01-13 16:28:51,284 :     (2): WhiteBottleneck(
+2026-01-13 16:28:51,284 :       (conv1): WhiteConv2(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,284 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,284 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,284 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,284 :       (conv3): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,285 :       (bn3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,285 :       (add): WhiteAdd()
+2026-01-13 16:28:51,285 :     )
+2026-01-13 16:28:51,285 :   )
+2026-01-13 16:28:51,285 :   (layer2): WhiteSequential(
+2026-01-13 16:28:51,285 :     (0): WhiteBottleneck(
+2026-01-13 16:28:51,286 :       (conv1): WhiteConv2(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,286 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,286 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,286 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,286 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,286 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,286 :       (downsample): WhiteSequential(
+2026-01-13 16:28:51,287 :         (0): WhiteConv2(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,287 :         (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,287 :       )
+2026-01-13 16:28:51,287 :       (add): WhiteAdd()
+2026-01-13 16:28:51,287 :     )
+2026-01-13 16:28:51,287 :     (1): WhiteBottleneck(
+2026-01-13 16:28:51,287 :       (conv1): WhiteConv2(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,287 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,288 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,288 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,288 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,288 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,288 :       (add): WhiteAdd()
+2026-01-13 16:28:51,288 :     )
+2026-01-13 16:28:51,288 :     (2): WhiteBottleneck(
+2026-01-13 16:28:51,289 :       (conv1): WhiteConv2(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,289 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,289 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,289 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,289 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,289 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,289 :       (add): WhiteAdd()
+2026-01-13 16:28:51,289 :     )
+2026-01-13 16:28:51,290 :     (3): WhiteBottleneck(
+2026-01-13 16:28:51,290 :       (conv1): WhiteConv2(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,290 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,290 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,290 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,290 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,290 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,290 :       (add): WhiteAdd()
+2026-01-13 16:28:51,291 :     )
+2026-01-13 16:28:51,291 :   )
+2026-01-13 16:28:51,291 :   (layer3): WhiteSequential(
+2026-01-13 16:28:51,291 :     (0): WhiteBottleneck(
+2026-01-13 16:28:51,291 :       (conv1): WhiteConv2(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,291 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,291 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,292 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,292 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,292 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,292 :       (downsample): WhiteSequential(
+2026-01-13 16:28:51,293 :         (0): WhiteConv2(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,293 :         (1): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,293 :       )
+2026-01-13 16:28:51,293 :       (add): WhiteAdd()
+2026-01-13 16:28:51,294 :     )
+2026-01-13 16:28:51,294 :     (1): WhiteBottleneck(
+2026-01-13 16:28:51,294 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,294 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,295 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,295 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,295 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,295 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,296 :       (add): WhiteAdd()
+2026-01-13 16:28:51,296 :     )
+2026-01-13 16:28:51,296 :     (2): WhiteBottleneck(
+2026-01-13 16:28:51,296 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,296 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,296 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,297 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,297 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,297 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,297 :       (add): WhiteAdd()
+2026-01-13 16:28:51,297 :     )
+2026-01-13 16:28:51,297 :     (3): WhiteBottleneck(
+2026-01-13 16:28:51,297 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,297 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,298 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,298 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,298 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,298 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,298 :       (add): WhiteAdd()
+2026-01-13 16:28:51,298 :     )
+2026-01-13 16:28:51,298 :     (4): WhiteBottleneck(
+2026-01-13 16:28:51,298 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,299 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,299 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,299 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,299 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,299 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,299 :       (add): WhiteAdd()
+2026-01-13 16:28:51,299 :     )
+2026-01-13 16:28:51,299 :     (5): WhiteBottleneck(
+2026-01-13 16:28:51,300 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,300 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,300 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,300 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,300 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,300 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,300 :       (add): WhiteAdd()
+2026-01-13 16:28:51,300 :     )
+2026-01-13 16:28:51,300 :   )
+2026-01-13 16:28:51,301 :   (layer4): WhiteSequential(
+2026-01-13 16:28:51,301 :     (0): WhiteBottleneck(
+2026-01-13 16:28:51,301 :       (conv1): WhiteConv2(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,301 :       (bn1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,301 :       (conv2): WhiteConv2(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,301 :       (bn2): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,301 :       (conv3): WhiteConv2(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,301 :       (bn3): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,301 :       (downsample): WhiteSequential(
+2026-01-13 16:28:51,302 :         (0): WhiteConv2(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,302 :         (1): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,302 :       )
+2026-01-13 16:28:51,302 :       (add): WhiteAdd()
+2026-01-13 16:28:51,302 :     )
+2026-01-13 16:28:51,302 :     (1): WhiteBottleneck(
+2026-01-13 16:28:51,302 :       (conv1): WhiteConv2(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,302 :       (bn1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,302 :       (conv2): WhiteConv2(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,303 :       (bn2): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,303 :       (conv3): WhiteConv2(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,303 :       (bn3): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,303 :       (add): WhiteAdd()
+2026-01-13 16:28:51,303 :     )
+2026-01-13 16:28:51,303 :     (2): WhiteBottleneck(
+2026-01-13 16:28:51,303 :       (conv1): WhiteConv2(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,304 :       (bn1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,304 :       (conv2): WhiteConv2(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,304 :       (bn2): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,304 :       (conv3): WhiteConv2(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:28:51,304 :       (bn3): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:28:51,304 :       (add): WhiteAdd()
+2026-01-13 16:28:51,304 :     )
+2026-01-13 16:28:51,304 :   )
+2026-01-13 16:28:51,305 :   (avgpool): WhitePool()
+2026-01-13 16:28:51,305 :   (fc): WhiteMiniLinear(in_features=2048, out_features=1000, bias=True)
+2026-01-13 16:28:51,305 : )
+2026-01-13 16:28:51,340 : Traceback (most recent call last):
+2026-01-13 16:28:51,340 :   File "E:\TableNet2026\generateWhitebox.py", line 152, in <module>
+2026-01-13 16:28:51,341 :     train_set = ImageFolder(root='./data/imagenet/train-5000', transform=transform_train)
+2026-01-13 16:28:51,341 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torchvision\datasets\folder.py", line 328, in __init__
+2026-01-13 16:28:51,349 :     super().__init__(
+2026-01-13 16:28:51,350 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torchvision\datasets\folder.py", line 150, in __init__
+2026-01-13 16:28:51,351 :     samples = self.make_dataset(
+2026-01-13 16:28:51,351 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torchvision\datasets\folder.py", line 203, in make_dataset
+2026-01-13 16:28:51,352 :     return make_dataset(
+2026-01-13 16:28:51,352 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torchvision\datasets\folder.py", line 87, in make_dataset
+2026-01-13 16:28:51,352 :     if not os.path.isdir(target_dir):
+2026-01-13 16:28:51,352 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\genericpath.py", line 42, in isdir
+2026-01-13 16:28:51,354 :     st = os.stat(s)
+2026-01-13 16:28:51,354 : KeyboardInterrupt
+2026-01-13 16:29:12,055 : WhiteResNet50(
+2026-01-13 16:29:12,056 :   (conv1): WhiteConv2(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,056 :   (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,056 :   (maxpool): WhiteMaxPool()
+2026-01-13 16:29:12,056 :   (layer1): WhiteSequential(
+2026-01-13 16:29:12,056 :     (0): WhiteBottleneck(
+2026-01-13 16:29:12,056 :       (conv1): WhiteConv2(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,057 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,057 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,057 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,057 :       (conv3): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,057 :       (bn3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,057 :       (downsample): WhiteSequential(
+2026-01-13 16:29:12,057 :         (0): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,058 :         (1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,058 :       )
+2026-01-13 16:29:12,058 :       (add): WhiteAdd()
+2026-01-13 16:29:12,058 :     )
+2026-01-13 16:29:12,058 :     (1): WhiteBottleneck(
+2026-01-13 16:29:12,058 :       (conv1): WhiteConv2(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,058 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,058 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,059 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,059 :       (conv3): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,059 :       (bn3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,059 :       (add): WhiteAdd()
+2026-01-13 16:29:12,059 :     )
+2026-01-13 16:29:12,059 :     (2): WhiteBottleneck(
+2026-01-13 16:29:12,059 :       (conv1): WhiteConv2(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,060 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,060 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,060 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,060 :       (conv3): WhiteConv2(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,060 :       (bn3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,060 :       (add): WhiteAdd()
+2026-01-13 16:29:12,060 :     )
+2026-01-13 16:29:12,060 :   )
+2026-01-13 16:29:12,061 :   (layer2): WhiteSequential(
+2026-01-13 16:29:12,061 :     (0): WhiteBottleneck(
+2026-01-13 16:29:12,061 :       (conv1): WhiteConv2(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,061 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,061 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,061 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,061 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,061 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,062 :       (downsample): WhiteSequential(
+2026-01-13 16:29:12,062 :         (0): WhiteConv2(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,062 :         (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,062 :       )
+2026-01-13 16:29:12,062 :       (add): WhiteAdd()
+2026-01-13 16:29:12,062 :     )
+2026-01-13 16:29:12,062 :     (1): WhiteBottleneck(
+2026-01-13 16:29:12,063 :       (conv1): WhiteConv2(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,063 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,063 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,063 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,063 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,063 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,063 :       (add): WhiteAdd()
+2026-01-13 16:29:12,064 :     )
+2026-01-13 16:29:12,064 :     (2): WhiteBottleneck(
+2026-01-13 16:29:12,064 :       (conv1): WhiteConv2(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,064 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,064 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,064 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,064 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,065 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,065 :       (add): WhiteAdd()
+2026-01-13 16:29:12,065 :     )
+2026-01-13 16:29:12,065 :     (3): WhiteBottleneck(
+2026-01-13 16:29:12,065 :       (conv1): WhiteConv2(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,065 :       (bn1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,065 :       (conv2): WhiteConv2(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,065 :       (bn2): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,066 :       (conv3): WhiteConv2(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,066 :       (bn3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,066 :       (add): WhiteAdd()
+2026-01-13 16:29:12,066 :     )
+2026-01-13 16:29:12,066 :   )
+2026-01-13 16:29:12,066 :   (layer3): WhiteSequential(
+2026-01-13 16:29:12,066 :     (0): WhiteBottleneck(
+2026-01-13 16:29:12,066 :       (conv1): WhiteConv2(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,067 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,067 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,067 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,067 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,067 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,067 :       (downsample): WhiteSequential(
+2026-01-13 16:29:12,067 :         (0): WhiteConv2(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,068 :         (1): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,068 :       )
+2026-01-13 16:29:12,068 :       (add): WhiteAdd()
+2026-01-13 16:29:12,068 :     )
+2026-01-13 16:29:12,068 :     (1): WhiteBottleneck(
+2026-01-13 16:29:12,068 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,068 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,068 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,069 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,069 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,069 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,069 :       (add): WhiteAdd()
+2026-01-13 16:29:12,069 :     )
+2026-01-13 16:29:12,069 :     (2): WhiteBottleneck(
+2026-01-13 16:29:12,069 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,069 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,070 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,070 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,070 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,070 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,070 :       (add): WhiteAdd()
+2026-01-13 16:29:12,070 :     )
+2026-01-13 16:29:12,070 :     (3): WhiteBottleneck(
+2026-01-13 16:29:12,071 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,071 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,071 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,071 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,071 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,071 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,071 :       (add): WhiteAdd()
+2026-01-13 16:29:12,071 :     )
+2026-01-13 16:29:12,072 :     (4): WhiteBottleneck(
+2026-01-13 16:29:12,072 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,072 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,072 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,072 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,072 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,072 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,073 :       (add): WhiteAdd()
+2026-01-13 16:29:12,073 :     )
+2026-01-13 16:29:12,073 :     (5): WhiteBottleneck(
+2026-01-13 16:29:12,073 :       (conv1): WhiteConv2(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,073 :       (bn1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,073 :       (conv2): WhiteConv2(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,073 :       (bn2): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,073 :       (conv3): WhiteConv2(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,074 :       (bn3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,074 :       (add): WhiteAdd()
+2026-01-13 16:29:12,074 :     )
+2026-01-13 16:29:12,074 :   )
+2026-01-13 16:29:12,074 :   (layer4): WhiteSequential(
+2026-01-13 16:29:12,074 :     (0): WhiteBottleneck(
+2026-01-13 16:29:12,074 :       (conv1): WhiteConv2(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,074 :       (bn1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,075 :       (conv2): WhiteConv2(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,075 :       (bn2): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,075 :       (conv3): WhiteConv2(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,075 :       (bn3): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,075 :       (downsample): WhiteSequential(
+2026-01-13 16:29:12,075 :         (0): WhiteConv2(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,075 :         (1): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,076 :       )
+2026-01-13 16:29:12,076 :       (add): WhiteAdd()
+2026-01-13 16:29:12,076 :     )
+2026-01-13 16:29:12,076 :     (1): WhiteBottleneck(
+2026-01-13 16:29:12,076 :       (conv1): WhiteConv2(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,076 :       (bn1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,076 :       (conv2): WhiteConv2(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,077 :       (bn2): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,077 :       (conv3): WhiteConv2(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,077 :       (bn3): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,077 :       (add): WhiteAdd()
+2026-01-13 16:29:12,077 :     )
+2026-01-13 16:29:12,077 :     (2): WhiteBottleneck(
+2026-01-13 16:29:12,077 :       (conv1): WhiteConv2(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,077 :       (bn1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,078 :       (conv2): WhiteConv2(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,078 :       (bn2): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,078 :       (conv3): WhiteConv2(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-01-13 16:29:12,078 :       (bn3): WhiteBatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:29:12,078 :       (add): WhiteAdd()
+2026-01-13 16:29:12,078 :     )
+2026-01-13 16:29:12,078 :   )
+2026-01-13 16:29:12,079 :   (avgpool): WhitePool()
+2026-01-13 16:29:12,079 :   (fc): WhiteMiniLinear(in_features=2048, out_features=1000, bias=True)
+2026-01-13 16:29:12,079 : )
+2026-01-13 16:29:12,471 : ==============================1-conv1 load==============================
+2026-01-13 16:29:12,488 : ==============================2-bn1 load==============================
+2026-01-13 16:29:12,562 : ==============================3-maxpool load==============================
+2026-01-13 16:29:12,695 : ==============================4-layer1.0.conv1 load==============================
+2026-01-13 16:29:12,720 : ==============================5-layer1.0.bn1 load==============================
+2026-01-13 16:29:12,853 : ==============================6-layer1.0.conv2 load==============================
+2026-01-13 16:29:12,869 : ==============================7-layer1.0.bn2 load==============================
+2026-01-13 16:29:12,995 : ==============================8-layer1.0.conv3 load==============================
+2026-01-13 16:29:13,010 : ==============================9-layer1.0.bn3 load==============================
+2026-01-13 16:29:13,134 : ==============================10-layer1.0.downsample.0 load==============================
+2026-01-13 16:29:13,163 : ==============================11-layer1.0.downsample.1 load==============================
+2026-01-13 16:29:13,197 : ==============================12-layer1.0.add load==============================
+2026-01-13 16:29:13,274 : ==============================13-layer1.1.conv1 load==============================
+2026-01-13 16:29:13,300 : ==============================14-layer1.1.bn1 load==============================
+2026-01-13 16:29:13,467 : ==============================15-layer1.1.conv2 load==============================
+2026-01-13 16:29:13,492 : ==============================16-layer1.1.bn2 load==============================
+2026-01-13 16:29:13,601 : ==============================17-layer1.1.conv3 load==============================
+2026-01-13 16:29:13,609 : ==============================18-layer1.1.bn3 load==============================
+2026-01-13 16:29:13,627 : ==============================19-layer1.1.add load==============================
+2026-01-13 16:29:13,709 : ==============================20-layer1.2.conv1 load==============================
+2026-01-13 16:29:13,733 : ==============================21-layer1.2.bn1 load==============================
+2026-01-13 16:29:13,910 : ==============================22-layer1.2.conv2 load==============================
+2026-01-13 16:29:13,935 : ==============================23-layer1.2.bn2 load==============================
+2026-01-13 16:29:14,040 : ==============================24-layer1.2.conv3 load==============================
+2026-01-13 16:29:14,051 : ==============================25-layer1.2.bn3 load==============================
+2026-01-13 16:29:14,070 : ==============================26-layer1.2.add load==============================
+2026-01-13 16:29:14,224 : ==============================27-layer2.0.conv1 load==============================
+2026-01-13 16:29:14,244 : ==============================28-layer2.0.bn1 load==============================
+2026-01-13 16:29:14,492 : ==============================29-layer2.0.conv2 load==============================
+2026-01-13 16:29:14,510 : ==============================30-layer2.0.bn2 load==============================
+2026-01-13 16:29:14,739 : ==============================31-layer2.0.conv3 load==============================
+2026-01-13 16:29:14,773 : ==============================32-layer2.0.bn3 load==============================
+2026-01-13 16:29:14,944 : ==============================33-layer2.0.downsample.0 load==============================
+2026-01-13 16:29:14,963 : ==============================34-layer2.0.downsample.1 load==============================
+2026-01-13 16:29:14,983 : ==============================35-layer2.0.add load==============================
+2026-01-13 16:29:15,060 : ==============================36-layer2.1.conv1 load==============================
+2026-01-13 16:29:15,078 : ==============================37-layer2.1.bn1 load==============================
+2026-01-13 16:29:15,277 : ==============================38-layer2.1.conv2 load==============================
+2026-01-13 16:29:15,293 : ==============================39-layer2.1.bn2 load==============================
+2026-01-13 16:29:15,400 : ==============================40-layer2.1.conv3 load==============================
+2026-01-13 16:29:15,433 : ==============================41-layer2.1.bn3 load==============================
+2026-01-13 16:29:15,469 : ==============================42-layer2.1.add load==============================
+2026-01-13 16:29:15,595 : ==============================43-layer2.2.conv1 load==============================
+2026-01-13 16:29:15,627 : ==============================44-layer2.2.bn1 load==============================
+2026-01-13 16:29:15,853 : ==============================45-layer2.2.conv2 load==============================
+2026-01-13 16:29:15,881 : ==============================46-layer2.2.bn2 load==============================
+2026-01-13 16:29:16,089 : ==============================47-layer2.2.conv3 load==============================
+2026-01-13 16:29:16,130 : ==============================48-layer2.2.bn3 load==============================
+2026-01-13 16:29:16,180 : ==============================49-layer2.2.add load==============================
+2026-01-13 16:29:16,304 : ==============================50-layer2.3.conv1 load==============================
+2026-01-13 16:29:16,330 : ==============================51-layer2.3.bn1 load==============================
+2026-01-13 16:29:16,596 : ==============================52-layer2.3.conv2 load==============================
+2026-01-13 16:29:16,627 : ==============================53-layer2.3.bn2 load==============================
+2026-01-13 16:29:16,800 : ==============================54-layer2.3.conv3 load==============================
+2026-01-13 16:29:16,824 : ==============================55-layer2.3.bn3 load==============================
+2026-01-13 16:29:16,847 : ==============================56-layer2.3.add load==============================
+2026-01-13 16:29:17,243 : ==============================57-layer3.0.conv1 load==============================
+2026-01-13 16:29:17,251 : ==============================58-layer3.0.bn1 load==============================
+2026-01-13 16:29:17,434 : ==============================59-layer3.0.conv2 load==============================
+2026-01-13 16:29:17,443 : ==============================60-layer3.0.bn2 load==============================
+2026-01-13 16:29:17,702 : ==============================61-layer3.0.conv3 load==============================
+2026-01-13 16:29:17,725 : ==============================62-layer3.0.bn3 load==============================
+2026-01-13 16:29:17,946 : ==============================63-layer3.0.downsample.0 load==============================
+2026-01-13 16:29:17,969 : ==============================64-layer3.0.downsample.1 load==============================
+2026-01-13 16:29:17,988 : ==============================65-layer3.0.add load==============================
+2026-01-13 16:29:18,062 : ==============================66-layer3.1.conv1 load==============================
+2026-01-13 16:29:18,085 : ==============================67-layer3.1.bn1 load==============================
+2026-01-13 16:29:18,277 : ==============================68-layer3.1.conv2 load==============================
+2026-01-13 16:29:18,300 : ==============================69-layer3.1.bn2 load==============================
+2026-01-13 16:29:18,441 : ==============================70-layer3.1.conv3 load==============================
+2026-01-13 16:29:18,463 : ==============================71-layer3.1.bn3 load==============================
+2026-01-13 16:29:18,488 : ==============================72-layer3.1.add load==============================
+2026-01-13 16:29:18,568 : ==============================73-layer3.2.conv1 load==============================
+2026-01-13 16:29:18,593 : ==============================74-layer3.2.bn1 load==============================
+2026-01-13 16:29:18,781 : ==============================75-layer3.2.conv2 load==============================
+2026-01-13 16:29:18,794 : ==============================76-layer3.2.bn2 load==============================
+2026-01-13 16:29:18,908 : ==============================77-layer3.2.conv3 load==============================
+2026-01-13 16:29:18,925 : ==============================78-layer3.2.bn3 load==============================
+2026-01-13 16:29:18,958 : ==============================79-layer3.2.add load==============================
+2026-01-13 16:29:19,069 : ==============================80-layer3.3.conv1 load==============================
+2026-01-13 16:29:19,088 : ==============================81-layer3.3.bn1 load==============================
+2026-01-13 16:29:19,254 : ==============================82-layer3.3.conv2 load==============================
+2026-01-13 16:29:19,266 : ==============================83-layer3.3.bn2 load==============================
+2026-01-13 16:29:19,370 : ==============================84-layer3.3.conv3 load==============================
+2026-01-13 16:29:19,387 : ==============================85-layer3.3.bn3 load==============================
+2026-01-13 16:29:19,406 : ==============================86-layer3.3.add load==============================
+2026-01-13 16:29:19,496 : ==============================87-layer3.4.conv1 load==============================
+2026-01-13 16:29:19,519 : ==============================88-layer3.4.bn1 load==============================
+2026-01-13 16:29:19,660 : ==============================89-layer3.4.conv2 load==============================
+2026-01-13 16:29:19,677 : ==============================90-layer3.4.bn2 load==============================
+2026-01-13 16:29:19,803 : ==============================91-layer3.4.conv3 load==============================
+2026-01-13 16:29:19,839 : ==============================92-layer3.4.bn3 load==============================
+2026-01-13 16:29:19,861 : ==============================93-layer3.4.add load==============================
+2026-01-13 16:29:19,979 : ==============================94-layer3.5.conv1 load==============================
+2026-01-13 16:29:20,001 : ==============================95-layer3.5.bn1 load==============================
+2026-01-13 16:29:20,165 : ==============================96-layer3.5.conv2 load==============================
+2026-01-13 16:29:20,184 : ==============================97-layer3.5.bn2 load==============================
+2026-01-13 16:29:20,303 : ==============================98-layer3.5.conv3 load==============================
+2026-01-13 16:29:20,333 : ==============================99-layer3.5.bn3 load==============================
+2026-01-13 16:29:20,361 : ==============================100-layer3.5.add load==============================
+2026-01-13 16:29:20,909 : ==============================101-layer4.0.conv1 load==============================
+2026-01-13 16:29:20,937 : ==============================102-layer4.0.bn1 load==============================
+2026-01-13 16:29:21,079 : ==============================103-layer4.0.conv2 load==============================
+2026-01-13 16:29:21,109 : ==============================104-layer4.0.bn2 load==============================
+2026-01-13 16:29:21,495 : ==============================105-layer4.0.conv3 load==============================
+2026-01-13 16:29:21,531 : ==============================106-layer4.0.bn3 load==============================
+2026-01-13 16:29:21,751 : ==============================107-layer4.0.downsample.0 load==============================
+2026-01-13 16:29:21,775 : ==============================108-layer4.0.downsample.1 load==============================
+2026-01-13 16:29:21,798 : ==============================109-layer4.0.add load==============================
+2026-01-13 16:29:21,894 : ==============================110-layer4.1.conv1 load==============================
+2026-01-13 16:29:21,907 : ==============================111-layer4.1.bn1 load==============================
+2026-01-13 16:29:22,056 : ==============================112-layer4.1.conv2 load==============================
+2026-01-13 16:29:22,071 : ==============================113-layer4.1.bn2 load==============================
+2026-01-13 16:29:22,212 : ==============================114-layer4.1.conv3 load==============================
+2026-01-13 16:29:22,246 : ==============================115-layer4.1.bn3 load==============================
+2026-01-13 16:29:22,278 : ==============================116-layer4.1.add load==============================
+2026-01-13 16:29:22,646 : ==============================117-layer4.2.conv1 load==============================
+2026-01-13 16:29:22,673 : ==============================118-layer4.2.bn1 load==============================
+2026-01-13 16:29:22,799 : ==============================119-layer4.2.conv2 load==============================
+2026-01-13 16:29:22,825 : ==============================120-layer4.2.bn2 load==============================
+2026-01-13 16:29:23,128 : ==============================121-layer4.2.conv3 load==============================
+2026-01-13 16:29:23,168 : ==============================122-layer4.2.bn3 load==============================
+2026-01-13 16:29:23,200 : ==============================123-layer4.2.add load==============================
+2026-01-13 16:29:24,312 : ==============================124-avgpool load==============================
+2026-01-13 16:29:28,766 : ==============================125-fc load==============================
+2026-01-13 16:29:57,264 : 0 200 Acc: 60.000%
+2026-01-13 16:30:25,282 : 1 200 Acc: 65.000%
+2026-01-13 16:30:53,391 : 2 200 Acc: 70.000%
+2026-01-13 16:31:17,343 : Traceback (most recent call last):
+2026-01-13 16:31:17,344 :   File "E:\TableNet2026\generateWhitebox.py", line 170, in <module>
+2026-01-13 16:31:17,344 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-01-13 16:31:17,345 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-01-13 16:31:17,345 :     self.test_once(test_loader)
+2026-01-13 16:31:17,345 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-01-13 16:31:17,345 :     outputs = self(inputs)
+2026-01-13 16:31:17,345 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:31:17,346 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:31:17,347 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:31:17,347 :     return forward_call(*args, **kwargs)
+2026-01-13 16:31:17,347 :   File "E:\TableNet2026\net\resnet50.py", line 134, in forward
+2026-01-13 16:31:17,348 :     x = self.layer4(x)
+2026-01-13 16:31:17,348 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:31:17,349 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:31:17,349 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:31:17,350 :     return forward_call(*args, **kwargs)
+2026-01-13 16:31:17,350 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-01-13 16:31:17,350 :     input = module(input)
+2026-01-13 16:31:17,350 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:31:17,351 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:31:17,351 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:31:17,352 :     return forward_call(*args, **kwargs)
+2026-01-13 16:31:17,352 :   File "E:\TableNet2026\net\resnet50.py", line 74, in forward
+2026-01-13 16:31:17,353 :     out = self.conv1(x)
+2026-01-13 16:31:17,353 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:31:17,354 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:31:17,354 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:31:17,355 :     return forward_call(*args, **kwargs)
+2026-01-13 16:31:17,355 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-01-13 16:31:17,355 :     out = self._whitebox_forward(input)
+2026-01-13 16:31:17,355 :   File "E:\TableNet2026\modules\white_conv.py", line 69, in _whitebox_forward
+2026-01-13 16:31:17,356 :     out[:, out_ch] = table[out[:, out_ch], input_arr[:, in_ch, i: i + step: stride, j: j + step: stride]]
+2026-01-13 16:31:17,356 : KeyboardInterrupt

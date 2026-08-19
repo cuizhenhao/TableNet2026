@@ -1,0 +1,129 @@
+2026-08-19 19:55:04,598 : CCT_IMDB(
+2026-08-19 19:55:04,598 :   (tokenizer): Tokenizer(
+2026-08-19 19:55:04,598 :     (emb_conv): WhiteConvEmbedding(
+2026-08-19 19:55:04,598 :       (conv): Conv2d(1, 64, kernel_size=(1, 50), stride=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:55:04,598 :       (embedding): Embedding(10001, 50)
+2026-08-19 19:55:04,598 :     )
+2026-08-19 19:55:04,599 :     (pool): WhiteMaxPool()
+2026-08-19 19:55:04,599 :     (transpose): WhiteTranspose()
+2026-08-19 19:55:04,599 :   )
+2026-08-19 19:55:04,599 :   (classifier): TransformerClassifier(
+2026-08-19 19:55:04,599 :     (positional_emb): WhiteParameterAdd()
+2026-08-19 19:55:04,610 :     (blocks): WhiteSequential(
+2026-08-19 19:55:04,610 :       (0): TransformerEncoderLayer(
+2026-08-19 19:55:04,610 :         (pre_norm): WhiteLayerNorm((64,), eps=1e-05, elementwise_affine=True)
+2026-08-19 19:55:04,610 :         (self_attn): Attention(
+2026-08-19 19:55:04,610 :           (qkv): WhiteLinear(in_features=64, out_features=192, bias=False)
+2026-08-19 19:55:04,610 :           (proj): WhiteLinear(in_features=64, out_features=64, bias=True)
+2026-08-19 19:55:04,610 :         )
+2026-08-19 19:55:04,610 :         (self_attention): WhiteMultiHeadAttention(
+2026-08-19 19:55:04,611 :           (head1): WhiteAttention(
+2026-08-19 19:55:04,611 :             (nonzero): NoneZeroActivationFunction()
+2026-08-19 19:55:04,611 :             (q): WhiteLinear(in_features=64, out_features=32, bias=False)
+2026-08-19 19:55:04,611 :             (k): WhiteLinear(in_features=64, out_features=32, bias=False)
+2026-08-19 19:55:04,611 :             (v): WhiteLinear(in_features=64, out_features=32, bias=False)
+2026-08-19 19:55:04,611 :             (transpose): WhiteTranspose()
+2026-08-19 19:55:04,611 :             (matmul): WhiteMatMul()
+2026-08-19 19:55:04,611 :             (softmax): WhiteSoftmax()
+2026-08-19 19:55:04,611 :             (matmul2): WhiteMatMulPro()
+2026-08-19 19:55:04,611 :           )
+2026-08-19 19:55:04,611 :           (head2): WhiteAttention(
+2026-08-19 19:55:04,612 :             (nonzero): NoneZeroActivationFunction()
+2026-08-19 19:55:04,612 :             (q): WhiteLinear(in_features=64, out_features=32, bias=False)
+2026-08-19 19:55:04,612 :             (k): WhiteLinear(in_features=64, out_features=32, bias=False)
+2026-08-19 19:55:04,612 :             (v): WhiteLinear(in_features=64, out_features=32, bias=False)
+2026-08-19 19:55:04,612 :             (transpose): WhiteTranspose()
+2026-08-19 19:55:04,612 :             (matmul): WhiteMatMul()
+2026-08-19 19:55:04,612 :             (softmax): WhiteSoftmax()
+2026-08-19 19:55:04,612 :             (matmul2): WhiteMatMulPro()
+2026-08-19 19:55:04,613 :           )
+2026-08-19 19:55:04,613 :           (concat): WhiteCat2D()
+2026-08-19 19:55:04,613 :           (proj): WhiteLinear(in_features=64, out_features=64, bias=True)
+2026-08-19 19:55:04,613 :         )
+2026-08-19 19:55:04,613 :         (add1): WhiteAdd()
+2026-08-19 19:55:04,613 :         (norm1): WhiteLayerNorm((64,), eps=1e-05, elementwise_affine=True)
+2026-08-19 19:55:04,614 :         (linear1): WhiteLinear(in_features=64, out_features=32, bias=True)
+2026-08-19 19:55:04,614 :         (linear2): WhiteLinear(in_features=32, out_features=64, bias=True)
+2026-08-19 19:55:04,614 :         (add2): WhiteAdd()
+2026-08-19 19:55:04,614 :       )
+2026-08-19 19:55:04,614 :     )
+2026-08-19 19:55:04,614 :     (norm): WhiteLayerNorm((64,), eps=1e-05, elementwise_affine=True)
+2026-08-19 19:55:04,614 :     (attention_pool): WhiteLinear(in_features=64, out_features=1, bias=True)
+2026-08-19 19:55:04,614 :     (softmax): WhiteSoftmax()
+2026-08-19 19:55:04,614 :     (matmul): WhiteMatMulPro()
+2026-08-19 19:55:04,614 :     (fc): WhiteLinear(in_features=64, out_features=1, bias=True)
+2026-08-19 19:55:04,614 :   )
+2026-08-19 19:55:04,615 : )
+2026-08-19 19:55:04,712 : ==============================1-tokenizer.emb_conv load==============================
+2026-08-19 19:55:04,725 : ==============================2-tokenizer.pool load==============================
+2026-08-19 19:55:04,734 : ==============================3-tokenizer.transpose load==============================
+2026-08-19 19:55:04,740 : ==============================4-classifier.positional_emb load==============================
+2026-08-19 19:55:04,832 : ==============================5-classifier.blocks.0.self_attention.head1.q load==============================
+2026-08-19 19:55:04,927 : ==============================6-classifier.blocks.0.self_attention.head1.k load==============================
+2026-08-19 19:55:05,019 : ==============================7-classifier.blocks.0.self_attention.head1.v load==============================
+2026-08-19 19:55:05,020 : ==============================8-classifier.blocks.0.self_attention.head1.matmul load==============================
+2026-08-19 19:55:05,022 : ==============================9-classifier.blocks.0.self_attention.head1.softmax load==============================
+2026-08-19 19:55:05,025 : ==============================10-classifier.blocks.0.self_attention.head1.matmul2 load==============================
+2026-08-19 19:55:05,119 : ==============================11-classifier.blocks.0.self_attention.head2.q load==============================
+2026-08-19 19:55:05,212 : ==============================12-classifier.blocks.0.self_attention.head2.k load==============================
+2026-08-19 19:55:05,301 : ==============================13-classifier.blocks.0.self_attention.head2.v load==============================
+2026-08-19 19:55:05,302 : ==============================14-classifier.blocks.0.self_attention.head2.matmul load==============================
+2026-08-19 19:55:05,305 : ==============================15-classifier.blocks.0.self_attention.head2.softmax load==============================
+2026-08-19 19:55:05,310 : ==============================16-classifier.blocks.0.self_attention.head2.matmul2 load==============================
+2026-08-19 19:55:05,311 : ==============================17-classifier.blocks.0.self_attention.concat load==============================
+2026-08-19 19:55:05,602 : ==============================18-classifier.blocks.0.self_attention.proj load==============================
+2026-08-19 19:55:05,604 : ==============================19-classifier.blocks.0.add1 load==============================
+2026-08-19 19:55:05,711 : ==============================20-classifier.blocks.0.linear1 load==============================
+2026-08-19 19:55:05,815 : ==============================21-classifier.blocks.0.linear2 load==============================
+2026-08-19 19:55:05,817 : ==============================22-classifier.blocks.0.add2 load==============================
+2026-08-19 19:55:05,820 : ==============================23-classifier.attention_pool load==============================
+2026-08-19 19:55:05,823 : ==============================24-classifier.softmax load==============================
+2026-08-19 19:55:05,829 : ==============================25-classifier.matmul load==============================
+2026-08-19 19:55:05,835 : ==============================26-classifier.fc load==============================
+2026-08-19 19:55:10,011 : 0 125 Acc: 86.000%
+2026-08-19 19:55:13,227 : Traceback (most recent call last):
+2026-08-19 19:55:13,227 :   File "E:\TableNet2026\generateWhitebox.py", line 168, in <module>
+2026-08-19 19:55:13,227 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:55:13,227 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:55:13,228 :     self.test_once(test_loader)
+2026-08-19 19:55:13,228 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:55:13,228 :     outputs = self(inputs)
+2026-08-19 19:55:13,229 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:55:13,230 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:55:13,230 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:55:13,231 :     return forward_call(*args, **kwargs)
+2026-08-19 19:55:13,231 :   File "E:\TableNet2026\net\cct_imdb.py", line 326, in forward
+2026-08-19 19:55:13,231 :     return self.classifier(x)
+2026-08-19 19:55:13,232 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:55:13,233 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:55:13,233 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:55:13,234 :     return forward_call(*args, **kwargs)
+2026-08-19 19:55:13,234 :   File "E:\TableNet2026\net\cct_imdb.py", line 259, in forward
+2026-08-19 19:55:13,234 :     x = blk(x)
+2026-08-19 19:55:13,234 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:55:13,237 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:55:13,238 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:55:13,240 :     return forward_call(*args, **kwargs)
+2026-08-19 19:55:13,240 :   File "E:\TableNet2026\net\cct_imdb.py", line 207, in forward
+2026-08-19 19:55:13,241 :     x = self.self_attention(src)
+2026-08-19 19:55:13,241 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:55:13,243 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:55:13,243 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:55:13,244 :     return forward_call(*args, **kwargs)
+2026-08-19 19:55:13,245 :   File "E:\TableNet2026\net\cct_imdb.py", line 138, in forward
+2026-08-19 19:55:13,245 :     x2 = self.head2(x)
+2026-08-19 19:55:13,245 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:55:13,246 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:55:13,247 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:55:13,248 :     return forward_call(*args, **kwargs)
+2026-08-19 19:55:13,248 :   File "E:\TableNet2026\net\cct_imdb.py", line 100, in forward
+2026-08-19 19:55:13,248 :     attn = self.matmul((q, k))
+2026-08-19 19:55:13,249 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:55:13,250 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:55:13,250 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:55:13,252 :     return forward_call(*args, **kwargs)
+2026-08-19 19:55:13,252 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-08-19 19:55:13,253 :     out = self._whitebox_forward(input)
+2026-08-19 19:55:13,253 :   File "E:\TableNet2026\modules\cct\white_mat_mul.py", line 42, in _whitebox_forward
+2026-08-19 19:55:13,253 :     mul_results.append(mul_table[left_input[:, i, k], right_input[:, k, j]])
+2026-08-19 19:55:13,253 : KeyboardInterrupt

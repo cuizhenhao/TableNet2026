@@ -1,0 +1,225 @@
+2026-01-13 16:11:51,377 : MobileNetV1(
+2026-01-13 16:11:51,377 :   (model): WhiteSequential(
+2026-01-13 16:11:51,378 :     (0): WhiteSequential(
+2026-01-13 16:11:51,378 :       (0): WhiteConv2(3, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+2026-01-13 16:11:51,378 :       (1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,379 :     )
+2026-01-13 16:11:51,379 :     (1): WhiteSequential(
+2026-01-13 16:11:51,379 :       (0): WhiteConv2Groups(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+2026-01-13 16:11:51,380 :       (1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,380 :       (2): WhiteConv2(32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,381 :       (3): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,381 :     )
+2026-01-13 16:11:51,381 :     (2): WhiteSequential(
+2026-01-13 16:11:51,381 :       (0): WhiteConv2Groups(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=64, bias=False)
+2026-01-13 16:11:51,382 :       (1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,382 :       (2): WhiteConv2(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,382 :       (3): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,382 :     )
+2026-01-13 16:11:51,383 :     (3): WhiteSequential(
+2026-01-13 16:11:51,383 :       (0): WhiteConv2Groups(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128, bias=False)
+2026-01-13 16:11:51,384 :       (1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,384 :       (2): WhiteConv2(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,384 :       (3): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,384 :     )
+2026-01-13 16:11:51,385 :     (4): WhiteSequential(
+2026-01-13 16:11:51,385 :       (0): WhiteConv2Groups(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=128, bias=False)
+2026-01-13 16:11:51,385 :       (1): WhiteBatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,386 :       (2): WhiteConv2(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,386 :       (3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,386 :     )
+2026-01-13 16:11:51,386 :     (5): WhiteSequential(
+2026-01-13 16:11:51,387 :       (0): WhiteConv2Groups(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=256, bias=False)
+2026-01-13 16:11:51,387 :       (1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,387 :       (2): WhiteConv2(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,387 :       (3): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,387 :     )
+2026-01-13 16:11:51,387 :     (6): WhiteSequential(
+2026-01-13 16:11:51,388 :       (0): WhiteConv2Groups(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=256, bias=False)
+2026-01-13 16:11:51,388 :       (1): WhiteBatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,388 :       (2): WhiteConv2(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,388 :       (3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,388 :     )
+2026-01-13 16:11:51,389 :     (7): WhiteSequential(
+2026-01-13 16:11:51,389 :       (0): WhiteConv2Groups(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512, bias=False)
+2026-01-13 16:11:51,389 :       (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,390 :       (2): WhiteConv2(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,390 :       (3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,390 :     )
+2026-01-13 16:11:51,390 :     (8): WhiteSequential(
+2026-01-13 16:11:51,390 :       (0): WhiteConv2Groups(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512, bias=False)
+2026-01-13 16:11:51,390 :       (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,390 :       (2): WhiteConv2(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,391 :       (3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,391 :     )
+2026-01-13 16:11:51,391 :     (9): WhiteSequential(
+2026-01-13 16:11:51,391 :       (0): WhiteConv2Groups(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512, bias=False)
+2026-01-13 16:11:51,391 :       (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,392 :       (2): WhiteConv2(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,392 :       (3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,392 :     )
+2026-01-13 16:11:51,392 :     (10): WhiteSequential(
+2026-01-13 16:11:51,393 :       (0): WhiteConv2Groups(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512, bias=False)
+2026-01-13 16:11:51,393 :       (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,393 :       (2): WhiteConv2(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,394 :       (3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,394 :     )
+2026-01-13 16:11:51,394 :     (11): WhiteSequential(
+2026-01-13 16:11:51,394 :       (0): WhiteConv2Groups(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512, bias=False)
+2026-01-13 16:11:51,395 :       (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,395 :       (2): WhiteConv2(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,395 :       (3): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,396 :     )
+2026-01-13 16:11:51,396 :     (12): WhiteSequential(
+2026-01-13 16:11:51,396 :       (0): WhiteConv2Groups(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=512, bias=False)
+2026-01-13 16:11:51,396 :       (1): WhiteBatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,397 :       (2): WhiteConv2(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,397 :       (3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,397 :     )
+2026-01-13 16:11:51,397 :     (13): WhiteSequential(
+2026-01-13 16:11:51,398 :       (0): WhiteConv2Groups(1024, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=1024, bias=False)
+2026-01-13 16:11:51,398 :       (1): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,398 :       (2): WhiteConv2(1024, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+2026-01-13 16:11:51,398 :       (3): WhiteBatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-01-13 16:11:51,398 :     )
+2026-01-13 16:11:51,398 :     (14): WhitePool()
+2026-01-13 16:11:51,399 :   )
+2026-01-13 16:11:51,399 :   (fc): WhiteMiniLinear(in_features=1024, out_features=1000, bias=True)
+2026-01-13 16:11:51,399 : )
+2026-01-13 16:11:51,729 : ==============================1-model.0.0 load==============================
+2026-01-13 16:11:51,753 : ==============================2-model.0.1 load==============================
+2026-01-13 16:11:51,808 : ==============================3-model.1.0 load==============================
+2026-01-13 16:11:51,821 : ==============================4-model.1.1 load==============================
+2026-01-13 16:11:51,971 : ==============================5-model.1.2 load==============================
+2026-01-13 16:11:51,994 : ==============================6-model.1.3 load==============================
+2026-01-13 16:11:52,113 : ==============================7-model.2.0 load==============================
+2026-01-13 16:11:52,136 : ==============================8-model.2.1 load==============================
+2026-01-13 16:11:52,513 : ==============================9-model.2.2 load==============================
+2026-01-13 16:11:52,531 : ==============================10-model.2.3 load==============================
+2026-01-13 16:11:52,656 : ==============================11-model.3.0 load==============================
+2026-01-13 16:11:52,669 : ==============================12-model.3.1 load==============================
+2026-01-13 16:11:53,112 : ==============================13-model.3.2 load==============================
+2026-01-13 16:11:53,133 : ==============================14-model.3.3 load==============================
+2026-01-13 16:11:53,285 : ==============================15-model.4.0 load==============================
+2026-01-13 16:11:53,303 : ==============================16-model.4.1 load==============================
+2026-01-13 16:11:53,967 : ==============================17-model.4.2 load==============================
+2026-01-13 16:11:54,020 : ==============================18-model.4.3 load==============================
+2026-01-13 16:11:54,185 : ==============================19-model.5.0 load==============================
+2026-01-13 16:11:54,255 : ==============================20-model.5.1 load==============================
+2026-01-13 16:11:55,103 : ==============================21-model.5.2 load==============================
+2026-01-13 16:11:55,166 : ==============================22-model.5.3 load==============================
+2026-01-13 16:11:55,369 : ==============================23-model.6.0 load==============================
+2026-01-13 16:11:55,404 : ==============================24-model.6.1 load==============================
+2026-01-13 16:11:56,735 : ==============================25-model.6.2 load==============================
+2026-01-13 16:11:56,791 : ==============================26-model.6.3 load==============================
+2026-01-13 16:11:57,091 : ==============================27-model.7.0 load==============================
+2026-01-13 16:11:57,153 : ==============================28-model.7.1 load==============================
+2026-01-13 16:11:58,430 : ==============================29-model.7.2 load==============================
+2026-01-13 16:11:58,489 : ==============================30-model.7.3 load==============================
+2026-01-13 16:11:58,766 : ==============================31-model.8.0 load==============================
+2026-01-13 16:11:58,927 : ==============================32-model.8.1 load==============================
+2026-01-13 16:12:00,813 : ==============================33-model.8.2 load==============================
+2026-01-13 16:12:00,857 : ==============================34-model.8.3 load==============================
+2026-01-13 16:12:01,306 : ==============================35-model.9.0 load==============================
+2026-01-13 16:12:01,360 : ==============================36-model.9.1 load==============================
+2026-01-13 16:12:02,668 : ==============================37-model.9.2 load==============================
+2026-01-13 16:12:02,737 : ==============================38-model.9.3 load==============================
+2026-01-13 16:12:02,972 : ==============================39-model.10.0 load==============================
+2026-01-13 16:12:03,021 : ==============================40-model.10.1 load==============================
+2026-01-13 16:12:04,330 : ==============================41-model.10.2 load==============================
+2026-01-13 16:12:04,385 : ==============================42-model.10.3 load==============================
+2026-01-13 16:12:04,635 : ==============================43-model.11.0 load==============================
+2026-01-13 16:12:04,688 : ==============================44-model.11.1 load==============================
+2026-01-13 16:12:06,122 : ==============================45-model.11.2 load==============================
+2026-01-13 16:12:06,150 : ==============================46-model.11.3 load==============================
+2026-01-13 16:12:06,391 : ==============================47-model.12.0 load==============================
+2026-01-13 16:12:06,439 : ==============================48-model.12.1 load==============================
+2026-01-13 16:12:08,600 : ==============================49-model.12.2 load==============================
+2026-01-13 16:12:08,651 : ==============================50-model.12.3 load==============================
+2026-01-13 16:12:09,147 : ==============================51-model.13.0 load==============================
+2026-01-13 16:12:09,235 : ==============================52-model.13.1 load==============================
+2026-01-13 16:12:12,164 : ==============================53-model.13.2 load==============================
+2026-01-13 16:12:12,255 : ==============================54-model.13.3 load==============================
+2026-01-13 16:12:14,772 : ==============================55-model.14 load==============================
+2026-01-13 16:12:17,282 : ==============================56-fc load==============================
+2026-01-13 16:12:36,794 : 0 200 Acc: 80.000%
+2026-01-13 16:12:56,808 : 1 200 Acc: 55.000%
+2026-01-13 16:13:15,844 : 2 200 Acc: 56.667%
+2026-01-13 16:13:35,168 : 3 200 Acc: 62.500%
+2026-01-13 16:13:55,046 : 4 200 Acc: 62.000%
+2026-01-13 16:14:14,424 : 5 200 Acc: 60.000%
+2026-01-13 16:14:42,258 : 6 200 Acc: 62.857%
+2026-01-13 16:15:21,511 : 7 200 Acc: 63.750%
+2026-01-13 16:15:54,073 : 8 200 Acc: 58.889%
+2026-01-13 16:16:20,199 : 9 200 Acc: 60.000%
+2026-01-13 16:16:57,251 : 10 200 Acc: 60.909%
+2026-01-13 16:17:19,929 : 11 200 Acc: 60.833%
+2026-01-13 16:17:39,299 : 12 200 Acc: 59.231%
+2026-01-13 16:17:58,614 : 13 200 Acc: 60.000%
+2026-01-13 16:18:17,841 : 14 200 Acc: 60.000%
+2026-01-13 16:18:36,957 : 15 200 Acc: 61.875%
+2026-01-13 16:18:56,474 : 16 200 Acc: 62.353%
+2026-01-13 16:19:16,245 : 17 200 Acc: 63.889%
+2026-01-13 16:19:34,623 : 18 200 Acc: 63.684%
+2026-01-13 16:19:53,228 : 19 200 Acc: 63.500%
+2026-01-13 16:20:13,019 : 20 200 Acc: 65.238%
+2026-01-13 16:20:32,605 : 21 200 Acc: 64.545%
+2026-01-13 16:20:52,608 : 22 200 Acc: 63.913%
+2026-01-13 16:21:11,229 : 23 200 Acc: 63.750%
+2026-01-13 16:21:30,995 : 24 200 Acc: 64.800%
+2026-01-13 16:21:50,983 : 25 200 Acc: 64.231%
+2026-01-13 16:22:09,837 : 26 200 Acc: 64.444%
+2026-01-13 16:22:28,680 : 27 200 Acc: 64.286%
+2026-01-13 16:22:47,961 : 28 200 Acc: 64.138%
+2026-01-13 16:23:06,735 : 29 200 Acc: 65.000%
+2026-01-13 16:23:26,259 : 30 200 Acc: 64.839%
+2026-01-13 16:23:46,557 : 31 200 Acc: 64.688%
+2026-01-13 16:24:06,560 : 32 200 Acc: 63.939%
+2026-01-13 16:24:25,862 : 33 200 Acc: 64.118%
+2026-01-13 16:24:44,907 : 34 200 Acc: 63.714%
+2026-01-13 16:25:04,015 : 35 200 Acc: 63.611%
+2026-01-13 16:25:24,175 : 36 200 Acc: 63.243%
+2026-01-13 16:25:42,643 : 37 200 Acc: 63.684%
+2026-01-13 16:26:01,487 : 38 200 Acc: 63.846%
+2026-01-13 16:26:20,366 : 39 200 Acc: 63.250%
+2026-01-13 16:26:40,939 : 40 200 Acc: 62.683%
+2026-01-13 16:27:00,946 : 41 200 Acc: 62.857%
+2026-01-13 16:27:22,726 : 42 200 Acc: 63.256%
+2026-01-13 16:27:44,716 : 43 200 Acc: 63.636%
+2026-01-13 16:28:05,219 : 44 200 Acc: 64.000%
+2026-01-13 16:28:20,389 : Traceback (most recent call last):
+2026-01-13 16:28:20,389 :   File "E:\TableNet2026\generateWhitebox.py", line 170, in <module>
+2026-01-13 16:28:20,391 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-01-13 16:28:20,391 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-01-13 16:28:20,392 :     self.test_once(test_loader)
+2026-01-13 16:28:20,392 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-01-13 16:28:20,392 :     outputs = self(inputs)
+2026-01-13 16:28:20,393 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:28:20,395 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:28:20,395 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:28:20,397 :     return forward_call(*args, **kwargs)
+2026-01-13 16:28:20,397 :   File "E:\TableNet2026\net\mobilenet.py", line 51, in forward
+2026-01-13 16:28:20,397 :     x = self.model(x)
+2026-01-13 16:28:20,398 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:28:20,398 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:28:20,399 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:28:20,399 :     return forward_call(*args, **kwargs)
+2026-01-13 16:28:20,400 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-01-13 16:28:20,400 :     input = module(input)
+2026-01-13 16:28:20,401 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:28:20,402 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:28:20,402 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:28:20,404 :     return forward_call(*args, **kwargs)
+2026-01-13 16:28:20,404 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-01-13 16:28:20,405 :     input = module(input)
+2026-01-13 16:28:20,405 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-01-13 16:28:20,406 :     return self._call_impl(*args, **kwargs)
+2026-01-13 16:28:20,406 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-01-13 16:28:20,408 :     return forward_call(*args, **kwargs)
+2026-01-13 16:28:20,408 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-01-13 16:28:20,470 :     out = self._whitebox_forward(input)
+2026-01-13 16:28:20,470 :   File "E:\TableNet2026\modules\white_conv.py", line 57, in _whitebox_forward
+2026-01-13 16:28:20,505 :     origin[:, in_ch] = np.pad(input_arr[:,in_ch], x_padding, mode="constant", constant_values=self.zero_pad_tabel[in_ch])
+2026-01-13 16:28:20,505 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\numpy\lib\arraypad.py", line 742, in pad
+2026-01-13 16:28:20,507 :     pad_width = np.asarray(pad_width)
+2026-01-13 16:28:20,508 : KeyboardInterrupt

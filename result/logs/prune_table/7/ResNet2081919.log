@@ -1,0 +1,617 @@
+2026-08-19 19:12:39,366 : ResNet20(
+2026-08-19 19:12:39,366 :   (conv1): WhiteConv2(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,366 :   (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,367 :   (layer1): WhiteSequential(
+2026-08-19 19:12:39,367 :     (0): WhiteResBlock(
+2026-08-19 19:12:39,367 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,367 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,403 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,403 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,403 :       (shortcut): Sequential()
+2026-08-19 19:12:39,403 :       (add): WhiteAdd()
+2026-08-19 19:12:39,403 :     )
+2026-08-19 19:12:39,404 :     (1): WhiteResBlock(
+2026-08-19 19:12:39,404 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,404 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,404 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,404 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,404 :       (shortcut): Sequential()
+2026-08-19 19:12:39,405 :       (add): WhiteAdd()
+2026-08-19 19:12:39,405 :     )
+2026-08-19 19:12:39,405 :     (2): WhiteResBlock(
+2026-08-19 19:12:39,405 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,405 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,405 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,405 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,405 :       (shortcut): Sequential()
+2026-08-19 19:12:39,406 :       (add): WhiteAdd()
+2026-08-19 19:12:39,406 :     )
+2026-08-19 19:12:39,406 :   )
+2026-08-19 19:12:39,406 :   (layer2): WhiteSequential(
+2026-08-19 19:12:39,406 :     (0): WhiteResBlock(
+2026-08-19 19:12:39,406 :       (conv1): WhiteConv2(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,406 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,406 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,406 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,407 :       (shortcut): Sequential(
+2026-08-19 19:12:39,407 :         (0): WhiteConv2(16, 32, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,407 :         (1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,407 :       )
+2026-08-19 19:12:39,407 :       (add): WhiteAdd()
+2026-08-19 19:12:39,407 :     )
+2026-08-19 19:12:39,407 :     (1): WhiteResBlock(
+2026-08-19 19:12:39,407 :       (conv1): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,408 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,408 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,408 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,408 :       (shortcut): Sequential()
+2026-08-19 19:12:39,408 :       (add): WhiteAdd()
+2026-08-19 19:12:39,408 :     )
+2026-08-19 19:12:39,408 :     (2): WhiteResBlock(
+2026-08-19 19:12:39,408 :       (conv1): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,409 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,409 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,409 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,409 :       (shortcut): Sequential()
+2026-08-19 19:12:39,409 :       (add): WhiteAdd()
+2026-08-19 19:12:39,409 :     )
+2026-08-19 19:12:39,409 :   )
+2026-08-19 19:12:39,409 :   (layer3): WhiteSequential(
+2026-08-19 19:12:39,410 :     (0): WhiteResBlock(
+2026-08-19 19:12:39,410 :       (conv1): WhiteConv2(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,410 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,410 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,410 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,410 :       (shortcut): Sequential(
+2026-08-19 19:12:39,410 :         (0): WhiteConv2(32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,410 :         (1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,410 :       )
+2026-08-19 19:12:39,411 :       (add): WhiteAdd()
+2026-08-19 19:12:39,411 :     )
+2026-08-19 19:12:39,411 :     (1): WhiteResBlock(
+2026-08-19 19:12:39,411 :       (conv1): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,411 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,411 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,411 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,411 :       (shortcut): Sequential()
+2026-08-19 19:12:39,412 :       (add): WhiteAdd()
+2026-08-19 19:12:39,412 :     )
+2026-08-19 19:12:39,412 :     (2): WhiteResBlock(
+2026-08-19 19:12:39,412 :       (conv1): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,412 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,412 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:12:39,412 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:12:39,412 :       (shortcut): Sequential()
+2026-08-19 19:12:39,412 :       (add): WhiteAdd()
+2026-08-19 19:12:39,413 :     )
+2026-08-19 19:12:39,413 :   )
+2026-08-19 19:12:39,413 :   (pool): WhitePool()
+2026-08-19 19:12:39,413 :   (linear): WhiteLinear(in_features=64, out_features=10, bias=True)
+2026-08-19 19:12:39,413 : )
+2026-08-19 19:12:39,697 : Files already downloaded and verified
+2026-08-19 19:12:40,412 : Files already downloaded and verified
+2026-08-19 19:12:40,709 : ==============================1-conv1 load==============================
+2026-08-19 19:12:40,710 : ==============================2-bn1 load==============================
+2026-08-19 19:12:40,718 : ==============================3-layer1.0.conv1 load==============================
+2026-08-19 19:12:40,719 : ==============================4-layer1.0.bn1 load==============================
+2026-08-19 19:12:40,728 : ==============================5-layer1.0.conv2 load==============================
+2026-08-19 19:12:40,728 : ==============================6-layer1.0.bn2 load==============================
+2026-08-19 19:12:40,730 : ==============================7-layer1.0.add load==============================
+2026-08-19 19:12:40,739 : ==============================8-layer1.1.conv1 load==============================
+2026-08-19 19:12:40,740 : ==============================9-layer1.1.bn1 load==============================
+2026-08-19 19:12:40,748 : ==============================10-layer1.1.conv2 load==============================
+2026-08-19 19:12:40,749 : ==============================11-layer1.1.bn2 load==============================
+2026-08-19 19:12:40,750 : ==============================12-layer1.1.add load==============================
+2026-08-19 19:12:40,760 : ==============================13-layer1.2.conv1 load==============================
+2026-08-19 19:12:40,761 : ==============================14-layer1.2.bn1 load==============================
+2026-08-19 19:12:40,770 : ==============================15-layer1.2.conv2 load==============================
+2026-08-19 19:12:40,771 : ==============================16-layer1.2.bn2 load==============================
+2026-08-19 19:12:40,772 : ==============================17-layer1.2.add load==============================
+2026-08-19 19:12:40,788 : ==============================18-layer2.0.conv1 load==============================
+2026-08-19 19:12:40,795 : ==============================19-layer2.0.bn1 load==============================
+2026-08-19 19:12:40,826 : ==============================20-layer2.0.conv2 load==============================
+2026-08-19 19:12:40,827 : ==============================21-layer2.0.bn2 load==============================
+2026-08-19 19:12:40,829 : ==============================22-layer2.0.shortcut.0 load==============================
+2026-08-19 19:12:40,829 : ==============================23-layer2.0.shortcut.1 load==============================
+2026-08-19 19:12:40,831 : ==============================24-layer2.0.add load==============================
+2026-08-19 19:12:40,859 : ==============================25-layer2.1.conv1 load==============================
+2026-08-19 19:12:40,860 : ==============================26-layer2.1.bn1 load==============================
+2026-08-19 19:12:40,894 : ==============================27-layer2.1.conv2 load==============================
+2026-08-19 19:12:40,895 : ==============================28-layer2.1.bn2 load==============================
+2026-08-19 19:12:40,896 : ==============================29-layer2.1.add load==============================
+2026-08-19 19:12:40,927 : ==============================30-layer2.2.conv1 load==============================
+2026-08-19 19:12:40,927 : ==============================31-layer2.2.bn1 load==============================
+2026-08-19 19:12:40,959 : ==============================32-layer2.2.conv2 load==============================
+2026-08-19 19:12:40,960 : ==============================33-layer2.2.bn2 load==============================
+2026-08-19 19:12:40,961 : ==============================34-layer2.2.add load==============================
+2026-08-19 19:12:41,038 : ==============================35-layer3.0.conv1 load==============================
+2026-08-19 19:12:41,039 : ==============================36-layer3.0.bn1 load==============================
+2026-08-19 19:12:41,159 : ==============================37-layer3.0.conv2 load==============================
+2026-08-19 19:12:41,160 : ==============================38-layer3.0.bn2 load==============================
+2026-08-19 19:12:41,167 : ==============================39-layer3.0.shortcut.0 load==============================
+2026-08-19 19:12:41,168 : ==============================40-layer3.0.shortcut.1 load==============================
+2026-08-19 19:12:41,170 : ==============================41-layer3.0.add load==============================
+2026-08-19 19:12:41,302 : ==============================42-layer3.1.conv1 load==============================
+2026-08-19 19:12:41,303 : ==============================43-layer3.1.bn1 load==============================
+2026-08-19 19:12:41,428 : ==============================44-layer3.1.conv2 load==============================
+2026-08-19 19:12:41,429 : ==============================45-layer3.1.bn2 load==============================
+2026-08-19 19:12:41,431 : ==============================46-layer3.1.add load==============================
+2026-08-19 19:12:41,548 : ==============================47-layer3.2.conv1 load==============================
+2026-08-19 19:12:41,549 : ==============================48-layer3.2.bn1 load==============================
+2026-08-19 19:12:41,662 : ==============================49-layer3.2.conv2 load==============================
+2026-08-19 19:12:41,663 : ==============================50-layer3.2.bn2 load==============================
+2026-08-19 19:12:41,666 : ==============================51-layer3.2.add load==============================
+2026-08-19 19:12:41,844 : ==============================52-pool load==============================
+2026-08-19 19:12:41,847 : ==============================53-linear load==============================
+2026-08-19 19:12:45,368 : 0 100 Acc: 77.000%
+2026-08-19 19:12:48,848 : 1 100 Acc: 79.500%
+2026-08-19 19:12:52,334 : 2 100 Acc: 79.333%
+2026-08-19 19:12:55,845 : 3 100 Acc: 78.000%
+2026-08-19 19:12:59,621 : 4 100 Acc: 78.800%
+2026-08-19 19:13:03,790 : 5 100 Acc: 78.833%
+2026-08-19 19:13:08,103 : 6 100 Acc: 79.429%
+2026-08-19 19:13:12,562 : 7 100 Acc: 78.750%
+2026-08-19 19:13:17,027 : 8 100 Acc: 78.556%
+2026-08-19 19:13:21,654 : 9 100 Acc: 79.200%
+2026-08-19 19:13:26,083 : 10 100 Acc: 78.727%
+2026-08-19 19:13:29,949 : 11 100 Acc: 78.417%
+2026-08-19 19:13:30,210 : Traceback (most recent call last):
+2026-08-19 19:13:30,211 :   File "E:\TableNet2026\generateWhitebox.py", line 177, in <module>
+2026-08-19 19:13:30,211 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:13:30,211 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:13:30,212 :     self.test_once(test_loader)
+2026-08-19 19:13:30,212 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:13:30,212 :     outputs = self(inputs)
+2026-08-19 19:13:30,212 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:13:30,214 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:13:30,215 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:13:30,216 :     return forward_call(*args, **kwargs)
+2026-08-19 19:13:30,216 :   File "E:\TableNet2026\net\resnet20.py", line 38, in forward
+2026-08-19 19:13:30,217 :     out = self.layer1(out)
+2026-08-19 19:13:30,217 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:13:30,218 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:13:30,218 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:13:30,219 :     return forward_call(*args, **kwargs)
+2026-08-19 19:13:30,219 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-08-19 19:13:30,220 :     input = module(input)
+2026-08-19 19:13:30,220 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:13:30,221 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:13:30,221 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:13:30,222 :     return forward_call(*args, **kwargs)
+2026-08-19 19:13:30,222 :   File "E:\TableNet2026\modules\white_res_block.py", line 31, in forward
+2026-08-19 19:13:30,223 :     out = self.bn1(self.conv1(x))
+2026-08-19 19:13:30,223 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:13:30,224 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:13:30,224 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:13:30,225 :     return forward_call(*args, **kwargs)
+2026-08-19 19:13:30,225 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-08-19 19:13:30,225 :     out = self._whitebox_forward(input)
+2026-08-19 19:13:30,225 :   File "E:\TableNet2026\modules\white_conv.py", line 69, in _whitebox_forward
+2026-08-19 19:13:30,226 :     out[:, out_ch] = table[out[:, out_ch], input_arr[:, in_ch, i: i + step: stride, j: j + step: stride]]
+2026-08-19 19:13:30,226 : KeyboardInterrupt
+2026-08-19 19:21:16,454 : ResNet20(
+2026-08-19 19:21:16,454 :   (conv1): WhiteConv2(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,454 :   (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,454 :   (layer1): WhiteSequential(
+2026-08-19 19:21:16,454 :     (0): WhiteResBlock(
+2026-08-19 19:21:16,454 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,454 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,455 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,455 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,455 :       (shortcut): Sequential()
+2026-08-19 19:21:16,455 :       (add): WhiteAdd()
+2026-08-19 19:21:16,455 :     )
+2026-08-19 19:21:16,455 :     (1): WhiteResBlock(
+2026-08-19 19:21:16,455 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,455 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,455 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,455 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,456 :       (shortcut): Sequential()
+2026-08-19 19:21:16,456 :       (add): WhiteAdd()
+2026-08-19 19:21:16,456 :     )
+2026-08-19 19:21:16,456 :     (2): WhiteResBlock(
+2026-08-19 19:21:16,456 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,456 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,456 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,456 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,456 :       (shortcut): Sequential()
+2026-08-19 19:21:16,456 :       (add): WhiteAdd()
+2026-08-19 19:21:16,457 :     )
+2026-08-19 19:21:16,457 :   )
+2026-08-19 19:21:16,457 :   (layer2): WhiteSequential(
+2026-08-19 19:21:16,457 :     (0): WhiteResBlock(
+2026-08-19 19:21:16,457 :       (conv1): WhiteConv2(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,457 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,457 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,457 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,457 :       (shortcut): Sequential(
+2026-08-19 19:21:16,457 :         (0): WhiteConv2(16, 32, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,458 :         (1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,458 :       )
+2026-08-19 19:21:16,458 :       (add): WhiteAdd()
+2026-08-19 19:21:16,458 :     )
+2026-08-19 19:21:16,458 :     (1): WhiteResBlock(
+2026-08-19 19:21:16,458 :       (conv1): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,458 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,458 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,458 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,458 :       (shortcut): Sequential()
+2026-08-19 19:21:16,458 :       (add): WhiteAdd()
+2026-08-19 19:21:16,459 :     )
+2026-08-19 19:21:16,459 :     (2): WhiteResBlock(
+2026-08-19 19:21:16,459 :       (conv1): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,459 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,459 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,459 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,459 :       (shortcut): Sequential()
+2026-08-19 19:21:16,459 :       (add): WhiteAdd()
+2026-08-19 19:21:16,459 :     )
+2026-08-19 19:21:16,459 :   )
+2026-08-19 19:21:16,459 :   (layer3): WhiteSequential(
+2026-08-19 19:21:16,460 :     (0): WhiteResBlock(
+2026-08-19 19:21:16,460 :       (conv1): WhiteConv2(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,460 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,460 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,460 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,460 :       (shortcut): Sequential(
+2026-08-19 19:21:16,460 :         (0): WhiteConv2(32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,460 :         (1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,460 :       )
+2026-08-19 19:21:16,460 :       (add): WhiteAdd()
+2026-08-19 19:21:16,461 :     )
+2026-08-19 19:21:16,461 :     (1): WhiteResBlock(
+2026-08-19 19:21:16,461 :       (conv1): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,461 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,461 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,461 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,461 :       (shortcut): Sequential()
+2026-08-19 19:21:16,461 :       (add): WhiteAdd()
+2026-08-19 19:21:16,461 :     )
+2026-08-19 19:21:16,461 :     (2): WhiteResBlock(
+2026-08-19 19:21:16,461 :       (conv1): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,462 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,462 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, padding_mode=replicate)
+2026-08-19 19:21:16,462 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:21:16,462 :       (shortcut): Sequential()
+2026-08-19 19:21:16,462 :       (add): WhiteAdd()
+2026-08-19 19:21:16,462 :     )
+2026-08-19 19:21:16,462 :   )
+2026-08-19 19:21:16,462 :   (pool): WhitePool()
+2026-08-19 19:21:16,462 :   (linear): WhiteLinear(in_features=64, out_features=10, bias=True)
+2026-08-19 19:21:16,462 : )
+2026-08-19 19:21:16,722 : Files already downloaded and verified
+2026-08-19 19:21:17,361 : Files already downloaded and verified
+2026-08-19 19:21:17,646 : ==============================1-conv1 load==============================
+2026-08-19 19:21:17,646 : ==============================2-bn1 load==============================
+2026-08-19 19:21:17,654 : ==============================3-layer1.0.conv1 load==============================
+2026-08-19 19:21:17,654 : ==============================4-layer1.0.bn1 load==============================
+2026-08-19 19:21:17,662 : ==============================5-layer1.0.conv2 load==============================
+2026-08-19 19:21:17,663 : ==============================6-layer1.0.bn2 load==============================
+2026-08-19 19:21:17,664 : ==============================7-layer1.0.add load==============================
+2026-08-19 19:21:17,673 : ==============================8-layer1.1.conv1 load==============================
+2026-08-19 19:21:17,673 : ==============================9-layer1.1.bn1 load==============================
+2026-08-19 19:21:17,681 : ==============================10-layer1.1.conv2 load==============================
+2026-08-19 19:21:17,681 : ==============================11-layer1.1.bn2 load==============================
+2026-08-19 19:21:17,682 : ==============================12-layer1.1.add load==============================
+2026-08-19 19:21:17,691 : ==============================13-layer1.2.conv1 load==============================
+2026-08-19 19:21:17,692 : ==============================14-layer1.2.bn1 load==============================
+2026-08-19 19:21:17,700 : ==============================15-layer1.2.conv2 load==============================
+2026-08-19 19:21:17,700 : ==============================16-layer1.2.bn2 load==============================
+2026-08-19 19:21:17,701 : ==============================17-layer1.2.add load==============================
+2026-08-19 19:21:17,716 : ==============================18-layer2.0.conv1 load==============================
+2026-08-19 19:21:17,717 : ==============================19-layer2.0.bn1 load==============================
+2026-08-19 19:21:17,749 : ==============================20-layer2.0.conv2 load==============================
+2026-08-19 19:21:17,749 : ==============================21-layer2.0.bn2 load==============================
+2026-08-19 19:21:17,752 : ==============================22-layer2.0.shortcut.0 load==============================
+2026-08-19 19:21:17,752 : ==============================23-layer2.0.shortcut.1 load==============================
+2026-08-19 19:21:17,753 : ==============================24-layer2.0.add load==============================
+2026-08-19 19:21:17,782 : ==============================25-layer2.1.conv1 load==============================
+2026-08-19 19:21:17,783 : ==============================26-layer2.1.bn1 load==============================
+2026-08-19 19:21:17,815 : ==============================27-layer2.1.conv2 load==============================
+2026-08-19 19:21:17,816 : ==============================28-layer2.1.bn2 load==============================
+2026-08-19 19:21:17,817 : ==============================29-layer2.1.add load==============================
+2026-08-19 19:21:17,848 : ==============================30-layer2.2.conv1 load==============================
+2026-08-19 19:21:17,849 : ==============================31-layer2.2.bn1 load==============================
+2026-08-19 19:21:17,881 : ==============================32-layer2.2.conv2 load==============================
+2026-08-19 19:21:17,882 : ==============================33-layer2.2.bn2 load==============================
+2026-08-19 19:21:17,883 : ==============================34-layer2.2.add load==============================
+2026-08-19 19:21:17,945 : ==============================35-layer3.0.conv1 load==============================
+2026-08-19 19:21:17,946 : ==============================36-layer3.0.bn1 load==============================
+2026-08-19 19:21:18,069 : ==============================37-layer3.0.conv2 load==============================
+2026-08-19 19:21:18,070 : ==============================38-layer3.0.bn2 load==============================
+2026-08-19 19:21:18,077 : ==============================39-layer3.0.shortcut.0 load==============================
+2026-08-19 19:21:18,077 : ==============================40-layer3.0.shortcut.1 load==============================
+2026-08-19 19:21:18,081 : ==============================41-layer3.0.add load==============================
+2026-08-19 19:21:18,210 : ==============================42-layer3.1.conv1 load==============================
+2026-08-19 19:21:18,210 : ==============================43-layer3.1.bn1 load==============================
+2026-08-19 19:21:18,342 : ==============================44-layer3.1.conv2 load==============================
+2026-08-19 19:21:18,343 : ==============================45-layer3.1.bn2 load==============================
+2026-08-19 19:21:18,345 : ==============================46-layer3.1.add load==============================
+2026-08-19 19:21:18,476 : ==============================47-layer3.2.conv1 load==============================
+2026-08-19 19:21:18,477 : ==============================48-layer3.2.bn1 load==============================
+2026-08-19 19:21:18,594 : ==============================49-layer3.2.conv2 load==============================
+2026-08-19 19:21:18,595 : ==============================50-layer3.2.bn2 load==============================
+2026-08-19 19:21:18,598 : ==============================51-layer3.2.add load==============================
+2026-08-19 19:21:18,772 : ==============================52-pool load==============================
+2026-08-19 19:21:18,775 : ==============================53-linear load==============================
+2026-08-19 19:21:22,263 : 0 100 Acc: 77.000%
+2026-08-19 19:21:25,763 : 1 100 Acc: 79.500%
+2026-08-19 19:21:27,165 : Traceback (most recent call last):
+2026-08-19 19:21:27,166 :   File "E:\TableNet2026\generateWhitebox.py", line 177, in <module>
+2026-08-19 19:21:27,166 :     net.test_whitebox(save_path, train_set, test_set, test_batch_size, clustering_batch_size, white_bit, input_format)
+2026-08-19 19:21:27,166 :   File "E:\TableNet2026\modules\white_net.py", line 85, in test_whitebox
+2026-08-19 19:21:27,166 :     self.test_once(test_loader)
+2026-08-19 19:21:27,167 :   File "E:\TableNet2026\modules\white_net.py", line 26, in test_once
+2026-08-19 19:21:27,167 :     outputs = self(inputs)
+2026-08-19 19:21:27,167 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:21:27,168 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:21:27,169 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:21:27,170 :     return forward_call(*args, **kwargs)
+2026-08-19 19:21:27,170 :   File "E:\TableNet2026\net\resnet20.py", line 39, in forward
+2026-08-19 19:21:27,171 :     out = self.layer2(out)
+2026-08-19 19:21:27,171 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:21:27,172 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:21:27,173 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:21:27,174 :     return forward_call(*args, **kwargs)
+2026-08-19 19:21:27,174 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+2026-08-19 19:21:27,175 :     input = module(input)
+2026-08-19 19:21:27,175 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:21:27,176 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:21:27,177 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:21:27,178 :     return forward_call(*args, **kwargs)
+2026-08-19 19:21:27,178 :   File "E:\TableNet2026\modules\white_res_block.py", line 32, in forward
+2026-08-19 19:21:27,179 :     out = self.bn2(self.conv2(out))
+2026-08-19 19:21:27,179 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+2026-08-19 19:21:27,181 :     return self._call_impl(*args, **kwargs)
+2026-08-19 19:21:27,181 :   File "C:\Users\12784\anaconda3\envs\py3.10\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+2026-08-19 19:21:27,182 :     return forward_call(*args, **kwargs)
+2026-08-19 19:21:27,183 :   File "E:\TableNet2026\modules\parents\clustering_layer.py", line 88, in forward
+2026-08-19 19:21:27,183 :     out = self._whitebox_forward(input)
+2026-08-19 19:21:27,183 :   File "E:\TableNet2026\modules\white_conv.py", line 69, in _whitebox_forward
+2026-08-19 19:21:27,184 :     out[:, out_ch] = table[out[:, out_ch], input_arr[:, in_ch, i: i + step: stride, j: j + step: stride]]
+2026-08-19 19:21:27,184 : KeyboardInterrupt
+2026-08-19 19:24:13,006 : ResNet20(
+2026-08-19 19:24:13,006 :   (conv1): WhiteConv2(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,007 :   (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,007 :   (layer1): WhiteSequential(
+2026-08-19 19:24:13,007 :     (0): WhiteResBlock(
+2026-08-19 19:24:13,007 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,007 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,007 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,007 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,007 :       (shortcut): Sequential()
+2026-08-19 19:24:13,007 :       (add): WhiteAdd()
+2026-08-19 19:24:13,008 :     )
+2026-08-19 19:24:13,008 :     (1): WhiteResBlock(
+2026-08-19 19:24:13,008 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,008 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,008 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,008 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,008 :       (shortcut): Sequential()
+2026-08-19 19:24:13,008 :       (add): WhiteAdd()
+2026-08-19 19:24:13,009 :     )
+2026-08-19 19:24:13,009 :     (2): WhiteResBlock(
+2026-08-19 19:24:13,009 :       (conv1): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,009 :       (bn1): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,009 :       (conv2): WhiteConv2(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,009 :       (bn2): WhiteBatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,009 :       (shortcut): Sequential()
+2026-08-19 19:24:13,009 :       (add): WhiteAdd()
+2026-08-19 19:24:13,009 :     )
+2026-08-19 19:24:13,009 :   )
+2026-08-19 19:24:13,010 :   (layer2): WhiteSequential(
+2026-08-19 19:24:13,010 :     (0): WhiteResBlock(
+2026-08-19 19:24:13,010 :       (conv1): WhiteConv2(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,010 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,010 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,010 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,010 :       (shortcut): Sequential(
+2026-08-19 19:24:13,010 :         (0): WhiteConv2(16, 32, kernel_size=(1, 1), stride=(2, 2), bias=False)
+2026-08-19 19:24:13,010 :         (1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,010 :       )
+2026-08-19 19:24:13,010 :       (add): WhiteAdd()
+2026-08-19 19:24:13,011 :     )
+2026-08-19 19:24:13,011 :     (1): WhiteResBlock(
+2026-08-19 19:24:13,011 :       (conv1): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,011 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,011 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,011 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,011 :       (shortcut): Sequential()
+2026-08-19 19:24:13,011 :       (add): WhiteAdd()
+2026-08-19 19:24:13,011 :     )
+2026-08-19 19:24:13,011 :     (2): WhiteResBlock(
+2026-08-19 19:24:13,011 :       (conv1): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,012 :       (bn1): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,012 :       (conv2): WhiteConv2(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,012 :       (bn2): WhiteBatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,012 :       (shortcut): Sequential()
+2026-08-19 19:24:13,012 :       (add): WhiteAdd()
+2026-08-19 19:24:13,012 :     )
+2026-08-19 19:24:13,012 :   )
+2026-08-19 19:24:13,012 :   (layer3): WhiteSequential(
+2026-08-19 19:24:13,012 :     (0): WhiteResBlock(
+2026-08-19 19:24:13,012 :       (conv1): WhiteConv2(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,012 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,013 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,013 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,013 :       (shortcut): Sequential(
+2026-08-19 19:24:13,013 :         (0): WhiteConv2(32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False)
+2026-08-19 19:24:13,013 :         (1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,013 :       )
+2026-08-19 19:24:13,013 :       (add): WhiteAdd()
+2026-08-19 19:24:13,013 :     )
+2026-08-19 19:24:13,013 :     (1): WhiteResBlock(
+2026-08-19 19:24:13,013 :       (conv1): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,013 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,014 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,014 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,014 :       (shortcut): Sequential()
+2026-08-19 19:24:13,014 :       (add): WhiteAdd()
+2026-08-19 19:24:13,014 :     )
+2026-08-19 19:24:13,014 :     (2): WhiteResBlock(
+2026-08-19 19:24:13,014 :       (conv1): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,014 :       (bn1): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,015 :       (conv2): WhiteConv2(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+2026-08-19 19:24:13,015 :       (bn2): WhiteBatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+2026-08-19 19:24:13,015 :       (shortcut): Sequential()
+2026-08-19 19:24:13,015 :       (add): WhiteAdd()
+2026-08-19 19:24:13,015 :     )
+2026-08-19 19:24:13,015 :   )
+2026-08-19 19:24:13,015 :   (pool): WhitePool()
+2026-08-19 19:24:13,015 :   (linear): WhiteLinear(in_features=64, out_features=10, bias=True)
+2026-08-19 19:24:13,015 : )
+2026-08-19 19:24:13,281 : Files already downloaded and verified
+2026-08-19 19:24:13,935 : Files already downloaded and verified
+2026-08-19 19:24:14,218 : ==============================1-conv1 load==============================
+2026-08-19 19:24:14,218 : ==============================2-bn1 load==============================
+2026-08-19 19:24:14,226 : ==============================3-layer1.0.conv1 load==============================
+2026-08-19 19:24:14,226 : ==============================4-layer1.0.bn1 load==============================
+2026-08-19 19:24:14,236 : ==============================5-layer1.0.conv2 load==============================
+2026-08-19 19:24:14,236 : ==============================6-layer1.0.bn2 load==============================
+2026-08-19 19:24:14,237 : ==============================7-layer1.0.add load==============================
+2026-08-19 19:24:14,246 : ==============================8-layer1.1.conv1 load==============================
+2026-08-19 19:24:14,247 : ==============================9-layer1.1.bn1 load==============================
+2026-08-19 19:24:14,254 : ==============================10-layer1.1.conv2 load==============================
+2026-08-19 19:24:14,254 : ==============================11-layer1.1.bn2 load==============================
+2026-08-19 19:24:14,256 : ==============================12-layer1.1.add load==============================
+2026-08-19 19:24:14,264 : ==============================13-layer1.2.conv1 load==============================
+2026-08-19 19:24:14,264 : ==============================14-layer1.2.bn1 load==============================
+2026-08-19 19:24:14,273 : ==============================15-layer1.2.conv2 load==============================
+2026-08-19 19:24:14,273 : ==============================16-layer1.2.bn2 load==============================
+2026-08-19 19:24:14,274 : ==============================17-layer1.2.add load==============================
+2026-08-19 19:24:14,289 : ==============================18-layer2.0.conv1 load==============================
+2026-08-19 19:24:14,290 : ==============================19-layer2.0.bn1 load==============================
+2026-08-19 19:24:14,322 : ==============================20-layer2.0.conv2 load==============================
+2026-08-19 19:24:14,323 : ==============================21-layer2.0.bn2 load==============================
+2026-08-19 19:24:14,325 : ==============================22-layer2.0.shortcut.0 load==============================
+2026-08-19 19:24:14,325 : ==============================23-layer2.0.shortcut.1 load==============================
+2026-08-19 19:24:14,327 : ==============================24-layer2.0.add load==============================
+2026-08-19 19:24:14,357 : ==============================25-layer2.1.conv1 load==============================
+2026-08-19 19:24:14,358 : ==============================26-layer2.1.bn1 load==============================
+2026-08-19 19:24:14,394 : ==============================27-layer2.1.conv2 load==============================
+2026-08-19 19:24:14,396 : ==============================28-layer2.1.bn2 load==============================
+2026-08-19 19:24:14,399 : ==============================29-layer2.1.add load==============================
+2026-08-19 19:24:14,435 : ==============================30-layer2.2.conv1 load==============================
+2026-08-19 19:24:14,436 : ==============================31-layer2.2.bn1 load==============================
+2026-08-19 19:24:14,469 : ==============================32-layer2.2.conv2 load==============================
+2026-08-19 19:24:14,470 : ==============================33-layer2.2.bn2 load==============================
+2026-08-19 19:24:14,472 : ==============================34-layer2.2.add load==============================
+2026-08-19 19:24:14,536 : ==============================35-layer3.0.conv1 load==============================
+2026-08-19 19:24:14,537 : ==============================36-layer3.0.bn1 load==============================
+2026-08-19 19:24:14,661 : ==============================37-layer3.0.conv2 load==============================
+2026-08-19 19:24:14,662 : ==============================38-layer3.0.bn2 load==============================
+2026-08-19 19:24:14,668 : ==============================39-layer3.0.shortcut.0 load==============================
+2026-08-19 19:24:14,669 : ==============================40-layer3.0.shortcut.1 load==============================
+2026-08-19 19:24:14,671 : ==============================41-layer3.0.add load==============================
+2026-08-19 19:24:14,798 : ==============================42-layer3.1.conv1 load==============================
+2026-08-19 19:24:14,799 : ==============================43-layer3.1.bn1 load==============================
+2026-08-19 19:24:14,930 : ==============================44-layer3.1.conv2 load==============================
+2026-08-19 19:24:14,931 : ==============================45-layer3.1.bn2 load==============================
+2026-08-19 19:24:14,934 : ==============================46-layer3.1.add load==============================
+2026-08-19 19:24:15,055 : ==============================47-layer3.2.conv1 load==============================
+2026-08-19 19:24:15,056 : ==============================48-layer3.2.bn1 load==============================
+2026-08-19 19:24:15,170 : ==============================49-layer3.2.conv2 load==============================
+2026-08-19 19:24:15,171 : ==============================50-layer3.2.bn2 load==============================
+2026-08-19 19:24:15,176 : ==============================51-layer3.2.add load==============================
+2026-08-19 19:24:15,349 : ==============================52-pool load==============================
+2026-08-19 19:24:15,353 : ==============================53-linear load==============================
+2026-08-19 19:24:18,990 : 0 100 Acc: 90.000%
+2026-08-19 19:24:22,548 : 1 100 Acc: 89.000%
+2026-08-19 19:24:26,160 : 2 100 Acc: 89.000%
+2026-08-19 19:24:29,780 : 3 100 Acc: 89.750%
+2026-08-19 19:24:33,358 : 4 100 Acc: 90.800%
+2026-08-19 19:24:36,891 : 5 100 Acc: 90.500%
+2026-08-19 19:24:40,460 : 6 100 Acc: 90.714%
+2026-08-19 19:24:44,029 : 7 100 Acc: 90.750%
+2026-08-19 19:24:47,612 : 8 100 Acc: 90.556%
+2026-08-19 19:24:51,129 : 9 100 Acc: 90.900%
+2026-08-19 19:24:54,686 : 10 100 Acc: 90.364%
+2026-08-19 19:24:58,208 : 11 100 Acc: 90.167%
+2026-08-19 19:25:01,731 : 12 100 Acc: 90.308%
+2026-08-19 19:25:05,273 : 13 100 Acc: 90.500%
+2026-08-19 19:25:08,825 : 14 100 Acc: 90.467%
+2026-08-19 19:25:12,352 : 15 100 Acc: 90.688%
+2026-08-19 19:25:15,898 : 16 100 Acc: 90.765%
+2026-08-19 19:25:19,468 : 17 100 Acc: 90.778%
+2026-08-19 19:25:23,007 : 18 100 Acc: 91.053%
+2026-08-19 19:25:26,574 : 19 100 Acc: 91.000%
+2026-08-19 19:25:30,154 : 20 100 Acc: 90.905%
+2026-08-19 19:25:34,540 : 21 100 Acc: 90.864%
+2026-08-19 19:25:39,261 : 22 100 Acc: 90.565%
+2026-08-19 19:25:43,835 : 23 100 Acc: 90.542%
+2026-08-19 19:25:48,455 : 24 100 Acc: 90.480%
+2026-08-19 19:25:52,862 : 25 100 Acc: 90.423%
+2026-08-19 19:25:57,437 : 26 100 Acc: 90.333%
+2026-08-19 19:26:02,150 : 27 100 Acc: 90.250%
+2026-08-19 19:26:06,805 : 28 100 Acc: 90.138%
+2026-08-19 19:26:11,572 : 29 100 Acc: 90.233%
+2026-08-19 19:26:16,089 : 30 100 Acc: 90.258%
+2026-08-19 19:26:20,832 : 31 100 Acc: 90.281%
+2026-08-19 19:26:25,600 : 32 100 Acc: 90.152%
+2026-08-19 19:26:30,312 : 33 100 Acc: 90.118%
+2026-08-19 19:26:34,727 : 34 100 Acc: 90.086%
+2026-08-19 19:26:39,679 : 35 100 Acc: 90.111%
+2026-08-19 19:26:44,276 : 36 100 Acc: 90.135%
+2026-08-19 19:26:48,961 : 37 100 Acc: 90.079%
+2026-08-19 19:26:53,939 : 38 100 Acc: 90.205%
+2026-08-19 19:26:58,757 : 39 100 Acc: 90.300%
+2026-08-19 19:27:03,452 : 40 100 Acc: 90.317%
+2026-08-19 19:27:08,261 : 41 100 Acc: 90.286%
+2026-08-19 19:27:13,391 : 42 100 Acc: 90.186%
+2026-08-19 19:27:18,215 : 43 100 Acc: 90.250%
+2026-08-19 19:27:23,168 : 44 100 Acc: 90.244%
+2026-08-19 19:27:28,235 : 45 100 Acc: 90.326%
+2026-08-19 19:27:33,106 : 46 100 Acc: 90.298%
+2026-08-19 19:27:37,991 : 47 100 Acc: 90.396%
+2026-08-19 19:27:42,651 : 48 100 Acc: 90.429%
+2026-08-19 19:27:47,484 : 49 100 Acc: 90.400%
+2026-08-19 19:27:52,213 : 50 100 Acc: 90.431%
+2026-08-19 19:27:56,712 : 51 100 Acc: 90.346%
+2026-08-19 19:28:01,122 : 52 100 Acc: 90.358%
+2026-08-19 19:28:05,680 : 53 100 Acc: 90.352%
+2026-08-19 19:28:10,540 : 54 100 Acc: 90.364%
+2026-08-19 19:28:14,693 : 55 100 Acc: 90.250%
+2026-08-19 19:28:18,277 : 56 100 Acc: 90.228%
+2026-08-19 19:28:21,895 : 57 100 Acc: 90.345%
+2026-08-19 19:28:25,509 : 58 100 Acc: 90.339%
+2026-08-19 19:28:29,085 : 59 100 Acc: 90.367%
+2026-08-19 19:28:32,668 : 60 100 Acc: 90.311%
+2026-08-19 19:28:36,239 : 61 100 Acc: 90.323%
+2026-08-19 19:28:39,877 : 62 100 Acc: 90.270%
+2026-08-19 19:28:43,486 : 63 100 Acc: 90.203%
+2026-08-19 19:28:47,113 : 64 100 Acc: 90.323%
+2026-08-19 19:28:50,732 : 65 100 Acc: 90.333%
+2026-08-19 19:28:54,310 : 66 100 Acc: 90.194%
+2026-08-19 19:28:57,949 : 67 100 Acc: 90.265%
+2026-08-19 19:29:01,638 : 68 100 Acc: 90.246%
+2026-08-19 19:29:05,302 : 69 100 Acc: 90.271%
+2026-08-19 19:29:09,008 : 70 100 Acc: 90.310%
+2026-08-19 19:29:13,007 : 71 100 Acc: 90.278%
+2026-08-19 19:29:16,840 : 72 100 Acc: 90.260%
+2026-08-19 19:29:20,463 : 73 100 Acc: 90.216%
+2026-08-19 19:29:24,064 : 74 100 Acc: 90.240%
+2026-08-19 19:29:27,647 : 75 100 Acc: 90.289%
+2026-08-19 19:29:31,246 : 76 100 Acc: 90.234%
+2026-08-19 19:29:34,836 : 77 100 Acc: 90.141%
+2026-08-19 19:29:38,499 : 78 100 Acc: 90.089%
+2026-08-19 19:29:42,154 : 79 100 Acc: 90.112%
+2026-08-19 19:29:45,741 : 80 100 Acc: 90.086%
+2026-08-19 19:29:49,308 : 81 100 Acc: 90.061%
+2026-08-19 19:29:52,910 : 82 100 Acc: 90.048%
+2026-08-19 19:29:56,483 : 83 100 Acc: 90.083%
+2026-08-19 19:30:00,091 : 84 100 Acc: 90.024%
+2026-08-19 19:30:03,697 : 85 100 Acc: 90.023%
+2026-08-19 19:30:07,265 : 86 100 Acc: 89.977%
+2026-08-19 19:30:10,870 : 87 100 Acc: 89.966%
+2026-08-19 19:30:14,456 : 88 100 Acc: 89.989%
+2026-08-19 19:30:18,059 : 89 100 Acc: 90.000%
+2026-08-19 19:30:21,649 : 90 100 Acc: 90.022%
+2026-08-19 19:30:25,245 : 91 100 Acc: 90.022%
+2026-08-19 19:30:28,833 : 92 100 Acc: 90.032%
+2026-08-19 19:30:32,408 : 93 100 Acc: 90.011%
+2026-08-19 19:30:36,001 : 94 100 Acc: 89.989%
+2026-08-19 19:30:39,590 : 95 100 Acc: 89.990%
+2026-08-19 19:30:43,170 : 96 100 Acc: 89.990%
+2026-08-19 19:30:46,766 : 97 100 Acc: 89.969%
+2026-08-19 19:30:50,361 : 98 100 Acc: 89.919%
+2026-08-19 19:30:53,941 : 99 100 Acc: 89.930%

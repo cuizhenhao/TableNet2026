@@ -13,15 +13,15 @@ class WhiteResBlock(WhiteNet):
 
     def __init__(self, in_planes, planes, stride=1):
         super(WhiteResBlock, self).__init__()
-        self.conv1 = WhiteConv2(in_planes, planes, kernel_size=3, stride=stride, padding=1, bias=False, padding_mode="replicate")
+        self.conv1 = WhiteConv2(in_planes, planes, kernel_size=3, stride=stride, padding=1, bias=False, padding_mode="zeros")
         self.bn1 = WhiteBatchNorm2d(planes, activate_function=F.relu)
-        self.conv2 = WhiteConv2(planes, planes, kernel_size=3, padding=1, bias=False, padding_mode="replicate")
-        self.bn2 = WhiteBatchNorm2d(planes, activate_function=F.relu)
+        self.conv2 = WhiteConv2(planes, planes, kernel_size=3, padding=1, bias=False, padding_mode="zeros")
+        self.bn2 = WhiteBatchNorm2d(planes)
         self.shortcut = nn.Sequential()
         if stride != 1:
             self.shortcut = nn.Sequential(
                 WhiteConv2(in_planes, planes,
-                          kernel_size=1, stride=stride, bias=False, padding_mode="replicate"),
+                          kernel_size=1, stride=stride, bias=False, padding_mode="zeros"),
                 WhiteBatchNorm2d(planes)
             )
         self.add = WhiteAdd(planes, activate_function=F.relu)

@@ -17,7 +17,7 @@ class ResNet20(WhiteNet):
         block = WhiteResBlock
 
         self.conv1 = WhiteConv2(3, 16, kernel_size=3,
-                               stride=1, padding=1, bias=False, padding_mode="replicate")
+                               stride=1, padding=1, bias=False, padding_mode="zeros")
         self.bn1 = WhiteBatchNorm2d(16, activate_function=F.relu)
         self.layer1 = self._make_layer(block, 16, 3, stride=1)
         self.layer2 = self._make_layer(block, 32, 3, stride=2)

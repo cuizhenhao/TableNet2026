@@ -26,7 +26,8 @@ class ClusteringLayer:
             path,layer_name = Net_Info.save_path, self.info.layer_name
             white_table = np.load(path + "/" + layer_name + "_table.npz", allow_pickle=True)
             self.white_table = white_table['arr1']
-            self.last_codebook = np.load(path + "/" + layer_name + "_last_codebook.npy", allow_pickle=True)
+            if self.is_last_layer:
+                self.last_codebook = np.load(path + "/" + layer_name + "_last_codebook.npy", allow_pickle=True)
             return True
         except IOError:
             return False

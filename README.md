@@ -1,14 +1,14 @@
 ## ReadMe
 
-Deep Neural Networks (DNNs) have been widely used in many applications. While it usually takes lots of resources to train DNN models, recent studies have demonstrated that adversaries could easily steal the structure and weights of the models. Although some approaches have been proposed to protect DNN models, they are ineffective in untrustworthy (or white-box) environments, where attackers can access the memory and monitor the execution of the DNN models. To address the limitation, we propose TableNet, a novel software-based DNN model privacy protection scheme against white-box attacks in untrustworthy environments.
+In recent years, Deep Neural Networks (DNNs) have demonstrated substantial potential across various fields. In many deployment scenarios, companies train proprietary DNN models locally and deploy them on user-controlled untrustworthy mobile or edge devices, where model parameters and execution traces may be exposed to adversaries with full software visibility. Existing model-protection approaches, however, often rely on trusted hardware (e.g., TEE-based methods), require interactive multi-party computation parties (e.g., 2PC-based methods), or incur substantial computational overhead (e.g., HE-based methods).
 
-Specifically, TableNet protects the model's weights and functionality by replacing the calculation of various functions including convolutions and activation functions with table lookup operations on a set of specifically generated tables. Accordingly, during the inference process, parameters like weights are utilized in a protected format rather than in their original, unprotected form. To this end, we first design a novel table generation algorithm to generate the equivalent encoded lookup tables for each layer. Then, we propose a series of optimization strategies such as approximate encodings to handle the accuracy-memory consumption dilemma. Moreover, we create an external encoding layer to protect the output of the model. We perform security analysis on TableNet and conduct extensive experiments to evaluate it. The experimental results show that TableNet can protect DNN model privacy in untrustworthy environments with reasonable performance, and the inference speed at least 50 times faster than state-of-the-art 2-PC schemes.
+To address these limitations, we propose TableNet, a software-only model-protection framework that transforms a trained DNN into randomized encoded lookup tables, enabling inference without exposing plaintext weights or numerical intermediate activations. To make tabulation practical, TableNet decomposes high-dimensional operators into small lookup tables and employs adaptive approximate encoding to balance model accuracy and storage overhead. For two-party deployments, TableNet further introduces an external output encoding to mitigate code-lifting attacks. We evaluate TableNet against cryptanalysis-inspired white-box attacks, DCA/HO-DCA, and an adaptive model-extraction attack that exploits encoded execution traces. The results show that the additional white-box information exposed by TableNet does not provide the adversary with a meaningful advantage over black-box access. Across seven DNN architectures covering CNNs, Transformers, and LSTMs, TableNet achieves at least 50 times faster online inference than 2-PC schemes while incurring negligible communication overhead.
 
-The paper has been submitted to CCS 2026.  
+The paper has been submitted to Usenix Security 2027.  
 
 ### Environment Setup:
 
-TableNet1.yaml lists all the packages needed.
+requirements.txt lists all the packages needed.
 
 ### Source code
 

@@ -81,20 +81,20 @@ if __name__ == '__main__':
     print(net)
 
     if args.net == "LeNet5":
-        mean = 0.5
-        std = 0.5
+        mean = 0.1307
+        std = 0.3081
         net.last_codebook = np.array([(256, (np.arange(256, dtype=np.float32) / 255 - mean) / std)], dtype=np.object)
         # 这里定义了反标准化的codebook
         train_tf = transforms.Compose([
             transforms.Grayscale(num_output_channels=1),
             transforms.ToTensor(),
             # transforms.Lambda(lambda x: x * 255)
-            transforms.Normalize(0.5, 0.5)
+            transforms.Normalize(mean, std)
         ])
         test_tf = transforms.Compose([
             transforms.Grayscale(num_output_channels=1),
             transforms.ToTensor(),
-            transforms.Normalize(0.5, 0.5)
+            transforms.Normalize(mean, std)
         ])
         train_set = mnist.MNIST('./data', train=True, transform=train_tf, download=True)
         test_set = mnist.MNIST('./data', train=False, transform=test_tf, download=True)

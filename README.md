@@ -4,7 +4,7 @@ In recent years, Deep Neural Networks (DNNs) have demonstrated substantial poten
 
 To address these limitations, we propose TableNet, a software-only model-protection framework that transforms a trained DNN into randomized encoded lookup tables, enabling inference without exposing plaintext weights or numerical intermediate activations. To make tabulation practical, TableNet decomposes high-dimensional operators into small lookup tables and employs adaptive approximate encoding to balance model accuracy and storage overhead. For two-party deployments, TableNet further introduces an external output encoding to mitigate code-lifting attacks. We evaluate TableNet against cryptanalysis-inspired white-box attacks, DCA/HO-DCA, and an adaptive model-extraction attack that exploits encoded execution traces. The results show that the additional white-box information exposed by TableNet does not provide the adversary with a meaningful advantage over black-box access. Across seven DNN architectures covering CNNs, Transformers, and LSTMs, TableNet achieves at least 38 times faster online inference than 2-PC schemes while incurring negligible communication overhead.
 
-The paper has been submitted to Usenix Security 2027.  
+The paper has been submitted to IEEE S&P 2027.  
 
 ### Environment Setup:
 
